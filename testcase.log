@@ -1,0 +1,514 @@
+
+C:\Users\Seth\Dropbox\Sensei>rm obj/* 
+
+C:\Users\Seth\Dropbox\Sensei>set PYTHONIOENCODING=utf-8 
+
+C:\Users\Seth\Dropbox\Sensei>python3 sensei.py --help 
+usage: sensei.py [-h] [--version] cmd [args [args ...]]
+
+positional arguments:
+  cmd         Command to execute.
+  args        Arguments for command.
+
+optional arguments:
+  -h, --help  show this help message and exit
+  --version   show program's version number and exit
+
+List of Commands with arguments:
+
+  --help
+  scoreteacher [teacher]
+     Report the full score of a specific teacher, by name. Use quotes. 
+  scoreclass [classcode]
+     Compare the scores of all teachers of a class, by code (XX[XX]####)
+  compare teacher teacher [teacher teacher teacher...]
+     Compare the scores of a list of teachers, by name. Use quotes. 
+
+Utility Commands:
+
+  0. setclasscodes [classcode, classcode...] (uppercase)
+     Save a list of class codes (CS, ATEC, etc) for use
+  1. downloaddirlists [year, year] (eg. 02 16)
+     Download directory listings for a range of years. 
+  2. downloadevals (uses last class list from dirlists)
+     Download individual evalulation reports for building datasets.
+  3. rebuild [list of glob matches within /evals]
+     Build datasets out of evalulation files for use in main program.
+  
+Development Commands:
+  dump
+     Print a full list of saved variables to stdout
+  prompt
+     Drop down to interactive level
+
+C:\Users\Seth\Dropbox\Sensei>python3 sensei.py setclasscodes 
+No data saved! Please download dirlists and download evals, then rebuild!
+You must specify class codes. 
+Defaulting. 
+Classcodes: 
+['CS', 'HONS', 'GOVT', 'PHYS', 'UNIV']
+
+C:\Users\Seth\Dropbox\Sensei>python3 sensei.py setclasscodes CS UNIV 
+No data saved! Please download dirlists and download evals, then rebuild!
+Classcodes: 
+['CS', 'UNIV']
+
+C:\Users\Seth\Dropbox\Sensei>python3 sensei.py downloaddirlists 
+No data saved! Please download dirlists and download evals, then rebuild!
+['CS', 'UNIV']
+You must specify a year range!
+
+C:\Users\Seth\Dropbox\Sensei>python3 sensei.py downloaddirlists 15 16 
+No data saved! Please download dirlists and download evals, then rebuild!
+['CS', 'UNIV']
+[15, 17]
+Processing ./directorylisting/15s_CS.html
+Processing ./directorylisting/15s_UNIV.html
+Processing ./directorylisting/15u_CS.html
+Processing ./directorylisting/15u_UNIV.html
+Processing ./directorylisting/15f_CS.html
+Processing ./directorylisting/15f_UNIV.html
+Processing ./directorylisting/16s_CS.html
+Processing ./directorylisting/16s_UNIV.html
+Processing ./directorylisting/16u_CS.html
+Processing ./directorylisting/16u_UNIV.html
+Processing ./directorylisting/16f_CS.html
+Processing ./directorylisting/16f_UNIV.html
+
+C:\Users\Seth\Dropbox\Sensei>python3 sensei.py downloadevals 
+No data saved! Please download dirlists and download evals, then rebuild!
+Downloaded 0 new evalulation files.
+
+C:\Users\Seth\Dropbox\Sensei>python3 sensei.py rebuild 
+No data saved! Please download dirlists and download evals, then rebuild!
+Loaded 1 directory files. Processing...
+
+C:\Users\Seth\Dropbox\Sensei>rem python3 sensei.py rebuild "16f/cs1*" 
+
+C:\Users\Seth\Dropbox\Sensei>python3 sensei.py rebuild "03f/cs1315.003.03f" "16u/cs1335.0U1.16u" "16u/cs1136.6U1.16u" "03f/cs1315.004.03f" 
+Loaded 4 directory files. Processing...
+
+C:\Users\Seth\Dropbox\Sensei>python3 sensei.py scoreteacher 
+No instructor by name void on file!
+Not a valid teacher
+
+C:\Users\Seth\Dropbox\Sensei>python3 sensei.py scoreteacher "George Steinhorst" 
+Saving http://www.ratemyprofessors.com/search.jsp?queryoption=HEADER&queryBy=teacherName&schoolName=University+of+Texas+at+Dallas&schoolID=1273&query=George Steinhorst as temporary/rmp.html
+No data on RMP website for George Steinhorst
+==George Steinhorst
+Datapoints: 986
+No v1 data availible.
+=Survey v2 data
+Criteria                                 %    %  σ     [ VP,  PR,  FR,  GD,  VG,  EX]
+L2: Course as a whole                    59.28%  0.9   [  0,   0,   5,  12,  15,   5]
+L2: Course content                       60.18%  0.83  [  0,   0,   3,  14,  15,   5]
+L2: Instructor contribution to course    63.35%  0.95  [  0,   0,   3,  12,  12,  10]
+L2: Instructor effectiveness             57.92%  0.99  [  0,   1,   5,  12,  14,   5]
+L2: Course organization                  61.54%  0.82  [  0,   0,   1,  17,  12,   7]
+L2: Opportunity to ask questions         73.3 %  0.64  [  0,   0,   0,   3,  17,  17]
+L2: Explanations by instructor           60.93%  0.96  [  0,   0,   5,  10,  14,   7]
+L2: Contribution to personal ability     57.67%  0.97  [  0,   1,   5,  11,  15,   4]
+L2: Instructor use of examples           68.28%  0.94  [  0,   0,   1,  12,   8,  17]
+L2: Length and difficulty of homework    56.74%  1.08  [  0,   1,   7,  11,  11,   6]
+L2: Usefulness of exams in understanding 54.07%  0.91  [  0,   0,   7,  17,   7,   4]
+L2: Instructor enthusiasm                57.92%  0.96  [  0,   0,   5,  17,   8,   7]
+L2: Textbook overall                     56.83%  1.03  [  0,   1,   5,  17,   8,   7]
+L2: Answers to questions from class      62.56%  0.92  [  0,   0,   5,   7,  19,   7]
+L2: Lectures-text relationship           63.52%  0.92  [  0,   0,   3,  12,  14,  10]
+L2: Availability of extra help           61.54%  1.03  [  0,   0,   5,  12,  10,  10]
+L2: Instructor interest in learning      59.53%  1.0   [  0,   1,   4,  11,  14,   6]
+L2: Amount you learned in course         56.46%  1.26  [  0,   4,   4,   9,  11,   7]
+L2: Relevance of course content          59.81%  1.2   [  1,   1,   3,  10,  12,   8]
+L2: Relevance of homework assignments    63.35%  1.13  [  0,   1,   5,   7,  12,  12]
+L2: Reasonableness of assigned work      61.23%  1.05  [  0,   1,   3,  14,  10,  10]
+L2: Relationship of exams to material    65.07%  0.99  [  0,   0,   3,  10,  10,  12]
+Criteria                                 %    %  σ     [ MH,    ,    , AVG,  ML,    ,  ML]
+L2: Relative expected grade              61.24%  1.3   [  0,   0,   3,   9,   9,   7,   9]
+L2: Relative intelectual challenge       62.15%  0.96  [  0,   0,   1,   6,  12,  14,   3]
+L2: Relative effort invested             62.3 %  1.35  [  1,   1,   1,   4,   7,  17,   4]
+L2: Relative effort required             62.03%  1.17  [  1,   0,   0,   5,  12,  12,   4]
+L2: Relative involvement (time?)         67.73%  1.16  [  0,   0,   1,   6,   6,  12,  11]
+No vH data availible.
+No UES data availible.
+No RMP data availible.
+
+C:\Users\Seth\Dropbox\Sensei>python3 sensei.py scoreteacher "Seth Giovanetti" 
+No instructor by name Seth Giovanetti on file!
+Not a valid teacher
+
+C:\Users\Seth\Dropbox\Sensei>python3 sensei.py compare 
+No instructor by name void on file!
+No valid teachers to compare
+
+C:\Users\Seth\Dropbox\Sensei>python3 sensei.py scoreteacher "Michael Christiansen" 
+Saving http://www.ratemyprofessors.com/search.jsp?queryoption=HEADER&queryBy=teacherName&schoolName=University+of+Texas+at+Dallas&schoolID=1273&query=Michael Christiansen as temporary/rmp.html
+Saving http://www.ratemyprofessors.com/ShowRatings.jsp?tid=1208870 as temporary/rmp2.html
+==Michael Christiansen
+Datapoints: 0
+No v1 data availible.
+No v2 data availible.
+No vH data availible.
+Datapoints: 105
+Criteria                                  %    %     σ [ SD,   D,   N,   A,  SA]
+Course: Well Defined                       50.0%  1.41 [  1,   2,   1,   2,   1]
+Course: Organization                      42.86%   1.5 [  2,   1,   2,   1,   1]
+Course: Overall                           53.57%  1.35 [  1,   1,   2,   2,   1]
+Instructor: Preperation                    50.0%  1.41 [  1,   2,   1,   2,   1]
+Instructor: Communication                 42.86%  1.11 [  1,   2,   2,   2,   0]
+Instructor: Interest                      53.57%  1.68 [  2,   0,   2,   1,   2]
+Instructor: Responsive                    67.86%  1.11 [  0,   1,   2,   2,   2]
+Instructor: Accessibility                 57.14%  0.95 [  0,   1,   4,   1,   1]
+Instructor: Evalulation Objectivity        75.0%   1.0 [  0,   1,   0,   4,   2]
+Instructor: Overall                        75.0%  0.58 [  0,   0,   1,   5,   1]
+Experience: Freedom to communicate        71.43%  0.69 [  0,   0,   2,   4,   1]
+Experience: Evalulation Objectivity       57.14%  1.38 [  1,   1,   1,   3,   1]
+Experience: Outside discussion            57.14%  1.11 [  0,   2,   2,   2,   1]
+Experience: Course value                  67.86%  0.76 [  0,   0,   3,   3,   1]
+Experience: Inspiring                     71.43%   0.9 [  0,   0,   3,   2,   2]
+RMP: Overall                               3.1/5
+RMP: Would take again                        N/%
+RMP: Difficulty                            2.0/5
+RMP: Hot                                     Yes
+
+C:\Users\Seth\Dropbox\Sensei>python3 sensei.py scoreteacher "Gordon Arnold" 
+Saving http://www.ratemyprofessors.com/search.jsp?queryoption=HEADER&queryBy=teacherName&schoolName=University+of+Texas+at+Dallas&schoolID=1273&query=Gordon Arnold as temporary/rmp.html
+Saving http://www.ratemyprofessors.com/ShowRatings.jsp?tid=1976371 as temporary/rmp2.html
+==Gordon Arnold
+Datapoints: 0
+No v1 data availible.
+No v2 data availible.
+No vH data availible.
+Datapoints: 48
+Criteria                                  %    %     σ [ SD,   D,   N,   A,  SA]
+Course: Well Defined                      93.75%   0.5 [  0,   0,   0,   1,   3]
+Course: Organization                      93.75%   0.5 [  0,   0,   0,   1,   3]
+Course: Overall                           93.75%   0.5 [  0,   0,   0,   1,   3]
+Instructor: Preperation                   100.0%   0.0 [  0,   0,   0,   0,   3]
+Instructor: Communication                 100.0%   0.0 [  0,   0,   0,   0,   3]
+Instructor: Interest                      100.0%   0.0 [  0,   0,   0,   0,   3]
+Instructor: Responsive                    100.0%   0.0 [  0,   0,   0,   0,   3]
+Instructor: Accessibility                 100.0%   0.0 [  0,   0,   0,   0,   3]
+Instructor: Evalulation Objectivity       100.0%   0.0 [  0,   0,   0,   0,   3]
+Instructor: Overall                       100.0%   0.0 [  0,   0,   0,   0,   3]
+Experience: Freedom to communicate        100.0%   0.0 [  0,   0,   0,   0,   3]
+Experience: Evalulation Objectivity       100.0%   0.0 [  0,   0,   0,   0,   3]
+Experience: Outside discussion            100.0%   0.0 [  0,   0,   0,   0,   3]
+Experience: Course value                  100.0%   0.0 [  0,   0,   0,   0,   3]
+Experience: Inspiring                     83.33%  1.15 [  0,   0,   1,   0,   2]
+RMP: Overall                               4.2/5
+RMP: Would take again                        60%
+RMP: Difficulty                            2.3/5
+RMP: Hot                                      No
+
+C:\Users\Seth\Dropbox\Sensei>python3 sensei.py compare "Michael Christiansen" "Gordon Arnold" 
+No v1 data availible for Michael Christiansen
+No v1 data availible for Gordon Arnold
+No valid teachers to compare
+No v2 data availible for Michael Christiansen
+No v2 data availible for Gordon Arnold
+No valid teachers to compare
+No vH data availible for Michael Christiansen
+No vH data availible for Gordon Arnold
+No valid teachers to compare
+Course: Well Defined                     Gordon Arnold        Michael Christiansen 
+Course: Organization                     Gordon Arnold        Michael Christiansen 
+Course: Overall                          Gordon Arnold        Michael Christiansen 
+Instructor: Preperation                  Gordon Arnold        Michael Christiansen 
+Instructor: Communication                Gordon Arnold        Michael Christiansen 
+Instructor: Interest                     Gordon Arnold        Michael Christiansen 
+Instructor: Responsive                   Gordon Arnold        Michael Christiansen 
+Instructor: Accessibility                Gordon Arnold        Michael Christiansen 
+Instructor: Evalulation Objectivity      Gordon Arnold        Michael Christiansen 
+Instructor: Overall                      Gordon Arnold        Michael Christiansen 
+Experience: Freedom to communicate       Gordon Arnold        Michael Christiansen 
+Experience: Evalulation Objectivity      Gordon Arnold        Michael Christiansen 
+Experience: Outside discussion           Gordon Arnold        Michael Christiansen 
+Experience: Course value                 Gordon Arnold        Michael Christiansen 
+Experience: Inspiring                    Gordon Arnold        Michael Christiansen 
+RMP: Overall                             Gordon Arnold        Michael Christiansen 
+RMP: Would take again                    Michael Christiansen Gordon Arnold        
+RMP: Difficulty                          Michael Christiansen Gordon Arnold        
+RMP: Hot                                 Michael Christiansen Gordon Arnold        
+
+C:\Users\Seth\Dropbox\Sensei>python3 sensei.py compare "Michael Christiansen" "Gordon Arnold" "Seth Giovanetti" 
+No instructor by name Seth Giovanetti on file!
+No v1 data availible for Michael Christiansen
+No v1 data availible for Gordon Arnold
+No valid teachers to compare
+No v2 data availible for Michael Christiansen
+No v2 data availible for Gordon Arnold
+No valid teachers to compare
+No vH data availible for Michael Christiansen
+No vH data availible for Gordon Arnold
+No valid teachers to compare
+Course: Well Defined                     Gordon Arnold        Michael Christiansen 
+Course: Organization                     Gordon Arnold        Michael Christiansen 
+Course: Overall                          Gordon Arnold        Michael Christiansen 
+Instructor: Preperation                  Gordon Arnold        Michael Christiansen 
+Instructor: Communication                Gordon Arnold        Michael Christiansen 
+Instructor: Interest                     Gordon Arnold        Michael Christiansen 
+Instructor: Responsive                   Gordon Arnold        Michael Christiansen 
+Instructor: Accessibility                Gordon Arnold        Michael Christiansen 
+Instructor: Evalulation Objectivity      Gordon Arnold        Michael Christiansen 
+Instructor: Overall                      Gordon Arnold        Michael Christiansen 
+Experience: Freedom to communicate       Gordon Arnold        Michael Christiansen 
+Experience: Evalulation Objectivity      Gordon Arnold        Michael Christiansen 
+Experience: Outside discussion           Gordon Arnold        Michael Christiansen 
+Experience: Course value                 Gordon Arnold        Michael Christiansen 
+Experience: Inspiring                    Gordon Arnold        Michael Christiansen 
+RMP: Overall                             Gordon Arnold        Michael Christiansen 
+RMP: Would take again                    Michael Christiansen Gordon Arnold        
+RMP: Difficulty                          Michael Christiansen Gordon Arnold        
+RMP: Hot                                 Michael Christiansen Gordon Arnold        
+
+C:\Users\Seth\Dropbox\Sensei>python3 sensei.py scoreteacher "George Steinhorst" 
+==George Steinhorst
+Datapoints: 986
+No v1 data availible.
+=Survey v2 data
+Criteria                                 %    %  σ     [ VP,  PR,  FR,  GD,  VG,  EX]
+L2: Course as a whole                    59.28%  0.9   [  0,   0,   5,  12,  15,   5]
+L2: Course content                       60.18%  0.83  [  0,   0,   3,  14,  15,   5]
+L2: Instructor contribution to course    63.35%  0.95  [  0,   0,   3,  12,  12,  10]
+L2: Instructor effectiveness             57.92%  0.99  [  0,   1,   5,  12,  14,   5]
+L2: Course organization                  61.54%  0.82  [  0,   0,   1,  17,  12,   7]
+L2: Opportunity to ask questions         73.3 %  0.64  [  0,   0,   0,   3,  17,  17]
+L2: Explanations by instructor           60.93%  0.96  [  0,   0,   5,  10,  14,   7]
+L2: Contribution to personal ability     57.67%  0.97  [  0,   1,   5,  11,  15,   4]
+L2: Instructor use of examples           68.28%  0.94  [  0,   0,   1,  12,   8,  17]
+L2: Length and difficulty of homework    56.74%  1.08  [  0,   1,   7,  11,  11,   6]
+L2: Usefulness of exams in understanding 54.07%  0.91  [  0,   0,   7,  17,   7,   4]
+L2: Instructor enthusiasm                57.92%  0.96  [  0,   0,   5,  17,   8,   7]
+L2: Textbook overall                     56.83%  1.03  [  0,   1,   5,  17,   8,   7]
+L2: Answers to questions from class      62.56%  0.92  [  0,   0,   5,   7,  19,   7]
+L2: Lectures-text relationship           63.52%  0.92  [  0,   0,   3,  12,  14,  10]
+L2: Availability of extra help           61.54%  1.03  [  0,   0,   5,  12,  10,  10]
+L2: Instructor interest in learning      59.53%  1.0   [  0,   1,   4,  11,  14,   6]
+L2: Amount you learned in course         56.46%  1.26  [  0,   4,   4,   9,  11,   7]
+L2: Relevance of course content          59.81%  1.2   [  1,   1,   3,  10,  12,   8]
+L2: Relevance of homework assignments    63.35%  1.13  [  0,   1,   5,   7,  12,  12]
+L2: Reasonableness of assigned work      61.23%  1.05  [  0,   1,   3,  14,  10,  10]
+L2: Relationship of exams to material    65.07%  0.99  [  0,   0,   3,  10,  10,  12]
+Criteria                                 %    %  σ     [ MH,    ,    , AVG,  ML,    ,  ML]
+L2: Relative expected grade              61.24%  1.3   [  0,   0,   3,   9,   9,   7,   9]
+L2: Relative intelectual challenge       62.15%  0.96  [  0,   0,   1,   6,  12,  14,   3]
+L2: Relative effort invested             62.3 %  1.35  [  1,   1,   1,   4,   7,  17,   4]
+L2: Relative effort required             62.03%  1.17  [  1,   0,   0,   5,  12,  12,   4]
+L2: Relative involvement (time?)         67.73%  1.16  [  0,   0,   1,   6,   6,  12,  11]
+No vH data availible.
+No UES data availible.
+No RMP data availible.
+
+C:\Users\Seth\Dropbox\Sensei>python3 sensei.py scoreteacher "Martha Sanchez" 
+Saving http://www.ratemyprofessors.com/search.jsp?queryoption=HEADER&queryBy=teacherName&schoolName=University+of+Texas+at+Dallas&schoolID=1273&query=Martha Sanchez as temporary/rmp.html
+No data on RMP website for Martha Sanchez
+==Martha Sanchez
+Datapoints: 843
+No v1 data availible.
+=Survey v2 data
+Criteria                                 %    %  σ     [ VP,  PR,  FR,  GD,  VG,  EX]
+L2: Course as a whole                    36.31%  0.91  [  0,   6,  17,   3,   4,   0]
+L2: Course content                       42.64%  0.9   [  0,   5,   8,  18,   1,   1]
+L2: Instructor contribution to course    31.74%  0.88  [  1,   9,  10,   8,   0,   0]
+L2: Instructor effectiveness             30.46%  1.31  [  6,   8,   9,   7,   2,   1]
+L2: Course organization                  46.6 %  0.83  [  0,   1,  12,  12,   7,   0]
+L2: Opportunity to ask questions         57.59%  0.91  [  0,   0,   5,  12,  11,   4]
+L2: Explanations by instructor           29.84%  1.21  [  5,   8,  11,   6,   1,   1]
+L2: Contribution to personal ability     28.8 %  1.28  [  6,   8,  11,   4,   2,   1]
+L2: Instructor use of examples           40.61%  1.23  [  0,   8,  12,   7,   3,   3]
+L2: Length and difficulty of homework    39.27%  1.26  [  2,   6,  10,   9,   3,   2]
+L2: Usefulness of exams in understanding 40.37%  1.05  [  1,   4,   8,  12,   1,   1]
+L2: Instructor enthusiasm                47.72%  1.15  [  0,   5,   6,  14,   5,   3]
+L2: Textbook overall                     53.81%  1.22  [  0,   3,   6,  11,   7,   6]
+L2: Answers to questions from class      42.41%  1.14  [  1,   4,  12,   8,   6,   1]
+L2: Lectures-text relationship           50.31%  1.14  [  0,   2,   8,   8,   6,   3]
+L2: Availability of extra help           40.89%  1.08  [  1,   7,   6,  17,   2,   1]
+L2: Instructor interest in learning      44.72%  0.88  [  0,   1,  12,  10,   3,   1]
+L2: Amount you learned in course         37.56%  1.35  [  4,   5,  11,   6,   6,   1]
+L2: Relevance of course content          43.15%  1.3   [  3,   3,   8,  12,   5,   2]
+L2: Relevance of homework assignments    44.5 %  1.21  [  2,   3,   8,  11,   7,   1]
+L2: Reasonableness of assigned work      47.64%  1.14  [  0,   4,   9,   9,   8,   2]
+L2: Relationship of exams to material    47.64%  1.17  [  1,   2,   8,  15,   2,   4]
+Criteria                                 %    %  σ     [ MH,    ,    , AVG,  ML,    ,  ML]
+L2: Relative expected grade              60.87%  1.56  [  0,   2,   3,   6,   5,   8,   9]
+L2: Relative intelectual challenge       47.51%  1.54  [  2,   2,   2,   6,   9,   4,   1]
+L2: Relative effort invested             43.09%  1.85  [  3,   3,   3,   8,   4,   1,   4]
+L2: Relative effort required             45.22%  1.73  [  2,   5,   4,   9,   4,   6,   3]
+L2: Relative involvement (time?)         54.35%  1.41  [  0,   2,   3,  10,   8,   5,   5]
+No vH data availible.
+No UES data availible.
+No RMP data availible.
+
+C:\Users\Seth\Dropbox\Sensei>python3 sensei.py compare "George Steinhorst" "Martha Sanchez" 
+No v1 data availible for George Steinhorst
+No v1 data availible for Martha Sanchez
+No valid teachers to compare
+L2: Course as a whole                    George Steinhorst    Martha Sanchez       
+L2: Course content                       George Steinhorst    Martha Sanchez       
+L2: Instructor contribution to course    George Steinhorst    Martha Sanchez       
+L2: Instructor effectiveness             George Steinhorst    Martha Sanchez       
+L2: Course organization                  George Steinhorst    Martha Sanchez       
+L2: Opportunity to ask questions         George Steinhorst    Martha Sanchez       
+L2: Explanations by instructor           George Steinhorst    Martha Sanchez       
+L2: Contribution to personal ability     George Steinhorst    Martha Sanchez       
+L2: Instructor use of examples           George Steinhorst    Martha Sanchez       
+L2: Length and difficulty of homework    George Steinhorst    Martha Sanchez       
+L2: Usefulness of exams in understanding George Steinhorst    Martha Sanchez       
+L2: Instructor enthusiasm                George Steinhorst    Martha Sanchez       
+L2: Textbook overall                     George Steinhorst    Martha Sanchez       
+L2: Answers to questions from class      George Steinhorst    Martha Sanchez       
+L2: Lectures-text relationship           George Steinhorst    Martha Sanchez       
+L2: Availability of extra help           George Steinhorst    Martha Sanchez       
+L2: Instructor interest in learning      George Steinhorst    Martha Sanchez       
+L2: Amount you learned in course         George Steinhorst    Martha Sanchez       
+L2: Relevance of course content          George Steinhorst    Martha Sanchez       
+L2: Relevance of homework assignments    George Steinhorst    Martha Sanchez       
+L2: Reasonableness of assigned work      George Steinhorst    Martha Sanchez       
+L2: Relationship of exams to material    George Steinhorst    Martha Sanchez       
+L2: Relative expected grade              George Steinhorst    Martha Sanchez       
+L2: Relative intelectual challenge       George Steinhorst    Martha Sanchez       
+L2: Relative effort invested             George Steinhorst    Martha Sanchez       
+L2: Relative effort required             George Steinhorst    Martha Sanchez       
+L2: Relative involvement (time?)         George Steinhorst    Martha Sanchez       
+No vH data availible for George Steinhorst
+No vH data availible for Martha Sanchez
+No valid teachers to compare
+No UES data availible for George Steinhorst
+No UES data availible for Martha Sanchez
+No valid teachers to compare after removals.
+No valid teachers to compare
+
+C:\Users\Seth\Dropbox\Sensei>python3 sensei.py compare "George Steinhorst" "Martha Sanchez" "Seth Giovanetti" 
+No instructor by name Seth Giovanetti on file!
+No v1 data availible for George Steinhorst
+No v1 data availible for Martha Sanchez
+No valid teachers to compare
+L2: Course as a whole                    George Steinhorst    Martha Sanchez       
+L2: Course content                       George Steinhorst    Martha Sanchez       
+L2: Instructor contribution to course    George Steinhorst    Martha Sanchez       
+L2: Instructor effectiveness             George Steinhorst    Martha Sanchez       
+L2: Course organization                  George Steinhorst    Martha Sanchez       
+L2: Opportunity to ask questions         George Steinhorst    Martha Sanchez       
+L2: Explanations by instructor           George Steinhorst    Martha Sanchez       
+L2: Contribution to personal ability     George Steinhorst    Martha Sanchez       
+L2: Instructor use of examples           George Steinhorst    Martha Sanchez       
+L2: Length and difficulty of homework    George Steinhorst    Martha Sanchez       
+L2: Usefulness of exams in understanding George Steinhorst    Martha Sanchez       
+L2: Instructor enthusiasm                George Steinhorst    Martha Sanchez       
+L2: Textbook overall                     George Steinhorst    Martha Sanchez       
+L2: Answers to questions from class      George Steinhorst    Martha Sanchez       
+L2: Lectures-text relationship           George Steinhorst    Martha Sanchez       
+L2: Availability of extra help           George Steinhorst    Martha Sanchez       
+L2: Instructor interest in learning      George Steinhorst    Martha Sanchez       
+L2: Amount you learned in course         George Steinhorst    Martha Sanchez       
+L2: Relevance of course content          George Steinhorst    Martha Sanchez       
+L2: Relevance of homework assignments    George Steinhorst    Martha Sanchez       
+L2: Reasonableness of assigned work      George Steinhorst    Martha Sanchez       
+L2: Relationship of exams to material    George Steinhorst    Martha Sanchez       
+L2: Relative expected grade              George Steinhorst    Martha Sanchez       
+L2: Relative intelectual challenge       George Steinhorst    Martha Sanchez       
+L2: Relative effort invested             George Steinhorst    Martha Sanchez       
+L2: Relative effort required             George Steinhorst    Martha Sanchez       
+L2: Relative involvement (time?)         George Steinhorst    Martha Sanchez       
+No vH data availible for George Steinhorst
+No vH data availible for Martha Sanchez
+No valid teachers to compare
+No UES data availible for George Steinhorst
+No UES data availible for Martha Sanchez
+No valid teachers to compare after removals.
+No valid teachers to compare
+
+C:\Users\Seth\Dropbox\Sensei>python3 sensei.py scoreclass 
+No valid teachers to compare
+No valid teachers to compare
+No valid teachers to compare
+No valid teachers to compare after removals.
+No valid teachers to compare
+
+C:\Users\Seth\Dropbox\Sensei>python3 sensei.py scoreclass CS1315 
+No v1 data availible for George Steinhorst
+No v1 data availible for Martha Sanchez
+No valid teachers to compare
+L2: Course as a whole                    George Steinhorst    Martha Sanchez       
+L2: Course content                       George Steinhorst    Martha Sanchez       
+L2: Instructor contribution to course    George Steinhorst    Martha Sanchez       
+L2: Instructor effectiveness             George Steinhorst    Martha Sanchez       
+L2: Course organization                  George Steinhorst    Martha Sanchez       
+L2: Opportunity to ask questions         George Steinhorst    Martha Sanchez       
+L2: Explanations by instructor           George Steinhorst    Martha Sanchez       
+L2: Contribution to personal ability     George Steinhorst    Martha Sanchez       
+L2: Instructor use of examples           George Steinhorst    Martha Sanchez       
+L2: Length and difficulty of homework    George Steinhorst    Martha Sanchez       
+L2: Usefulness of exams in understanding George Steinhorst    Martha Sanchez       
+L2: Instructor enthusiasm                George Steinhorst    Martha Sanchez       
+L2: Textbook overall                     George Steinhorst    Martha Sanchez       
+L2: Answers to questions from class      George Steinhorst    Martha Sanchez       
+L2: Lectures-text relationship           George Steinhorst    Martha Sanchez       
+L2: Availability of extra help           George Steinhorst    Martha Sanchez       
+L2: Instructor interest in learning      George Steinhorst    Martha Sanchez       
+L2: Amount you learned in course         George Steinhorst    Martha Sanchez       
+L2: Relevance of course content          George Steinhorst    Martha Sanchez       
+L2: Relevance of homework assignments    George Steinhorst    Martha Sanchez       
+L2: Reasonableness of assigned work      George Steinhorst    Martha Sanchez       
+L2: Relationship of exams to material    George Steinhorst    Martha Sanchez       
+L2: Relative expected grade              George Steinhorst    Martha Sanchez       
+L2: Relative intelectual challenge       George Steinhorst    Martha Sanchez       
+L2: Relative effort invested             George Steinhorst    Martha Sanchez       
+L2: Relative effort required             George Steinhorst    Martha Sanchez       
+L2: Relative involvement (time?)         George Steinhorst    Martha Sanchez       
+No vH data availible for George Steinhorst
+No vH data availible for Martha Sanchez
+No valid teachers to compare
+No UES data availible for George Steinhorst
+No UES data availible for Martha Sanchez
+No valid teachers to compare after removals.
+No valid teachers to compare
+
+C:\Users\Seth\Dropbox\Sensei>python3 sensei.py scoreclass NOTACLASS 
+No valid teachers to compare
+No valid teachers to compare
+No valid teachers to compare
+No valid teachers to compare after removals.
+No valid teachers to compare
+
+C:\Users\Seth\Dropbox\Sensei>REM return 
+
+C:\Users\Seth\Dropbox\Sensei>REM pause 
+
+C:\Users\Seth\Dropbox\Sensei>REM python3 -m cProfile sensei.py --help > help.log 
+
+C:\Users\Seth\Dropbox\Sensei>REM python3 -m cProfile sensei.py setclasscodes > set1.log 
+
+C:\Users\Seth\Dropbox\Sensei>REM python3 -m cProfile sensei.py setclasscodes CS UNIV > set2.log 
+
+C:\Users\Seth\Dropbox\Sensei>REM python3 -m cProfile sensei.py downloaddirlists > dl1.log 
+
+C:\Users\Seth\Dropbox\Sensei>REM python3 -m cProfile sensei.py downloaddirlists 15 16 > dl2.log 
+
+C:\Users\Seth\Dropbox\Sensei>REM python3 -m cProfile sensei.py downloadevals > dle.log 
+
+C:\Users\Seth\Dropbox\Sensei>REM python3 -m cProfile sensei.py rebuild > rb1.log 
+
+C:\Users\Seth\Dropbox\Sensei>REM python3 -m cProfile sensei.py rebuild "16f/cs1*" > rb2.log 
+
+C:\Users\Seth\Dropbox\Sensei>REM python3 -m cProfile sensei.py rebuild "16f/*" > rb3.log 
+
+C:\Users\Seth\Dropbox\Sensei>REM python3 -m cProfile sensei.py scoreteacher > score1.log 
+
+C:\Users\Seth\Dropbox\Sensei>REM python3 -m cProfile sensei.py scoreteacher "Jason Smith" > score2.log 
+
+C:\Users\Seth\Dropbox\Sensei>REM python3 -m cProfile sensei.py scoreteacher Timothy\ Farage > score3.log 
+
+C:\Users\Seth\Dropbox\Sensei>REM python3 -m cProfile sensei.py scoreteacher Seth Giovanetti > score4.log 
+
+C:\Users\Seth\Dropbox\Sensei>REM python3 -m cProfile sensei.py compare > comp1.log 
+
+C:\Users\Seth\Dropbox\Sensei>REM python3 -m cProfile sensei.py compare "Jason Smith" "Timothy Farage" > comp2.log 
+
+C:\Users\Seth\Dropbox\Sensei>REM python3 -m cProfile sensei.py compare "Jason Smith" "Timothy Farage" "Seth Giovanetti" > comp3.log 
+
+C:\Users\Seth\Dropbox\Sensei>REM python3 -m cProfile sensei.py scoreclass > scorec1.log 
+
+C:\Users\Seth\Dropbox\Sensei>REM python3 -m cProfile sensei.py scoreclass CS1337 > scorec2.log 
+
+C:\Users\Seth\Dropbox\Sensei>REM python3 -m cProfile sensei.py scoreclass NOTACLASS > scorec3.log 

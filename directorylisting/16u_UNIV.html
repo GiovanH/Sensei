@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>UT Dallas CourseBook Class Search :: UT Dallas Class, Syllabus, Course Evaluation, and Textbook Database</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="UT Dallas CourseBook is an advanced tool for obtaining information about classes at The University of Texas at Dallas (UTD). Lookup course and catalog information, Class Syllabi (Syllabus), Course Evaluations, Instructor Evaluations, and submit syllabus files from a single central location." />
+	<meta name="keywords" content="UTD, University of Texas, University of Texas at Dallas, Dallas, Texas, CourseBook, Syllabi, Syllabus, Evaluations, Submit Syllabus, OpenSearch, Course Lookup">
+	<meta name="viewport" content="width=850">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/clems+ptools+alertify+chosen+eforms+clarus+catbook-orion+fira+font-awesome+tooltipster4"/>
+
+	<link rel="stylesheet" href="/js/jquery/jquery-ui-1.8.4.custom/css/smoothness/jquery-ui-1.8.4.custom.css" type="text/css" media="screen" />
+
+	<link rel="shortcut icon" type="image/ico" href="https://provost.utdallas.edu/images/utd-favicon-gs.ico" />
+
+	<script src="/js/jquery/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="/js/jquery/tablesorter-2.0.3/jquery.tablesorter.min.js" type="text/javascript"></script>
+	<script src="/js/jquery/form-2.69/jquery.form.js" type="text/javascript"></script>
+	<script src="/js/jquery/jquery-ui-1.8.4.custom/js/jquery-ui-1.8.4.custom.min.js" type="text/javascript"></script>
+
+	<script src="/js/jquery/alertify-0.3.11/alertify.min.js" type="text/javascript"></script>
+	<script src="/js/jquery/tooltipster-4.1.5/tooltipster.bundle.min.js" type="text/javascript"></script>
+
+
+	<!-- ckeditor - used by coursebook mail -->
+	<script src="//cdn.ckeditor.com/4.4.5/standard/ckeditor.js"></script>
+	<script src="//cdn.ckeditor.com/4.4.5/standard/adapters/jquery.js"></script>
+
+	<!-- catbook uses arbor graphs -->
+	<script src="/js/jquery/arbor-0.92/arbor.js" type="text/javascript"></script>
+	<script src="/js/jquery/arbor-0.92/arbor-tween.js" type="text/javascript"></script>
+	<script src="/js/jquery/arbor-0.92/graphics.js" type="text/javascript"></script>
+	<script src="/js/jquery/arbor-0.92/renderer.js" type="text/javascript"></script>
+
+	<script>var ptools_js=[]; var ptools_data={};</script>
+	<script src="/js/ptools.js?v=20170125a" type="text/javascript"></script>
+	<script src="/js/wdiff/wdiff.js" type="text/javascript"></script>
+
+
+
+	<script>
+	  // google analytics 
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-19668321-9', 'auto'); ga('send', 'pageview');
+	</script>
+</head>
+
+<body id="main">
+	<div id="page-all">
+	<div id="page-left"></div>
+	<div id="page-middle">
+
+		<div id="header" class="hideforprint">
+			<div id="header-logo"><a href="https://www.utdallas.edu"><img src="/images/barsoom/header-logo.png" border="0" \></a></div>
+			<div id="header-title"><a href="https://coursebook.utdallas.edu">CourseBook</a></div>
+		</div>
+	
+		<div id="menus" class="hideforprint">
+<div id="lev1-menubar"><ul>
+<li class="lev1-active"><a href="http://coursebook.utdallas.edu/" id="level1-1" title="Course Tools">Course Tools</a></li>
+<li style="float: right; margin-right: 10px;" class="lev1-logout"><a href="https://coursebook.utdallas.edu/login/coursebook">login</a></li>
+</ul></div>
+<div id="lev2-menubar"><ul>
+<li class="lev2-active"><a href="http://coursebook.utdallas.edu" id="level2-1" title="CourseBook">CourseBook</a></li>
+<li><a href="https://coursebook.utdallas.edu/syllabus-policies" id="level2-2" title="Syllabus Policies">Syllabus Policies</a></li>
+<li><a href="http://provost.utdallas.edu/home/syllabus-templates" id="level2-3" title="Syllabus Templates">Syllabus Templates</a></li>
+</ul></div>
+</div>
+
+
+		<div id="page-content">
+			<div class="search-panel-div">
+		
+		<div class="search-panel-title-div2">
+			<b>CourseBook :: Class Search</b>
+		</div>
+
+		<div id='panel_1'>
+		
+			<div class="search-panel-menu-div2">				
+				<div id="tabset-menubar"><ul>
+					<div class="expandblock-tabs"><ul><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/aboutcoursebook">about</a></li><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/coursebookhelp">help</a></li><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/syllabussubmit">syllabus submission</a></li><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/advancedsearch">advanced search</a></li><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/myclasses">my classes</a></li><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/guidedsearch">guided search</a></li><li class="lev3-active lev3-first"><a href="https://coursebook.utdallas.edu/search">class search</a></li></ul></div>
+				</ul></div>
+			</div>
+	
+			<div class="search-panel-form-div" align="center">
+
+ 				<div id="topmsg"><div style="width: 600px; padding: 0 0 10px 0; margin: 0 auto; color: red; font-weight: bold; font-size: 12px; text-align: center; ">Looking for <u>ATEC</u> classes? This fall the ATEC prefix is changing to <u>ATCM</u><br />Looking for <u>DRAM</u> classes? This fall the DRAM prefix is changing to <u>THEA</u></div></div>
+
+				<div id="classsearch">
+	
+					<form method="get" name="searchform" id="searchform" action="https://coursebook.utdallas.edu/coursebook" onsubmit="dosearch(); return false;" class="search-panel-form" >
+					
+						<div style="width: 455px; margin: 0 auto;">
+							<div style="float: left; width: 150px;">
+								<input type="text" size="20" id="srch" name="s" value="cp_UNIV" style="width: 140px;" class="focushere" />
+							</div>
+							
+							<div style="float: left; padding: 0 0 0 7px;">
+								<select class="term-popup" id="srch_term" name="t"><option value="term_all" >Search All Terms</option><option value="_2017" >---------------</option><option value="term_17f" >2017 Fall (17f)</option><option value="term_17u" >2017 Summer (17u)</option><option value="term_17s" >2017 Spring (17s)</option><option value="_2016" >---------------</option><option value="term_16f" >2016 Fall (16f)</option><option value="term_16u" selected>2016 Summer (16u)</option><option value="term_16s" >2016 Spring (16s)</option><option value="_2015" >---------------</option><option value="term_15f" >2015 Fall (15f)</option><option value="term_15u" >2015 Summer (15u)</option><option value="term_15s" >2015 Spring (15s)</option><option value="_2014" >---------------</option><option value="term_14f" >2014 Fall (14f)</option><option value="term_14u" >2014 Summer (14u)</option><option value="term_14s" >2014 Spring (14s)</option><option value="_2013" >---------------</option><option value="term_13f" >2013 Fall (13f)</option><option value="term_13u" >2013 Summer (13u)</option><option value="term_13s" >2013 Spring (13s)</option><option value="_2012" >---------------</option><option value="term_12f" >2012 Fall (12f)</option><option value="term_12u" >2012 Summer (12u)</option><option value="term_12s" >2012 Spring (12s)</option><option value="_2011" >---------------</option><option value="term_11f" >2011 Fall (11f)</option><option value="term_11u" >2011 Summer (11u)</option><option value="term_11s" >2011 Spring (11s)</option><option value="_2010" >---------------</option><option value="term_10f" >2010 Fall (10f)</option><option value="term_10u" >2010 Summer (10u)</option><option value="term_10s" >2010 Spring (10s)</option></select>			
+							</div>
+	
+							<div style="float: left; padding: 0 0 0 7px;">
+								<a class="button-link" href="" onclick="dosearch(); return false;" style="width: 100px">search</a>
+							</div>
+
+							<div style="clear: both;"></div>
+							
+							<div style="padding: 10px 0 0 0">
+								<input id="has_syllabus" type="checkbox" name="has_syllabus" value="1"  /> <label for="has_syllabus" >has syllabus</label> <i class="fa fa-question-circle ptools-popover" aria-hidden="true" title="Check the HAS SYLLABUS box to limit search to classes with syllabi."></i>
+								&nbsp; 
+								<input id="has_evaluation" type="checkbox" name="has_evaluation" value="1" checked="checked" /> <label for="has_evaluation">has evaluation</label> <i class="fa fa-question-circle ptools-popover" aria-hidden="true" title="Check the HAS EVALUATION box to limit searches to classes with evaluations."></i>
+								&nbsp;
+								<input id="include_independent_study" type="checkbox" name="include_independent_study" value="1"  /> <label for="include_independent_study">include special classes</label> <i class="fa fa-question-circle ptools-popover" aria-hidden="true" title="Check this box to show 'special classes' such as independant study, executive education, and other special programs."></i>
+							</div>
+
+						</div>
+						
+					</form>
+
+					<form method="get" name="proxysearch" id="proxysearch" action="https://coursebook.utdallas.edu/coursebook" style="display: none"> </form>
+
+					<div id="searchhelp" style="display: none">
+						<div class="search-instructions">Use CourseBook to find classes, courses, syllabi (syllabus), and evaluation data for classes at UT Dallas.</div>
+						<div class="search-instructions">Search by course prefix, number, instructor name, email address, course title, or other search phrase.</div>
+						<div class="search-instructions">Click on a row to expand it and download syllabus and evaluation reports</div>
+					</div>
+
+					<div style="font-size: 10px; color: black; text-align: center; margin: 0 0 10px 0; ">Not sure what to search for? <a href="https://coursebook.utdallas.edu/guidedsearch">Click here to try <b>Guided Search</b> to find classes or build a schedule</a>.</div>
+
+					<div style="font-size: 10px; color: #ccc; text-align: center;">Search Counter: 12,513,697 (since 2014-10-08).</div>					
+				</div>
+
+			</div>
+						
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		// $('img.tt').tooltip();
+	</script>	
+	<div class="search-panel-div">
+		
+		<div class="search-panel-title-div2" id="searchresults">
+			<b>Search Results (no items found)</b>
+		</div>
+
+		<div id='panel_1'>
+		
+			<div class="search-panel-menu-div2">				
+				<div id="tabset-menubar"><ul>
+					<div class="expandblock-tabs"><ul><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/myevents">my events</a></li><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/mysavedclasses">saved classes</a></li><li class="lev3-active lev3-first"><a href="https://coursebook.utdallas.edu/searchresults">search results</a></li></ul></div>
+				</ul></div>
+			</div>
+	
+			<div class="search-panel-form-div" align="center">
+				<div id="sr"><div class="zeromatches"><p>No course sections matched your search criteria.</p><p>Please try again using fewer or different search terms.</p></div></div>
+			</div>
+
+		</div>
+	</div>
+		
+			
+			<div id="footer" class="hideforprint">
+				<div class="links">
+					<a href="https://www.utdallas.edu">UT Dallas Homepage</a> | <a href="https://provost.utdallas.edu">UT Dallas Office of the Provost</a> | <a href="https://coursebook.utdallas.edu">CourseBook</a> | <a href="mailto:ptg@utdallas.edu">Contact Provost&#39;s Technology Group</a> | <a href="https://www.utdallas.edu/privacy/">UT Dallas Privacy Policy</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="page-right" style="width: 8px; float: left;"></div>
+	<div style="clear:both;"></div>
+
+	<!-- bottom cap -->
+	<div id="page-bottomcap"></div>
+	
+	</div>
+
+	<!-- jslive: ajax javascript -->
+	<div id="jslive"></div>
+	
+
+	<script type="text/javascript" language="javascript">
+
+	  // focus cursor
+		$(".focushere").focus();
+
+	  // after the dom is loaded - execute these functions
+		$(document).ready( function()
+		{
+		  // buttons: add button styles 
+		  	$(".gbutton")
+		  	.mouseover( function() { $(this).css("backgroundPosition","0 -16px").css("cursor","pointer"); } )
+		  	.mouseout( function() { $(this).css("backgroundPosition","0 0"); } )
+		  	.mousedown( function() { $(this).css("backgroundPosition","0 -32px"); } )
+		  	.mouseup( function() { $(this).css("backgroundPosition","0 -16px"); } );
+
+		  // buttons: add button styles 
+		  	$(".gbutton2")
+		  	.mouseover( function() { $(this).css("backgroundPosition","0 -22px").css("cursor","pointer"); } )
+		  	.mouseout( function() { $(this).css("backgroundPosition","0 0"); } )
+		  	.mousedown( function() { $(this).css("backgroundPosition","0 -44px"); } )
+		  	.mouseup( function() { $(this).css("backgroundPosition","0 -22px"); } );
+
+		  // kill event propagation
+			$(".stopbubble").click( function(e){ e.stopPropagation();} );
+
+		  // table: add table sorting
+			$(".sortable").tablesorter();
+			//$(".sortable").tablesorter( {sortList: [[1,0], [2,0]] } );
+			//$(".sortable").tablesorter( {sortList: [[1,0], [2,0]], widgets: ['zebra'] } );
+			//$(".sortable").tablesorter( {widgets: ['zebra']} );
+			$(".sortable tr").mouseover( function() { $(this).addClass("hilite").css("cursor","pointer"); } ).mouseout( function() { $(this).removeClass("hilite"); } );
+
+		  // table: remove expanded rows before sorting table rows
+			$(".sortable th").mouseup( function() { $(".expandedrow").remove(); } );
+			
+		  // float divs
+		  	//$(".floatdiv").makeFloat({x:"current",y: 100});
+
+		  // ptools inits
+		  	ptools_init_popovers();
+		});
+		
+		function activate_buttons()
+		{
+		  // buttons: add button styles 
+		  	$(".gbutton")
+		  	.mouseover( function() { $(this).css("backgroundPosition","0 -16px").css("cursor","pointer"); } )
+		  	.mouseout( function() { $(this).css("backgroundPosition","0 0"); } )
+		  	.mousedown( function() { $(this).css("backgroundPosition","0 -32px"); } )
+		  	.mouseup( function() { $(this).css("backgroundPosition","0 -16px"); } );
+		}
+		
+
+		function do_cmd(cmd, id)
+		{
+			$('#jslive').load('https://coursebook.utdallas.edu/clips/clip-catbook_command.zog', { id: id, cmd: cmd });
+		}
+
+		var last_clip_catbook = 'current_catbook_tab';
+		var last_clip_coursebook = 'clip-section';
+
+		function open_subrow(event, parent_row_id, clip_type, data_id, toggle, subaction, row_class)
+		{
+		  // get div ids		
+			child_id = parent_row_id + 'child';
+			childcontent_id = parent_row_id + 'childcontent';
+			control_icon_id = parent_row_id + '-i';
+
+		  // switch clip type to last used
+			if (row_class == 'expandedrow catbook')
+			{
+				if (clip_type == 'last')
+			  	{
+					clip_type = last_clip_catbook;
+				}
+				else
+				{
+					last_clip_catbook = clip_type;
+				}
+		  	}
+		  	else
+		  	{
+				if (clip_type == 'last')
+			  	{
+					clip_type = last_clip_coursebook;
+				}
+				else
+				{
+					last_clip_coursebook = clip_type;
+				}
+		  	}
+
+		  // check if a child row exists, if not - create one
+			if ( $('#'+child_id).length === 0 )
+			{
+			  // close all other expanded rows
+				if (!event.shiftKey) 
+				{
+					$('.'+row_class).remove();
+				}
+	
+		  	  // insert child row below the parent_row
+		  	 	rows_in_parent = $('#'+parent_row_id).prop("cells").length;
+				$('#'+parent_row_id).after('<tr id="' + child_id + '" class="' + row_class + '"><td colspan="' + rows_in_parent + '" id="' +childcontent_id + '"><p align="center"><img src="/images/ajax-loader.gif" /></p></td></tr>');
+	
+			  // change +/- control to minus
+			  	$('#'+control_icon_id).attr({ src: "/images/foldicon-minus.gif"});
+
+			  // load clip file into child
+			  	$('#'+childcontent_id).load('https://coursebook.utdallas.edu/clips/'+clip_type+'.zog', { id: data_id, div: childcontent_id, subaction: subaction } );
+			}
+
+		  // if toggle is ON and row exists - remove the child row (i.e. toggle its display)
+			else if (toggle)
+			{
+			  // remove child row
+				$('#'+child_id).remove();
+				
+			  // change +/- control to plus
+			  	$('#'+control_icon_id).attr({ src: "/images/foldicon-plus.gif"});
+			}
+
+		  // if toggle is OFF and row exists - reload the child row
+			else
+			{
+			  // load clip file into child
+			  	$('#'+childcontent_id).load('https://coursebook.utdallas.edu/clips/'+clip_type+'.zog', { id: data_id, div: childcontent_id, subaction: subaction } ).hide().fadeIn('slow');
+			}
+
+		  // scroll to subrow
+		  	var scrollto=$('#'+childcontent_id).offset().top;
+			$('body,html,document').animate({ scrollTop: scrollto }, 1000);
+
+		}
+	
+		function dosearch(srch_type)
+		{
+			var srch = $('#srch').val().replace(/[^\w\-\.\!\: ]/gi, '');
+
+		  // advanced search - add items from selection lists
+			if (srch_type == 'adv')
+			{
+				$.each( $('.selectlist-list'), function(i, o) { v = $(o).val(); if (v != null) { srch += ' ' + v; }; } );
+				//$('.selectlist-list').each( function() { alert(this.val()); } );
+			}
+		  // catbook search
+			else if (srch_type == 'cat')
+			{
+			  // check for commands
+				var match = /(cmd_)([\w]*) ?([\w]*)?/.exec(srch);
+				if (match != null)
+				{
+					alertify.log(match[2]+" command received");
+					do_cmd(match[2], match[3]);
+					exit; 
+				}
+
+				srch += ' ' + $('#y').val();
+				$.each( $('.options'), function(i, o) { if ( $(o).is(':checked') ) { srch += ' ' + $(o).attr('id') } } );
+			}
+		  // standard coursebook search
+			else
+			{
+				srch += ' ' + $('#srch_term').val()
+				if ( $('#has_syllabus').is(':checked')==true ) srch += ' hassyllabus_1';
+				if ( $('#has_evaluation').is(':checked')==true ) srch += ' hasevaluation_1';
+				if ( $('#include_independent_study').is(':checked')==true ) srch += ' includeindstudy_1';
+			}
+			
+		  // substitute token words
+			srch = srch.replace(/^\s+|\s+$/g,'');
+			srch = srch.replace(/[, ]+/gi, '/');
+			srch = srch.replace(/benchmark/gi, 'kw_bm');
+			srch = srch.replace(/union/gi, 'kw_un');
+			srch = srch.replace(/select/gi, 'kw_sel');
+			srch = srch.replace(/insert/gi, 'kw_ins');
+			srch = srch.replace(/declare/gi, 'kw_dec');
+			srch = srch.replace(/drop/gi, 'kw_drp');
+			srch = srch.replace(/update/gi, 'kw_upd');
+			srch = srch.replace(/system/gi, 'kw_sys');
+			srch = srch.replace(/database/gi, 'kw_db');
+			srch = srch.replace(/data/gi, 'kw_dt');
+			
+		  // set url
+			if (srch_type == 'adv')
+			{
+				var srch_url = 'https://coursebook.utdallas.edu/' + srch + '#searchresults';
+			}
+			else
+			{			
+				var srch_url = 'https://coursebook.utdallas.edu/' + srch;
+			}
+
+		  // setup proxy redirect
+			$('#proxysearch').attr('action', srch_url);
+			$('#proxysearch').submit();
+		}
+
+	  // get grade info
+	  	function peek_grade(a, n)
+	  	{
+			$.getJSON(
+				'https://coursebook.utdallas.edu/clips/clip-gradepeek.zog', 
+				{'a':a, 'n':n}, 
+				function(data)
+				{	
+					if (data.type == 'prompt')
+					{
+						alertify.set({ buttonFocus: "ok", labels: { ok: "Notify Me", cancel: "Cancel"} } ); 
+						alertify.prompt(data.response, function (e, n) { if (e) { peek_grade(a, n) } else { console.log('x'); } }, data.default_value );
+					}
+					else if (data.reponse_type == 'notify')
+					{
+						alertify.set({ buttonFocus: "ok", labels: { ok: "OK" } } ); 
+						alertify.alert(data.response);
+					}
+					else
+					{
+						alertify.set({ buttonFocus: "ok", labels: { ok: "OK" } } ); 
+						alertify.alert(data.response);						
+					}
+			});
+	  	}
+	</script>
+
+
+</body>
+
+</html>
