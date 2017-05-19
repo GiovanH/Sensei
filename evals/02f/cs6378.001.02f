@@ -1,0 +1,885 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head>
+	<title>UT Dallas Course Evaluation for CS6378.001.02F.RAVIP.PUBLIC</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<link href="http://provost.utdallas.edu/images/utd-favicon-gs.ico" rel="shortcut icon" type="image/ico" />
+
+	<style type="text/css">
+  /* NOTE: CSS included inline */
+
+  /* reset */
+	a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,dialog,div,dl,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,meter,nav,object,ol,output,p,pre,progress,q,rp,rt,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video,xmp{border:0;margin:0;padding:0;font-size:100%;}
+	article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+	b,strong{font-weight:bold;}
+	img{color:transparent;font-size:0;vertical-align:middle;-ms-interpolation-mode:bicubic;}
+	li{display:list-item;}
+	table{border-spacing:0;}
+	th,td,caption{font-weight:normal;vertical-align:top;text-align:left;}
+	q{quotes:none;}
+	q:before,q:after{content:'';content:none;}
+	sub,sup,small{font-size:75%;}
+	sub,sup{line-height:0;position:relative;vertical-align:baseline;}
+	sub{bottom:-0.25em;}
+	sup{top:-0.5em;}
+	svg{overflow:hidden;}
+
+  /* screen display */
+	@media screen{
+	  /* ues2 report */
+		body { font-family: Arial, Verdana, "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lucida", Arial, Helvetica, sans-serif; font-size: 11px; }
+		
+		.center { text-align: center !important; }
+		.even td { background-color: #E8EDE3; }
+		.comment_list li {font-size: 10pt; padding-bottom: 5px; margin-left: 30px; line-height: 130%; }
+		.comment_note {font-size: 8pt; padding-left: 5px; color: #cccccc; }
+		
+		table.eval_table { border-collapse: collapse; border: none; width: 100%; }
+		table.eval_table td { vertical-align: top; padding: 4px; border: 1px solid gray; }
+		.header-note { font-weight: normal; }
+
+		table.option_counts { font-size: 9pt; border-collapse: collapse; width: 100%; padding-top: 5px; }
+		table.option_counts td { vertical-align: top; padding: 2px; border: 1px solid gray; }
+		table.option_counts th { border: 1px solid black; background-color: #c1c1c1 }
+		
+		.group-label { font-size: 14px; padding: 6px; color: white; background-color: #016e01; }
+		.group-head th { font-size: 11px; background-color: #c1c1c1; padding: 3px; text-align: center;}
+		
+		table.footer_table { padding-bottom: 20pt; padding-top: 10px; }
+		.footer_table td { text-align: center; }
+		
+		.ues-eval-summary-table { border-collapse: collapse; border: 1px solid gray; }
+		.ues-eval-summary-table td { vertical-align: top; padding: 3px; }
+		.ues-eval-summary-table tr:nth-child(even) { background-color: #E8EDE3 !important;  }
+				
+		.ues-eval-summary-table th.header { padding: 3px 3px; background-color: #c1c1c1; } 
+		.ues-eval-summary-table th.headerSortUp { background-color: #D4F2AA; border-top: 2px solid red; } 
+		.ues-eval-summary-table th.headerSortDown { background-color: #D4F2AA; border-bottom: 2px solid red; } 
+
+	  /* ues3 report */
+		#page{font-family:Helvetica,Arial,sans-serif;margin:0 auto;padding:10px;max-width:910px;}
+		.bold{font-weight:bold;}
+		.center{text-align:center;}
+		.page-header{margin-bottom:10px;}
+		.page-header td{font-size:12px;padding:0 10px 0 0;line-height: 130%; }
+		.section-head td{color:#ffffff;font-size:14px;font-weight:bold;padding:8px 10px;text-align:center;vertical-align:middle;background:url(http://provost.utdallas.edu/images/ues/green.jpg) left top repeat-x #0C620E;}
+		.section-head-private td{color:#ffffff;font-size:14px;font-weight:bold;padding:8px 10px;text-align:center;vertical-align:middle;background:url(http://provost.utdallas.edu/images/ues/red.jpg) left top repeat-x #610C0E;}
+		.key{height:100%;}.key td{background:#d8d8d8;border-bottom:1px solid #898989;font-size:10px;height:50px;overflow:hidden;text-align:center;vertical-align:middle;}
+		.key .info{border-bottom:1px solid #898989;width:300px;}
+		.key .spacer{width:5px;}
+		.key .chart-scale-heading{background:#c6c6c6;border:1px #898989;border-style:none solid none none;height:50px;overflow:hidden;text-align:center;width:59px;}.key .chart-scale-heading:nth-child(1){border-style:none solid;}
+		.key .count-table-heading{background:#c6c6c6;border:1px #898989;border-style:none solid none none;text-align:center;height:50px;overflow:hidden;width:32px;}.key .count-table-heading:nth-child(1){border-style:none solid;}
+		.key .summary-stat-heading{background:#c6c6c6;border:1px #898989;border-style:none solid;height:50px;overflow:hidden;text-align:center;width:75px;}
+		.statement-row.even-row{background:#E8EDE3;}
+		.statement-row tr{overflow:hidden;}
+		.statement-row td{padding:3px 0;border-bottom:1px solid #898989;}
+		.statement-row td img{border:1px solid #898989;}
+		.statement-row .statement{font-size:12px;padding:8px;}
+		.count-table{border:1px #898989;border-style:none none solid solid;margin:0;width:229px;}.count-table tr{background:#fff;}
+		.count-table td{border:1px #898989;border-style:solid solid none none;font-size:12px;line-height:27px;text-align:center;height:27px;width:32px;}
+		.count-table .dark{border:1px #898989;border-style:solid solid none none;background-color:#c6c6c6;}
+		.count-table .w35{width:35px;}
+		.summary-stat-table{border:1px #898989;border-style:none none solid solid;width:77px;}.summary-stat-table tr{background:#fff;border:none;}
+		.summary-stat-table td{border:1px #898989;border-style:solid solid none none;height:8px;font-size:12px;line-height:10px;text-align:center;}
+		.summary-stat-table .dark{border:1px #898989;border-style:solid solid none none;background:#c6c6c6;}
+	}
+
+	@media print{
+	  /* ues2 report */
+		body { font-family: Arial, Helvetica, sans-serif; font-size: 7pt;}
+		
+		.center { text-align: center !important; }
+		.even td { background-color: #E8EDE3; }
+		.comment_list li {font-size: 8pt; padding-bottom: 5px; margin-left: 30px; line-height: 130%; }
+		.comment_note {font-size: 7pt; padding-left: 5px; color: #cccccc; }
+
+		.banner_table { font-size: 9pt; }
+
+		.group-label { color: black; padding: 3pt; color: white; background-color: #016e01; border: 0.5pt solid gray; }
+		.group-head th { font-size: 6pt; background-color: #c1c1c1;  padding: 1pt; border: 0.5pt solid gray; }
+
+		table.eval_table { font-size: 7pt; line-height: 10pt; border-collapse: collapse; border: 0.5pt solid gray;}
+		table.eval_table th { border: 0.5pt solid black;   }
+		table.eval_table td { vertical-align: top; padding: 0 0 0 2pt; margin: 0; border: 0.25pt solid gray;  }
+		.header-note { font-weight: normal; }
+
+		table.option_counts { margin: 1pt; font-size: 6pt; border-collapse: collapse; border: 0.25pt solid gray; width: 99%; }
+		table.option_counts th { line-height: 9pt; border: 0.25 solid gray; background-color: #c1c1c1; padding: 0; margin: 0;  }
+		table.option_counts td { line-height: 8pt; vertical-align: top; padding: 0 0 0 1pt; margin: 0; }
+		
+		.footer_table { font-size: 7pt; padding-top: 10px; }
+		.footer_table td { text-align: center;  }
+		
+		hr { page-break-after: always; border: 0; color: white; background-color: white; height: 1px; }
+		
+		@page { margin: 10mm 10mm 10mm 10mm;}
+
+	  /* ues3 report */
+		#page{font-family:Helvetica,Arial,sans-serif;margin:0 auto; }
+		.bold{font-weight:bold;}
+		.center{text-align:center;}
+		.page-header{margin-bottom:10px;}
+		.page-header td{font-size:7pt;padding:0 10px 0 0;}
+		.section-head td{color:#ffffff;font-size:9pt;font-weight:bold;padding:6px 0;text-align:center;vertical-align:middle; background-color: green; }
+		.key{height:100%;}.key td{background:#d8d8d8;border-bottom:1px solid #898989;font-size:7pt;height:50px;overflow:hidden;text-align:center;vertical-align:middle;}
+		.key .info{border-bottom:1px solid #898989;width:300px;}
+		.key .spacer{width:5px;}
+		.key .chart-scale-heading{background:#c6c6c6;border:1px #898989;border-style:none solid none none;height:50px;overflow:hidden;text-align:center;width:62px;}.key .chart-scale-heading:nth-child(1){border-style:none solid;}
+		.key .count-table-heading{background:#c6c6c6;border:1px #898989;border-style:none solid none none;text-align:center;height:50px;overflow:hidden;width:33px;}.key .count-table-heading:nth-child(1){border-style:none solid;}
+		.key .summary-stat-heading{background:#c6c6c6;border:1px #898989;border-style:none solid;height:50px;overflow:hidden;text-align:center;width:75px;}
+		.statement-row.even-row{background:#E8EDE3;}
+		.statement-row tr{overflow:hidden;}
+		.statement-row td{padding:3px 0;border-bottom:1px solid #898989;}
+		.statement-row td img{border:1px solid #898989;}
+		.statement-row .statement{font-size:7pt;padding:8px;}
+		.count-table{border:1px #898989;border-style:none none solid solid;margin:0;width:229px;}.count-table tr{background:#fff;}
+		.count-table td{border:1px #898989;border-style:solid solid none none;font-size:7pt;line-height:27px;text-align:center;height:27px;width:31px;}
+		.count-table .dark{border:1px #898989;border-style:solid solid none none;background-color:#c6c6c6;}
+		.count-table .w35{width:35px;}
+		.summary-stat-table{border:1px #898989;border-style:none none solid solid;width:77px;}.summary-stat-table tr{background:#fff;border:none;}
+		.summary-stat-table td{border:1px #898989;border-style:solid solid none none;height:8px;font-size:7pt;line-height:10px;text-align:center;}
+		.summary-stat-table .dark{border:1px #898989;border-style:solid solid none none;background:#c6c6c6;}
+
+	}
+	</style>
+
+</head>
+
+<body>
+	<div id="page">
+		<table class="page-header" width="100%" border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td width="15%">
+				<img src='https://provost.utdallas.edu/images/eval-header-logo.png' width='150' alt='The University of Texas at Dallas'/>
+			</td>
+			<td width="8%">
+				<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Created with qrencode 3.4.4 (http://fukuchi.org/works/qrencode/index.html.en) -->
+<svg width="1.31cm" height="1.31cm" viewBox="0 0 37 37" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+	<g id="QRcode">
+		<rect x="0" y="0" width="37" height="37" fill="#ffffff" />
+		<g id="Pattern">
+			<rect x="4" y="4" width="1" height="1" fill="#000000" />
+			<rect x="5" y="4" width="1" height="1" fill="#000000" />
+			<rect x="6" y="4" width="1" height="1" fill="#000000" />
+			<rect x="7" y="4" width="1" height="1" fill="#000000" />
+			<rect x="8" y="4" width="1" height="1" fill="#000000" />
+			<rect x="9" y="4" width="1" height="1" fill="#000000" />
+			<rect x="10" y="4" width="1" height="1" fill="#000000" />
+			<rect x="13" y="4" width="1" height="1" fill="#000000" />
+			<rect x="17" y="4" width="1" height="1" fill="#000000" />
+			<rect x="19" y="4" width="1" height="1" fill="#000000" />
+			<rect x="23" y="4" width="1" height="1" fill="#000000" />
+			<rect x="24" y="4" width="1" height="1" fill="#000000" />
+			<rect x="26" y="4" width="1" height="1" fill="#000000" />
+			<rect x="27" y="4" width="1" height="1" fill="#000000" />
+			<rect x="28" y="4" width="1" height="1" fill="#000000" />
+			<rect x="29" y="4" width="1" height="1" fill="#000000" />
+			<rect x="30" y="4" width="1" height="1" fill="#000000" />
+			<rect x="31" y="4" width="1" height="1" fill="#000000" />
+			<rect x="32" y="4" width="1" height="1" fill="#000000" />
+			<rect x="4" y="5" width="1" height="1" fill="#000000" />
+			<rect x="10" y="5" width="1" height="1" fill="#000000" />
+			<rect x="12" y="5" width="1" height="1" fill="#000000" />
+			<rect x="13" y="5" width="1" height="1" fill="#000000" />
+			<rect x="15" y="5" width="1" height="1" fill="#000000" />
+			<rect x="16" y="5" width="1" height="1" fill="#000000" />
+			<rect x="20" y="5" width="1" height="1" fill="#000000" />
+			<rect x="26" y="5" width="1" height="1" fill="#000000" />
+			<rect x="32" y="5" width="1" height="1" fill="#000000" />
+			<rect x="4" y="6" width="1" height="1" fill="#000000" />
+			<rect x="6" y="6" width="1" height="1" fill="#000000" />
+			<rect x="7" y="6" width="1" height="1" fill="#000000" />
+			<rect x="8" y="6" width="1" height="1" fill="#000000" />
+			<rect x="10" y="6" width="1" height="1" fill="#000000" />
+			<rect x="13" y="6" width="1" height="1" fill="#000000" />
+			<rect x="14" y="6" width="1" height="1" fill="#000000" />
+			<rect x="15" y="6" width="1" height="1" fill="#000000" />
+			<rect x="19" y="6" width="1" height="1" fill="#000000" />
+			<rect x="20" y="6" width="1" height="1" fill="#000000" />
+			<rect x="24" y="6" width="1" height="1" fill="#000000" />
+			<rect x="26" y="6" width="1" height="1" fill="#000000" />
+			<rect x="28" y="6" width="1" height="1" fill="#000000" />
+			<rect x="29" y="6" width="1" height="1" fill="#000000" />
+			<rect x="30" y="6" width="1" height="1" fill="#000000" />
+			<rect x="32" y="6" width="1" height="1" fill="#000000" />
+			<rect x="4" y="7" width="1" height="1" fill="#000000" />
+			<rect x="6" y="7" width="1" height="1" fill="#000000" />
+			<rect x="7" y="7" width="1" height="1" fill="#000000" />
+			<rect x="8" y="7" width="1" height="1" fill="#000000" />
+			<rect x="10" y="7" width="1" height="1" fill="#000000" />
+			<rect x="12" y="7" width="1" height="1" fill="#000000" />
+			<rect x="13" y="7" width="1" height="1" fill="#000000" />
+			<rect x="15" y="7" width="1" height="1" fill="#000000" />
+			<rect x="20" y="7" width="1" height="1" fill="#000000" />
+			<rect x="21" y="7" width="1" height="1" fill="#000000" />
+			<rect x="22" y="7" width="1" height="1" fill="#000000" />
+			<rect x="26" y="7" width="1" height="1" fill="#000000" />
+			<rect x="28" y="7" width="1" height="1" fill="#000000" />
+			<rect x="29" y="7" width="1" height="1" fill="#000000" />
+			<rect x="30" y="7" width="1" height="1" fill="#000000" />
+			<rect x="32" y="7" width="1" height="1" fill="#000000" />
+			<rect x="4" y="8" width="1" height="1" fill="#000000" />
+			<rect x="6" y="8" width="1" height="1" fill="#000000" />
+			<rect x="7" y="8" width="1" height="1" fill="#000000" />
+			<rect x="8" y="8" width="1" height="1" fill="#000000" />
+			<rect x="10" y="8" width="1" height="1" fill="#000000" />
+			<rect x="14" y="8" width="1" height="1" fill="#000000" />
+			<rect x="16" y="8" width="1" height="1" fill="#000000" />
+			<rect x="20" y="8" width="1" height="1" fill="#000000" />
+			<rect x="21" y="8" width="1" height="1" fill="#000000" />
+			<rect x="22" y="8" width="1" height="1" fill="#000000" />
+			<rect x="23" y="8" width="1" height="1" fill="#000000" />
+			<rect x="24" y="8" width="1" height="1" fill="#000000" />
+			<rect x="26" y="8" width="1" height="1" fill="#000000" />
+			<rect x="28" y="8" width="1" height="1" fill="#000000" />
+			<rect x="29" y="8" width="1" height="1" fill="#000000" />
+			<rect x="30" y="8" width="1" height="1" fill="#000000" />
+			<rect x="32" y="8" width="1" height="1" fill="#000000" />
+			<rect x="4" y="9" width="1" height="1" fill="#000000" />
+			<rect x="10" y="9" width="1" height="1" fill="#000000" />
+			<rect x="12" y="9" width="1" height="1" fill="#000000" />
+			<rect x="14" y="9" width="1" height="1" fill="#000000" />
+			<rect x="19" y="9" width="1" height="1" fill="#000000" />
+			<rect x="21" y="9" width="1" height="1" fill="#000000" />
+			<rect x="24" y="9" width="1" height="1" fill="#000000" />
+			<rect x="26" y="9" width="1" height="1" fill="#000000" />
+			<rect x="32" y="9" width="1" height="1" fill="#000000" />
+			<rect x="4" y="10" width="1" height="1" fill="#000000" />
+			<rect x="5" y="10" width="1" height="1" fill="#000000" />
+			<rect x="6" y="10" width="1" height="1" fill="#000000" />
+			<rect x="7" y="10" width="1" height="1" fill="#000000" />
+			<rect x="8" y="10" width="1" height="1" fill="#000000" />
+			<rect x="9" y="10" width="1" height="1" fill="#000000" />
+			<rect x="10" y="10" width="1" height="1" fill="#000000" />
+			<rect x="12" y="10" width="1" height="1" fill="#000000" />
+			<rect x="14" y="10" width="1" height="1" fill="#000000" />
+			<rect x="16" y="10" width="1" height="1" fill="#000000" />
+			<rect x="18" y="10" width="1" height="1" fill="#000000" />
+			<rect x="20" y="10" width="1" height="1" fill="#000000" />
+			<rect x="22" y="10" width="1" height="1" fill="#000000" />
+			<rect x="24" y="10" width="1" height="1" fill="#000000" />
+			<rect x="26" y="10" width="1" height="1" fill="#000000" />
+			<rect x="27" y="10" width="1" height="1" fill="#000000" />
+			<rect x="28" y="10" width="1" height="1" fill="#000000" />
+			<rect x="29" y="10" width="1" height="1" fill="#000000" />
+			<rect x="30" y="10" width="1" height="1" fill="#000000" />
+			<rect x="31" y="10" width="1" height="1" fill="#000000" />
+			<rect x="32" y="10" width="1" height="1" fill="#000000" />
+			<rect x="16" y="11" width="1" height="1" fill="#000000" />
+			<rect x="17" y="11" width="1" height="1" fill="#000000" />
+			<rect x="19" y="11" width="1" height="1" fill="#000000" />
+			<rect x="24" y="11" width="1" height="1" fill="#000000" />
+			<rect x="4" y="12" width="1" height="1" fill="#000000" />
+			<rect x="5" y="12" width="1" height="1" fill="#000000" />
+			<rect x="6" y="12" width="1" height="1" fill="#000000" />
+			<rect x="7" y="12" width="1" height="1" fill="#000000" />
+			<rect x="8" y="12" width="1" height="1" fill="#000000" />
+			<rect x="10" y="12" width="1" height="1" fill="#000000" />
+			<rect x="11" y="12" width="1" height="1" fill="#000000" />
+			<rect x="12" y="12" width="1" height="1" fill="#000000" />
+			<rect x="13" y="12" width="1" height="1" fill="#000000" />
+			<rect x="14" y="12" width="1" height="1" fill="#000000" />
+			<rect x="16" y="12" width="1" height="1" fill="#000000" />
+			<rect x="17" y="12" width="1" height="1" fill="#000000" />
+			<rect x="18" y="12" width="1" height="1" fill="#000000" />
+			<rect x="21" y="12" width="1" height="1" fill="#000000" />
+			<rect x="25" y="12" width="1" height="1" fill="#000000" />
+			<rect x="27" y="12" width="1" height="1" fill="#000000" />
+			<rect x="29" y="12" width="1" height="1" fill="#000000" />
+			<rect x="31" y="12" width="1" height="1" fill="#000000" />
+			<rect x="6" y="13" width="1" height="1" fill="#000000" />
+			<rect x="7" y="13" width="1" height="1" fill="#000000" />
+			<rect x="8" y="13" width="1" height="1" fill="#000000" />
+			<rect x="11" y="13" width="1" height="1" fill="#000000" />
+			<rect x="13" y="13" width="1" height="1" fill="#000000" />
+			<rect x="18" y="13" width="1" height="1" fill="#000000" />
+			<rect x="22" y="13" width="1" height="1" fill="#000000" />
+			<rect x="23" y="13" width="1" height="1" fill="#000000" />
+			<rect x="24" y="13" width="1" height="1" fill="#000000" />
+			<rect x="26" y="13" width="1" height="1" fill="#000000" />
+			<rect x="27" y="13" width="1" height="1" fill="#000000" />
+			<rect x="28" y="13" width="1" height="1" fill="#000000" />
+			<rect x="32" y="13" width="1" height="1" fill="#000000" />
+			<rect x="4" y="14" width="1" height="1" fill="#000000" />
+			<rect x="5" y="14" width="1" height="1" fill="#000000" />
+			<rect x="6" y="14" width="1" height="1" fill="#000000" />
+			<rect x="7" y="14" width="1" height="1" fill="#000000" />
+			<rect x="9" y="14" width="1" height="1" fill="#000000" />
+			<rect x="10" y="14" width="1" height="1" fill="#000000" />
+			<rect x="11" y="14" width="1" height="1" fill="#000000" />
+			<rect x="12" y="14" width="1" height="1" fill="#000000" />
+			<rect x="13" y="14" width="1" height="1" fill="#000000" />
+			<rect x="15" y="14" width="1" height="1" fill="#000000" />
+			<rect x="16" y="14" width="1" height="1" fill="#000000" />
+			<rect x="17" y="14" width="1" height="1" fill="#000000" />
+			<rect x="18" y="14" width="1" height="1" fill="#000000" />
+			<rect x="19" y="14" width="1" height="1" fill="#000000" />
+			<rect x="20" y="14" width="1" height="1" fill="#000000" />
+			<rect x="27" y="14" width="1" height="1" fill="#000000" />
+			<rect x="28" y="14" width="1" height="1" fill="#000000" />
+			<rect x="4" y="15" width="1" height="1" fill="#000000" />
+			<rect x="5" y="15" width="1" height="1" fill="#000000" />
+			<rect x="6" y="15" width="1" height="1" fill="#000000" />
+			<rect x="8" y="15" width="1" height="1" fill="#000000" />
+			<rect x="9" y="15" width="1" height="1" fill="#000000" />
+			<rect x="11" y="15" width="1" height="1" fill="#000000" />
+			<rect x="13" y="15" width="1" height="1" fill="#000000" />
+			<rect x="14" y="15" width="1" height="1" fill="#000000" />
+			<rect x="15" y="15" width="1" height="1" fill="#000000" />
+			<rect x="19" y="15" width="1" height="1" fill="#000000" />
+			<rect x="23" y="15" width="1" height="1" fill="#000000" />
+			<rect x="24" y="15" width="1" height="1" fill="#000000" />
+			<rect x="25" y="15" width="1" height="1" fill="#000000" />
+			<rect x="27" y="15" width="1" height="1" fill="#000000" />
+			<rect x="28" y="15" width="1" height="1" fill="#000000" />
+			<rect x="29" y="15" width="1" height="1" fill="#000000" />
+			<rect x="31" y="15" width="1" height="1" fill="#000000" />
+			<rect x="5" y="16" width="1" height="1" fill="#000000" />
+			<rect x="7" y="16" width="1" height="1" fill="#000000" />
+			<rect x="9" y="16" width="1" height="1" fill="#000000" />
+			<rect x="10" y="16" width="1" height="1" fill="#000000" />
+			<rect x="11" y="16" width="1" height="1" fill="#000000" />
+			<rect x="13" y="16" width="1" height="1" fill="#000000" />
+			<rect x="15" y="16" width="1" height="1" fill="#000000" />
+			<rect x="17" y="16" width="1" height="1" fill="#000000" />
+			<rect x="19" y="16" width="1" height="1" fill="#000000" />
+			<rect x="20" y="16" width="1" height="1" fill="#000000" />
+			<rect x="21" y="16" width="1" height="1" fill="#000000" />
+			<rect x="23" y="16" width="1" height="1" fill="#000000" />
+			<rect x="27" y="16" width="1" height="1" fill="#000000" />
+			<rect x="29" y="16" width="1" height="1" fill="#000000" />
+			<rect x="30" y="16" width="1" height="1" fill="#000000" />
+			<rect x="4" y="17" width="1" height="1" fill="#000000" />
+			<rect x="9" y="17" width="1" height="1" fill="#000000" />
+			<rect x="11" y="17" width="1" height="1" fill="#000000" />
+			<rect x="13" y="17" width="1" height="1" fill="#000000" />
+			<rect x="14" y="17" width="1" height="1" fill="#000000" />
+			<rect x="16" y="17" width="1" height="1" fill="#000000" />
+			<rect x="19" y="17" width="1" height="1" fill="#000000" />
+			<rect x="23" y="17" width="1" height="1" fill="#000000" />
+			<rect x="25" y="17" width="1" height="1" fill="#000000" />
+			<rect x="26" y="17" width="1" height="1" fill="#000000" />
+			<rect x="27" y="17" width="1" height="1" fill="#000000" />
+			<rect x="28" y="17" width="1" height="1" fill="#000000" />
+			<rect x="32" y="17" width="1" height="1" fill="#000000" />
+			<rect x="4" y="18" width="1" height="1" fill="#000000" />
+			<rect x="5" y="18" width="1" height="1" fill="#000000" />
+			<rect x="7" y="18" width="1" height="1" fill="#000000" />
+			<rect x="8" y="18" width="1" height="1" fill="#000000" />
+			<rect x="10" y="18" width="1" height="1" fill="#000000" />
+			<rect x="13" y="18" width="1" height="1" fill="#000000" />
+			<rect x="19" y="18" width="1" height="1" fill="#000000" />
+			<rect x="20" y="18" width="1" height="1" fill="#000000" />
+			<rect x="21" y="18" width="1" height="1" fill="#000000" />
+			<rect x="24" y="18" width="1" height="1" fill="#000000" />
+			<rect x="29" y="18" width="1" height="1" fill="#000000" />
+			<rect x="30" y="18" width="1" height="1" fill="#000000" />
+			<rect x="4" y="19" width="1" height="1" fill="#000000" />
+			<rect x="5" y="19" width="1" height="1" fill="#000000" />
+			<rect x="7" y="19" width="1" height="1" fill="#000000" />
+			<rect x="11" y="19" width="1" height="1" fill="#000000" />
+			<rect x="13" y="19" width="1" height="1" fill="#000000" />
+			<rect x="14" y="19" width="1" height="1" fill="#000000" />
+			<rect x="16" y="19" width="1" height="1" fill="#000000" />
+			<rect x="17" y="19" width="1" height="1" fill="#000000" />
+			<rect x="19" y="19" width="1" height="1" fill="#000000" />
+			<rect x="22" y="19" width="1" height="1" fill="#000000" />
+			<rect x="23" y="19" width="1" height="1" fill="#000000" />
+			<rect x="25" y="19" width="1" height="1" fill="#000000" />
+			<rect x="27" y="19" width="1" height="1" fill="#000000" />
+			<rect x="31" y="19" width="1" height="1" fill="#000000" />
+			<rect x="4" y="20" width="1" height="1" fill="#000000" />
+			<rect x="5" y="20" width="1" height="1" fill="#000000" />
+			<rect x="10" y="20" width="1" height="1" fill="#000000" />
+			<rect x="12" y="20" width="1" height="1" fill="#000000" />
+			<rect x="13" y="20" width="1" height="1" fill="#000000" />
+			<rect x="16" y="20" width="1" height="1" fill="#000000" />
+			<rect x="20" y="20" width="1" height="1" fill="#000000" />
+			<rect x="21" y="20" width="1" height="1" fill="#000000" />
+			<rect x="24" y="20" width="1" height="1" fill="#000000" />
+			<rect x="29" y="20" width="1" height="1" fill="#000000" />
+			<rect x="30" y="20" width="1" height="1" fill="#000000" />
+			<rect x="4" y="21" width="1" height="1" fill="#000000" />
+			<rect x="7" y="21" width="1" height="1" fill="#000000" />
+			<rect x="9" y="21" width="1" height="1" fill="#000000" />
+			<rect x="12" y="21" width="1" height="1" fill="#000000" />
+			<rect x="14" y="21" width="1" height="1" fill="#000000" />
+			<rect x="18" y="21" width="1" height="1" fill="#000000" />
+			<rect x="19" y="21" width="1" height="1" fill="#000000" />
+			<rect x="20" y="21" width="1" height="1" fill="#000000" />
+			<rect x="22" y="21" width="1" height="1" fill="#000000" />
+			<rect x="23" y="21" width="1" height="1" fill="#000000" />
+			<rect x="24" y="21" width="1" height="1" fill="#000000" />
+			<rect x="25" y="21" width="1" height="1" fill="#000000" />
+			<rect x="26" y="21" width="1" height="1" fill="#000000" />
+			<rect x="28" y="21" width="1" height="1" fill="#000000" />
+			<rect x="30" y="21" width="1" height="1" fill="#000000" />
+			<rect x="32" y="21" width="1" height="1" fill="#000000" />
+			<rect x="4" y="22" width="1" height="1" fill="#000000" />
+			<rect x="6" y="22" width="1" height="1" fill="#000000" />
+			<rect x="7" y="22" width="1" height="1" fill="#000000" />
+			<rect x="8" y="22" width="1" height="1" fill="#000000" />
+			<rect x="10" y="22" width="1" height="1" fill="#000000" />
+			<rect x="11" y="22" width="1" height="1" fill="#000000" />
+			<rect x="14" y="22" width="1" height="1" fill="#000000" />
+			<rect x="15" y="22" width="1" height="1" fill="#000000" />
+			<rect x="16" y="22" width="1" height="1" fill="#000000" />
+			<rect x="19" y="22" width="1" height="1" fill="#000000" />
+			<rect x="22" y="22" width="1" height="1" fill="#000000" />
+			<rect x="24" y="22" width="1" height="1" fill="#000000" />
+			<rect x="25" y="22" width="1" height="1" fill="#000000" />
+			<rect x="27" y="22" width="1" height="1" fill="#000000" />
+			<rect x="30" y="22" width="1" height="1" fill="#000000" />
+			<rect x="4" y="23" width="1" height="1" fill="#000000" />
+			<rect x="6" y="23" width="1" height="1" fill="#000000" />
+			<rect x="7" y="23" width="1" height="1" fill="#000000" />
+			<rect x="8" y="23" width="1" height="1" fill="#000000" />
+			<rect x="12" y="23" width="1" height="1" fill="#000000" />
+			<rect x="15" y="23" width="1" height="1" fill="#000000" />
+			<rect x="19" y="23" width="1" height="1" fill="#000000" />
+			<rect x="27" y="23" width="1" height="1" fill="#000000" />
+			<rect x="31" y="23" width="1" height="1" fill="#000000" />
+			<rect x="4" y="24" width="1" height="1" fill="#000000" />
+			<rect x="6" y="24" width="1" height="1" fill="#000000" />
+			<rect x="9" y="24" width="1" height="1" fill="#000000" />
+			<rect x="10" y="24" width="1" height="1" fill="#000000" />
+			<rect x="11" y="24" width="1" height="1" fill="#000000" />
+			<rect x="13" y="24" width="1" height="1" fill="#000000" />
+			<rect x="15" y="24" width="1" height="1" fill="#000000" />
+			<rect x="19" y="24" width="1" height="1" fill="#000000" />
+			<rect x="21" y="24" width="1" height="1" fill="#000000" />
+			<rect x="24" y="24" width="1" height="1" fill="#000000" />
+			<rect x="25" y="24" width="1" height="1" fill="#000000" />
+			<rect x="26" y="24" width="1" height="1" fill="#000000" />
+			<rect x="27" y="24" width="1" height="1" fill="#000000" />
+			<rect x="28" y="24" width="1" height="1" fill="#000000" />
+			<rect x="30" y="24" width="1" height="1" fill="#000000" />
+			<rect x="31" y="24" width="1" height="1" fill="#000000" />
+			<rect x="32" y="24" width="1" height="1" fill="#000000" />
+			<rect x="12" y="25" width="1" height="1" fill="#000000" />
+			<rect x="16" y="25" width="1" height="1" fill="#000000" />
+			<rect x="21" y="25" width="1" height="1" fill="#000000" />
+			<rect x="22" y="25" width="1" height="1" fill="#000000" />
+			<rect x="24" y="25" width="1" height="1" fill="#000000" />
+			<rect x="28" y="25" width="1" height="1" fill="#000000" />
+			<rect x="29" y="25" width="1" height="1" fill="#000000" />
+			<rect x="30" y="25" width="1" height="1" fill="#000000" />
+			<rect x="31" y="25" width="1" height="1" fill="#000000" />
+			<rect x="32" y="25" width="1" height="1" fill="#000000" />
+			<rect x="4" y="26" width="1" height="1" fill="#000000" />
+			<rect x="5" y="26" width="1" height="1" fill="#000000" />
+			<rect x="6" y="26" width="1" height="1" fill="#000000" />
+			<rect x="7" y="26" width="1" height="1" fill="#000000" />
+			<rect x="8" y="26" width="1" height="1" fill="#000000" />
+			<rect x="9" y="26" width="1" height="1" fill="#000000" />
+			<rect x="10" y="26" width="1" height="1" fill="#000000" />
+			<rect x="12" y="26" width="1" height="1" fill="#000000" />
+			<rect x="14" y="26" width="1" height="1" fill="#000000" />
+			<rect x="18" y="26" width="1" height="1" fill="#000000" />
+			<rect x="19" y="26" width="1" height="1" fill="#000000" />
+			<rect x="20" y="26" width="1" height="1" fill="#000000" />
+			<rect x="23" y="26" width="1" height="1" fill="#000000" />
+			<rect x="24" y="26" width="1" height="1" fill="#000000" />
+			<rect x="26" y="26" width="1" height="1" fill="#000000" />
+			<rect x="28" y="26" width="1" height="1" fill="#000000" />
+			<rect x="29" y="26" width="1" height="1" fill="#000000" />
+			<rect x="30" y="26" width="1" height="1" fill="#000000" />
+			<rect x="4" y="27" width="1" height="1" fill="#000000" />
+			<rect x="10" y="27" width="1" height="1" fill="#000000" />
+			<rect x="13" y="27" width="1" height="1" fill="#000000" />
+			<rect x="16" y="27" width="1" height="1" fill="#000000" />
+			<rect x="17" y="27" width="1" height="1" fill="#000000" />
+			<rect x="18" y="27" width="1" height="1" fill="#000000" />
+			<rect x="22" y="27" width="1" height="1" fill="#000000" />
+			<rect x="23" y="27" width="1" height="1" fill="#000000" />
+			<rect x="24" y="27" width="1" height="1" fill="#000000" />
+			<rect x="28" y="27" width="1" height="1" fill="#000000" />
+			<rect x="32" y="27" width="1" height="1" fill="#000000" />
+			<rect x="4" y="28" width="1" height="1" fill="#000000" />
+			<rect x="6" y="28" width="1" height="1" fill="#000000" />
+			<rect x="7" y="28" width="1" height="1" fill="#000000" />
+			<rect x="8" y="28" width="1" height="1" fill="#000000" />
+			<rect x="10" y="28" width="1" height="1" fill="#000000" />
+			<rect x="12" y="28" width="1" height="1" fill="#000000" />
+			<rect x="13" y="28" width="1" height="1" fill="#000000" />
+			<rect x="14" y="28" width="1" height="1" fill="#000000" />
+			<rect x="16" y="28" width="1" height="1" fill="#000000" />
+			<rect x="19" y="28" width="1" height="1" fill="#000000" />
+			<rect x="20" y="28" width="1" height="1" fill="#000000" />
+			<rect x="21" y="28" width="1" height="1" fill="#000000" />
+			<rect x="22" y="28" width="1" height="1" fill="#000000" />
+			<rect x="24" y="28" width="1" height="1" fill="#000000" />
+			<rect x="25" y="28" width="1" height="1" fill="#000000" />
+			<rect x="26" y="28" width="1" height="1" fill="#000000" />
+			<rect x="27" y="28" width="1" height="1" fill="#000000" />
+			<rect x="28" y="28" width="1" height="1" fill="#000000" />
+			<rect x="30" y="28" width="1" height="1" fill="#000000" />
+			<rect x="32" y="28" width="1" height="1" fill="#000000" />
+			<rect x="4" y="29" width="1" height="1" fill="#000000" />
+			<rect x="6" y="29" width="1" height="1" fill="#000000" />
+			<rect x="7" y="29" width="1" height="1" fill="#000000" />
+			<rect x="8" y="29" width="1" height="1" fill="#000000" />
+			<rect x="10" y="29" width="1" height="1" fill="#000000" />
+			<rect x="12" y="29" width="1" height="1" fill="#000000" />
+			<rect x="13" y="29" width="1" height="1" fill="#000000" />
+			<rect x="14" y="29" width="1" height="1" fill="#000000" />
+			<rect x="17" y="29" width="1" height="1" fill="#000000" />
+			<rect x="18" y="29" width="1" height="1" fill="#000000" />
+			<rect x="20" y="29" width="1" height="1" fill="#000000" />
+			<rect x="21" y="29" width="1" height="1" fill="#000000" />
+			<rect x="22" y="29" width="1" height="1" fill="#000000" />
+			<rect x="29" y="29" width="1" height="1" fill="#000000" />
+			<rect x="30" y="29" width="1" height="1" fill="#000000" />
+			<rect x="4" y="30" width="1" height="1" fill="#000000" />
+			<rect x="6" y="30" width="1" height="1" fill="#000000" />
+			<rect x="7" y="30" width="1" height="1" fill="#000000" />
+			<rect x="8" y="30" width="1" height="1" fill="#000000" />
+			<rect x="10" y="30" width="1" height="1" fill="#000000" />
+			<rect x="12" y="30" width="1" height="1" fill="#000000" />
+			<rect x="15" y="30" width="1" height="1" fill="#000000" />
+			<rect x="16" y="30" width="1" height="1" fill="#000000" />
+			<rect x="19" y="30" width="1" height="1" fill="#000000" />
+			<rect x="20" y="30" width="1" height="1" fill="#000000" />
+			<rect x="21" y="30" width="1" height="1" fill="#000000" />
+			<rect x="23" y="30" width="1" height="1" fill="#000000" />
+			<rect x="24" y="30" width="1" height="1" fill="#000000" />
+			<rect x="25" y="30" width="1" height="1" fill="#000000" />
+			<rect x="26" y="30" width="1" height="1" fill="#000000" />
+			<rect x="27" y="30" width="1" height="1" fill="#000000" />
+			<rect x="28" y="30" width="1" height="1" fill="#000000" />
+			<rect x="29" y="30" width="1" height="1" fill="#000000" />
+			<rect x="30" y="30" width="1" height="1" fill="#000000" />
+			<rect x="31" y="30" width="1" height="1" fill="#000000" />
+			<rect x="4" y="31" width="1" height="1" fill="#000000" />
+			<rect x="10" y="31" width="1" height="1" fill="#000000" />
+			<rect x="12" y="31" width="1" height="1" fill="#000000" />
+			<rect x="13" y="31" width="1" height="1" fill="#000000" />
+			<rect x="15" y="31" width="1" height="1" fill="#000000" />
+			<rect x="24" y="31" width="1" height="1" fill="#000000" />
+			<rect x="26" y="31" width="1" height="1" fill="#000000" />
+			<rect x="27" y="31" width="1" height="1" fill="#000000" />
+			<rect x="29" y="31" width="1" height="1" fill="#000000" />
+			<rect x="31" y="31" width="1" height="1" fill="#000000" />
+			<rect x="4" y="32" width="1" height="1" fill="#000000" />
+			<rect x="5" y="32" width="1" height="1" fill="#000000" />
+			<rect x="6" y="32" width="1" height="1" fill="#000000" />
+			<rect x="7" y="32" width="1" height="1" fill="#000000" />
+			<rect x="8" y="32" width="1" height="1" fill="#000000" />
+			<rect x="9" y="32" width="1" height="1" fill="#000000" />
+			<rect x="10" y="32" width="1" height="1" fill="#000000" />
+			<rect x="12" y="32" width="1" height="1" fill="#000000" />
+			<rect x="13" y="32" width="1" height="1" fill="#000000" />
+			<rect x="14" y="32" width="1" height="1" fill="#000000" />
+			<rect x="15" y="32" width="1" height="1" fill="#000000" />
+			<rect x="16" y="32" width="1" height="1" fill="#000000" />
+			<rect x="19" y="32" width="1" height="1" fill="#000000" />
+			<rect x="21" y="32" width="1" height="1" fill="#000000" />
+			<rect x="23" y="32" width="1" height="1" fill="#000000" />
+			<rect x="25" y="32" width="1" height="1" fill="#000000" />
+			<rect x="27" y="32" width="1" height="1" fill="#000000" />
+			<rect x="28" y="32" width="1" height="1" fill="#000000" />
+			<rect x="30" y="32" width="1" height="1" fill="#000000" />
+		</g>
+	</g>
+</svg>
+
+			</td>
+			<td width="33%">
+				<b>Term:</b> 2002 Fall (02f)<br>
+				<b>School:</b> Erik Jonsson School of Engineering and Computer Science<br>
+				<b>Dept:</b> 
+			</td>
+			<td width="33%">
+				<b>Class ID:</b> <strong><a href="https://go.utdallas.edu/cs6378.001.02f" target="_blank" title="Visit the CourseBook page for this class.">CS6378.001.02F</a></strong><br>
+				<b>Title:</b> Advanced Operating Systems<br>
+				<b>Enrollment:</b> 16<br>
+				<b>Instructor:</b> <a href="https://go.utdallas.edu/eval/ravip" title="View all available evaluations for Ravi Prakash">Ravi Prakash</a><br>
+			</td>
+		</tr>
+	</table><table class="eval_table" border="0" cellspacing="0" cellpadding="0"><tr><th colspan='11' class='group-label'>Student Evaluation of Course and Instructor</th></tr><tr class='group-head'>
+					<th colspan='2' width='48%'>EX=Excellent, VG=Very Good, GD=Good, FR=Fair, PR=Poor, VP=Very Poor<br /><div class='header-note'>Results reported as rounded percentage of total responses.</div></th> 
+					<th width='5%'>EX<br />5 pts</th> 
+					<th width='5%'>VG<br />4 pts</th> 
+					<th width='5%'>GD<br />3 pts</th> 
+					<th width='5%'>FR<br />2 pts</th> 
+					<th width='5%'>PR<br />1 pt</th> 
+					<th width='5%'>VP<br />0 pts</th> 
+					<th width='5%'>&nbsp;</th> 
+					<th width='5%'>Resp.<br />Count</th> 
+					<th width='17%'>Median<br />Points</th> </tr><tr class='statement-row odd-row'><td>1.</td><td>The course as a whole was:</td>
+							<td class='center'>64%</td> 
+							<td class='center'>36%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>&nbsp;</td> 
+							<td class='center'>14</td>
+							<td class='center'>4.72 out of 5</td> </tr><tr class='statement-row even-row'><td>2.</td><td>The course content was:</td>
+							<td class='center'>50%</td> 
+							<td class='center'>50%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>&nbsp;</td> 
+							<td class='center'>14</td>
+							<td class='center'>4.50 out of 5</td> </tr><tr class='statement-row odd-row'><td>3.</td><td>The instructor's contribution to the course was:</td>
+							<td class='center'>57%</td> 
+							<td class='center'>36%</td> 
+							<td class='center'>7%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>&nbsp;</td> 
+							<td class='center'>14</td>
+							<td class='center'>4.63 out of 5</td> </tr><tr class='statement-row even-row'><td>4.</td><td>The instructor's effectiveness in teaching the subject matter was:</td>
+							<td class='center'>57%</td> 
+							<td class='center'>43%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>&nbsp;</td> 
+							<td class='center'>14</td>
+							<td class='center'>4.63 out of 5</td> </tr><tr class='statement-row odd-row'><td>5.</td><td>Course organization was:</td>
+							<td class='center'>62%</td> 
+							<td class='center'>31%</td> 
+							<td class='center'>8%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>&nbsp;</td> 
+							<td class='center'>13</td>
+							<td class='center'>4.69 out of 5</td> </tr><tr class='statement-row even-row'><td>6.</td><td>Opportunity to ask questions was:</td>
+							<td class='center'>64%</td> 
+							<td class='center'>29%</td> 
+							<td class='center'>7%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>&nbsp;</td> 
+							<td class='center'>14</td>
+							<td class='center'>4.72 out of 5</td> </tr><tr class='statement-row odd-row'><td>7.</td><td>Explanations by instructor were:</td>
+							<td class='center'>50%</td> 
+							<td class='center'>50%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>&nbsp;</td> 
+							<td class='center'>14</td>
+							<td class='center'>4.50 out of 5</td> </tr><tr class='statement-row even-row'><td>8.</td><td>instructor's contributions to your ability to solve problems was:</td>
+							<td class='center'>36%</td> 
+							<td class='center'>36%</td> 
+							<td class='center'>29%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>&nbsp;</td> 
+							<td class='center'>14</td>
+							<td class='center'>4.10 out of 5</td> </tr><tr class='statement-row odd-row'><td>9.</td><td>instructor's use of examples and illustrations was:</td>
+							<td class='center'>50%</td> 
+							<td class='center'>43%</td> 
+							<td class='center'>7%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>&nbsp;</td> 
+							<td class='center'>14</td>
+							<td class='center'>4.50 out of 5</td> </tr><tr class='statement-row even-row'><td>10.</td><td>Length and difficulty of homework assignments were:</td>
+							<td class='center'>29%</td> 
+							<td class='center'>36%</td> 
+							<td class='center'>29%</td> 
+							<td class='center'>7%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>&nbsp;</td> 
+							<td class='center'>14</td>
+							<td class='center'>3.90 out of 5</td> </tr><tr class='statement-row odd-row'><td>11.</td><td>Contribution of examinations to understanding course content was:</td>
+							<td class='center'>14%</td> 
+							<td class='center'>64%</td> 
+							<td class='center'>21%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>&nbsp;</td> 
+							<td class='center'>14</td>
+							<td class='center'>3.94 out of 5</td> </tr><tr class='statement-row even-row'><td>12.</td><td>Instructor's enthusiasm was:</td>
+							<td class='center'>57%</td> 
+							<td class='center'>43%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>&nbsp;</td> 
+							<td class='center'>14</td>
+							<td class='center'>4.63 out of 5</td> </tr><tr class='statement-row odd-row'><td>13.</td><td>The textbook overall was:</td>
+							<td class='center'>29%</td> 
+							<td class='center'>50%</td> 
+							<td class='center'>21%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>&nbsp;</td> 
+							<td class='center'>14</td>
+							<td class='center'>4.07 out of 5</td> </tr><tr class='statement-row even-row'><td>14.</td><td>Answers to questions from class were:</td>
+							<td class='center'>38%</td> 
+							<td class='center'>62%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>&nbsp;</td> 
+							<td class='center'>13</td>
+							<td class='center'>4.31 out of 5</td> </tr><tr class='statement-row odd-row'><td>15.</td><td>Relationship between lectures and text was:</td>
+							<td class='center'>43%</td> 
+							<td class='center'>43%</td> 
+							<td class='center'>7%</td> 
+							<td class='center'>7%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>&nbsp;</td> 
+							<td class='center'>14</td>
+							<td class='center'>4.33 out of 5</td> </tr><tr class='statement-row even-row'><td>16.</td><td>Availability of extra help when needed was:</td>
+							<td class='center'>31%</td> 
+							<td class='center'>46%</td> 
+							<td class='center'>23%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>&nbsp;</td> 
+							<td class='center'>13</td>
+							<td class='center'>4.08 out of 5</td> </tr><tr class='statement-row odd-row'><td>17.</td><td>Instructor's interest in whether students learned was:</td>
+							<td class='center'>23%</td> 
+							<td class='center'>38%</td> 
+							<td class='center'>38%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>&nbsp;</td> 
+							<td class='center'>13</td>
+							<td class='center'>3.80 out of 5</td> </tr><tr class='statement-row even-row'><td>18.</td><td>Amount you learned in the course was:</td>
+							<td class='center'>57%</td> 
+							<td class='center'>43%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>&nbsp;</td> 
+							<td class='center'>14</td>
+							<td class='center'>4.63 out of 5</td> </tr><tr class='statement-row odd-row'><td>19.</td><td>Relevance and usefulness of course content was:</td>
+							<td class='center'>50%</td> 
+							<td class='center'>43%</td> 
+							<td class='center'>7%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>&nbsp;</td> 
+							<td class='center'>14</td>
+							<td class='center'>4.50 out of 5</td> </tr><tr class='statement-row even-row'><td>20.</td><td>Relevance and usefulness of homework assignments were:</td>
+							<td class='center'>36%</td> 
+							<td class='center'>50%</td> 
+							<td class='center'>14%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>&nbsp;</td> 
+							<td class='center'>14</td>
+							<td class='center'>4.21 out of 5</td> </tr><tr class='statement-row odd-row'><td>21.</td><td>Reasonableness of assigned work was:</td>
+							<td class='center'>38%</td> 
+							<td class='center'>31%</td> 
+							<td class='center'>23%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>8%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>&nbsp;</td> 
+							<td class='center'>13</td>
+							<td class='center'>4.13 out of 5</td> </tr><tr class='statement-row even-row'><td>22.</td><td>Relationship of exams to material emphasized in the course was:</td>
+							<td class='center'>38%</td> 
+							<td class='center'>31%</td> 
+							<td class='center'>15%</td> 
+							<td class='center'>15%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>&nbsp;</td> 
+							<td class='center'>13</td>
+							<td class='center'>4.13 out of 5</td> </tr>
+							</table>
+				  		</td>
+					</tr>
+				</table>
+			<table class="eval_table" border="0" cellspacing="0" cellpadding="0"><tr><th colspan='11' class='group-label'>Relative to other class experiences</th></tr><tr class='group-head'>
+					<th colspan='2' width='48%'>MH=Much Higher, AVG=Average, ML=Much Lower<div class='header-note'>Results reported as rounded percentage of total responses.</div></th> 
+					<th width='5%'>MH<br />7 pts</th> 
+					<th width='5%'>6 pts</th> 
+					<th width='5%'>5 pts</th> 
+					<th width='5%'>AVG<br />4 pts</th> 
+					<th width='5%'>ML<br />3 pts</th> 
+					<th width='5%'>2 pts</th> 
+					<th width='5%'>ML<br />1 pt</th> 
+					<th width='5%'>Resp.<br />Count</th>  
+					<th width='17%'>Median<br />Points</th> </tr><tr class='statement-row odd-row'><td>23.</td><td>Do you expect your grade in this course to be:</td>
+							<td class='center'>31%</td> 
+							<td class='center'>38%</td> 
+							<td class='center'>23%</td> 
+							<td class='center'>8%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>13</td>
+							<td class='center'>6.00 out of 7</td> </tr><tr class='statement-row even-row'><td>24.</td><td>The intellectual challenge presented was:</td>
+							<td class='center'>57%</td> 
+							<td class='center'>43%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>14</td>
+							<td class='center'>6.63 out of 7</td> </tr><tr class='statement-row odd-row'><td>25.</td><td>The amount of effort you put into this course was:</td>
+							<td class='center'>57%</td> 
+							<td class='center'>43%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>14</td>
+							<td class='center'>6.63 out of 7</td> </tr><tr class='statement-row even-row'><td>26.</td><td>The amount of effort to succeed in this course was:</td>
+							<td class='center'>57%</td> 
+							<td class='center'>36%</td> 
+							<td class='center'>7%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>14</td>
+							<td class='center'>6.63 out of 7</td> </tr><tr class='statement-row odd-row'><td>27.</td><td>Your involvement in course (assignments, attendance, etc.) was:</td>
+							<td class='center'>64%</td> 
+							<td class='center'>36%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>0%</td> 
+							<td class='center'>14</td>
+							<td class='center'>6.72 out of 7</td> </tr>
+							</table>
+				  		</td>
+					</tr>
+				</table>
+			<table class="eval_table" border="0" cellspacing="0" cellpadding="0"><tr><th colspan='11' class='group-label'>Additional measures of class experience</th></tr><tr><td colspan='11'><div class='table-question' style='width: 24%; float: left; padding: 3px; '>28. On average, how many hours per week have you spent on this course, including attending classes, doing readings, reviewing notes, writing papers and any other course related work? <table class='option_counts'><tr><th colspan='2'>Selected Option(s)</th><th class='center'>#</th><th class='center'>%</th></tr><tr class='odd'><td width='5%'>1.</td><td width='75%'>0-1</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr><tr class='even'><td width='5%'>2.</td><td width='75%'>2-3</td><td class='center' width='10%'>1</td><td class='center' width='10%'>7%</td></tr><tr class='odd'><td width='5%'>3.</td><td width='75%'>4-5</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr><tr class='even'><td width='5%'>4.</td><td width='75%'>6-7</td><td class='center' width='10%'>1</td><td class='center' width='10%'>7%</td></tr><tr class='odd'><td width='5%'>5.</td><td width='75%'>8-9</td><td class='center' width='10%'>1</td><td class='center' width='10%'>7%</td></tr><tr class='even'><td width='5%'>6.</td><td width='75%'>10-11</td><td class='center' width='10%'>4</td><td class='center' width='10%'>29%</td></tr><tr class='odd'><td width='5%'>7.</td><td width='75%'>12-13</td><td class='center' width='10%'>3</td><td class='center' width='10%'>21%</td></tr><tr class='even'><td width='5%'>8.</td><td width='75%'>14-15</td><td class='center' width='10%'>1</td><td class='center' width='10%'>7%</td></tr><tr class='odd'><td width='5%'>9.</td><td width='75%'>16-17</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr><tr class='even'><td width='5%'>10.</td><td width='75%'>18-19</td><td class='center' width='10%'>1</td><td class='center' width='10%'>7%</td></tr><tr class='odd'><td width='5%'>11.</td><td width='75%'>22 or more</td><td class='center' width='10%'>1</td><td class='center' width='10%'>7%</td></tr></table></div><div class='table-question' style='width: 24%; float: left; padding: 3px; '>29. From the total average hours above, how many do you consider were valuable in advancing your education: <table class='option_counts'><tr><th colspan='2'>Selected Option(s)</th><th class='center'>#</th><th class='center'>%</th></tr><tr class='odd'><td width='5%'>1.</td><td width='75%'>0-1</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr><tr class='even'><td width='5%'>2.</td><td width='75%'>2-3</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr><tr class='odd'><td width='5%'>3.</td><td width='75%'>4-5</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr><tr class='even'><td width='5%'>4.</td><td width='75%'>6-7</td><td class='center' width='10%'>3</td><td class='center' width='10%'>21%</td></tr><tr class='odd'><td width='5%'>5.</td><td width='75%'>8-9</td><td class='center' width='10%'>3</td><td class='center' width='10%'>21%</td></tr><tr class='even'><td width='5%'>6.</td><td width='75%'>10-11</td><td class='center' width='10%'>3</td><td class='center' width='10%'>21%</td></tr><tr class='odd'><td width='5%'>7.</td><td width='75%'>12-13</td><td class='center' width='10%'>3</td><td class='center' width='10%'>21%</td></tr><tr class='even'><td width='5%'>8.</td><td width='75%'>14-15</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr><tr class='odd'><td width='5%'>9.</td><td width='75%'>16-17</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr><tr class='even'><td width='5%'>10.</td><td width='75%'>18-19</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr><tr class='odd'><td width='5%'>11.</td><td width='75%'>22 or more</td><td class='center' width='10%'>2</td><td class='center' width='10%'>14%</td></tr></table></div><div class='table-question' style='width: 24%; float: left; padding: 3px; '>30. What grade do you expect in this course: <table class='option_counts'><tr><th colspan='2'>Selected Option(s)</th><th class='center'>#</th><th class='center'>%</th></tr><tr class='odd'><td width='5%'>1.</td><td width='75%'>A (3.9-4.0)</td><td class='center' width='10%'>7</td><td class='center' width='10%'>50%</td></tr><tr class='even'><td width='5%'>2.</td><td width='75%'>A- (3.5-3.8)</td><td class='center' width='10%'>5</td><td class='center' width='10%'>36%</td></tr><tr class='odd'><td width='5%'>3.</td><td width='75%'>B+ (3.2-3.4)</td><td class='center' width='10%'>1</td><td class='center' width='10%'>7%</td></tr><tr class='even'><td width='5%'>4.</td><td width='75%'>B (2.9-3.1)</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr><tr class='odd'><td width='5%'>5.</td><td width='75%'>B- (2.5-2.8)</td><td class='center' width='10%'>1</td><td class='center' width='10%'>7%</td></tr><tr class='even'><td width='5%'>6.</td><td width='75%'>C+ (2.2-2.4)</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr><tr class='odd'><td width='5%'>7.</td><td width='75%'>C (1.9-2.1)</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr><tr class='even'><td width='5%'>8.</td><td width='75%'>C- (1.5-1.8)</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr><tr class='odd'><td width='5%'>9.</td><td width='75%'>D+ (1.2-1.4)</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr><tr class='even'><td width='5%'>10.</td><td width='75%'>D (0.9-1.1)</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr><tr class='odd'><td width='5%'>11.</td><td width='75%'>D- (0.7-0.8)</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr><tr class='even'><td width='5%'>12.</td><td width='75%'>(0.0)</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr><tr class='odd'><td width='5%'>13.</td><td width='75%'>Pass</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr><tr class='even'><td width='5%'>14.</td><td width='75%'>Credit</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr><tr class='odd'><td width='5%'>15.</td><td width='75%'>No Credit</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr></table></div><div class='table-question' style='width: 24%; float: left; padding: 3px; '>31. In regard to your academic program, is this course best described as: <table class='option_counts'><tr><th colspan='2'>Selected Option(s)</th><th class='center'>#</th><th class='center'>%</th></tr><tr class='odd'><td width='5%'>1.</td><td width='75%'>In your major?</td><td class='center' width='10%'>12</td><td class='center' width='10%'>86%</td></tr><tr class='even'><td width='5%'>2.</td><td width='75%'>In your minor?</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr><tr class='odd'><td width='5%'>3.</td><td width='75%'>A distribution requirement?</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr><tr class='even'><td width='5%'>4.</td><td width='75%'>A program requirement?</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr><tr class='odd'><td width='5%'>5.</td><td width='75%'>An Elective?</td><td class='center' width='10%'>2</td><td class='center' width='10%'>14%</td></tr><tr class='even'><td width='5%'>6.</td><td width='75%'>Other?</td><td class='center' width='10%'></td><td class='center' width='10%'>0%</td></tr></table></div></td></tr>
+							</table>
+				  		</td>
+					</tr>
+				</table>
+			<table class='footer_table' border='0' width='100%'><tr> 
+		<td width='100%'>The direct address for this report is: <a href="https://go.utdallas.edu/eval/cs6378.001.02f" target="_blank">go.utdallas.edu/eval/cs6378.001.02f</a>. Download a PDF version of this report: <a href="https://go.utdallas.edu/eval/cs6378.001.02f/pdf" target="_blank">go.utdallas.edu/eval/cs6378.001.02f/pdf</a>. Contact the Provost's Technology Group to verify authenticity of report data: <a href="mailto:ptg@utdallas.edu">ptg@utdallas.edu</a>. Median calculated using <a href="http://aec.umich.edu/median.php" target="_blank">Interpolated Median Algorithm</a>. This class is cross listed with: <a href="https://coursebook.utdallas.edu/ues-report/ce6378.001.02f">ce6378.001.02f (0)</a> Survey Type: <b>2</b>. Section Enrollment: <b>16</b>. Cache Time: <b>2017-04-13 14:05:58</b>. ceryvurr </td> </tr></table>
+	</div>
+</body>
+
+</html>
