@@ -142,7 +142,7 @@ def scoreTeacherues(teacher):
 		return	
 	print("Datapoints: " + str(uesdatapoints(teacher)))
 	ues_label_enum = sdat.enums().get('ues')
-	print("{0:<40}  {1:5}% {2:>5} [{3[0]:>3}, {3[1]:>3}, {3[2]:>3}, {3[3]:>3}, {3[4]:>3}]".format("Criteria","%","σ",["SD","D","N","A","SA"]))
+	print("{0:<40}  {1:5}% {2:>5} [{3[0]:>3}, {3[1]:>3}, {3[2]:>3}, {3[3]:>3}, {3[4]:>3}]".format("Criteria","%","DEV",["SD","D","N","A","SA"]))
 	for criteria in range(0,15):
 		total = teacher['data']['ues'][criteria]['total']
 		score = {}
@@ -182,7 +182,7 @@ def scoreTeacherlegacy(teacher):
 		sections.append({'critrange':range(0,22),'degrange':range(0,6),'scorefmtstr':"{1:<40} {2:5}%  {3[0]:<5} [{0[0]:>3}, {0[1]:>3}, {0[2]:>3}, {0[3]:>3}, {0[4]:>3}, {0[5]:>3}]",'labels':["VP","PR","FR","GD","VG","EX"]})
 		sections.append({'critrange':range(22,27),'degrange':range(0,7),'scorefmtstr':"{1:<40} {2:5}%  {3[0]:<5} [{0[0]:>3}, {0[1]:>3}, {0[2]:>3}, {0[3]:>3}, {0[4]:>3}, {0[5]:>3}, {0[6]:>3}]",'labels':["MH","","","AVG","ML","","ML"]})
 		for section in sections:
-			print(section['scorefmtstr'].format(section['labels'],"Criteria","%",["σ"]))
+			print(section['scorefmtstr'].format(section['labels'],"Criteria","%",["DEV"]))
 			for criteria in section['critrange']:
 				total = teacher['data'][surveytype][criteria]['total']
 				score = {}
