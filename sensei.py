@@ -56,7 +56,10 @@ parser.add_argument('--version', action='version', version='%(prog)s 0.1 beta')
 parser.add_argument("cmd", help="Command to execute.")
 parser.add_argument("args", nargs='*', help="Arguments for command.")
 parser.add_argument('--admin')
-parser.add_argument('--glob',dest='glob',default='02f/cs3*')
+parser.add_argument('--glob',dest='glob',nargs='+')
+parser.add_argument('--yearrange',dest='yearrange',nargs='+')
+parser.add_argument('--classcodes',dest='classcodes',nargs='+')
+parser.add_argument('--redownload', action='store_true')
 parser.add_argument('--quiet','-q', action='store_true')
 parser.add_argument('--offline','-o', action='store_true')
 args = parser.parse_args()
@@ -545,5 +548,13 @@ try:
 except KeyError:
 	print("Invalid command. Try with --help for a list.")
 
-rebuild([args.glob])
+print(args)
+if args.classcodes is not []:
+	snc.setClassCodes(args.classcodes)
+if args.yearrange is not []:
+	snc.downloadDirlists(args.yearrange)
+if args.redownload is not []:
+	snc.downloadEvals()
+if args.glob is not []: 
+	rebuild(args.glob)
 cmd.exe()
