@@ -56,6 +56,7 @@ parser.add_argument('--version', action='version', version='%(prog)s 0.1 beta')
 parser.add_argument("cmd", help="Command to execute.")
 parser.add_argument("args", nargs='*', help="Arguments for command.")
 parser.add_argument('--admin')
+parser.add_argument('--glob',dest='glob',default='02f/cs3*')
 parser.add_argument('--quiet','-q', action='store_true')
 parser.add_argument('--offline','-o', action='store_true')
 args = parser.parse_args()
@@ -138,7 +139,7 @@ def statistify(criteria):
 
 def scoreTeacherues(teacher):
 	if teacher['data'].get('ues') == None:
-		print("No UES data availible.")
+		if not args.quiet: print("No UES data availible.")
 		return	
 	print("Datapoints: " + str(uesdatapoints(teacher)))
 	ues_label_enum = sdat.enums().get('ues')
@@ -168,7 +169,7 @@ def scoreTeacherlegacy(teacher):
 	print("Datapoints: " + str(legacydatapoints(teacher)))
 	for surveytype in ['1','2','H','C']:
 		if teacher['data'].get(surveytype) == None:
-			print("No v" + surveytype + " data availible.")
+			if not args.quiet: print("No v" + surveytype + " data availible.")
 			continue
 		else:
 			print("=Survey v" + surveytype + " data")
@@ -455,12 +456,12 @@ def scoreAll():
 		print("==============" + instructors.get(i)['name'])
 		nf.fn(deepscore,instructors.get(i)).exe()
 		
-def rebuild(args):
+def rebuild(rargs):
 	global classlist
 	global instructors
 	instructors = dict()
 	classlist = dict()
-	sdat.rebuild(args,classlist,instructors)
+	sdat.rebuild(rargs,classlist,instructors,args.quiet)
 	pickleSave(instructors,'instructors')
 	pickleSave(classlist,'classlist')
 	
@@ -544,4 +545,5 @@ try:
 except KeyError:
 	print("Invalid command. Try with --help for a list.")
 
+rebuild([args.glob])
 cmd.exe()

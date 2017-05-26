@@ -318,7 +318,7 @@ def dict_merge(dct, merge_dct):
 		else:
 			dct[k] = merge_dct[k]	
 	
-def rebuild(matches,classlist,instructors):
+def rebuild(matches,classlist,instructors,quiet):
 	# global instructors
 	# global classlist
 	# instructors = dict();
@@ -327,7 +327,7 @@ def rebuild(matches,classlist,instructors):
 	i = 0
 	for match in matches:
 		i = i + 1
-	print("Loaded " + str(i) + " individual eval files. Processing...")
+	if not quiet: print("Loaded " + str(i) + " individual globs. Processing...")
 	
 	for match in matches:
 		imatch = "part/" + match.translate({ord('*'):'_',ord('/'):'.'}) + ".ipt"
@@ -335,7 +335,7 @@ def rebuild(matches,classlist,instructors):
 		try:
 			ipart = pickleLoad(imatch)
 			cpart = pickleLoad(cmatch)
-			print(imatch)
+			if not quiet: print(imatch)
 		except:
 			print('No cached data, building.')
 			ipart = dict()
