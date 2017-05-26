@@ -550,12 +550,16 @@ except KeyError:
 
 #print(args)
 if args.classcodes is not None:
+	if not args.quiet: print('Setting codes')
 	snc.setClassCodes(args.classcodes)
 if args.yearrange is not None:
+	if not args.quiet: print('Getting dirlists')
 	snc.downloadDirlists(args.yearrange)
 if args.redownload is not None:
+	if not args.quiet: print('Getting evals')
 	snc.downloadEvals(args)
 if args.glob is not None: 
+	if not args.quiet: print('Rebuilding database')
 	rebuild(args.glob)
 #print(arglist)
 cmd.exe()

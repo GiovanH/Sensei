@@ -325,6 +325,7 @@ def rebuild(matches,classlist,instructors,quiet):
 	# classlist = dict();
 	#Example usage:  rebuild(["cs*","*.15f"])
 	i = 0
+	quiet = True
 	for match in matches:
 		i = i + 1
 	if not quiet: print("Loaded " + str(i) + " individual globs. Processing...")
@@ -345,13 +346,13 @@ def rebuild(matches,classlist,instructors,quiet):
 			j = 0
 			pbar = 0
 			files = glob.glob("evals/" + match)
-			if not args.quiet: print('Rebuilding data libraries for specific glob')
-			if not args.quiet: print('[########################################]\n[',end='')
+			if not quiet: print('Rebuilding data libraries for specific glob')
+			if not quiet: print('[########################################]\n[',end='')
 			for filename in files:
 				try:
 					i = i + 1
 					if (int(i/len(files)*40) > pbar):
-						if not args.quiet: print("#",end='')
+						if not quiet: print("#",end='')
 						sys.stdout.flush()
 					pbar = int(i/len(files)*40)
 					processFile(filename,cpart,ipart)
@@ -368,7 +369,7 @@ def rebuild(matches,classlist,instructors,quiet):
 					j = j + 1
 			pickleSave(ipart,imatch)
 			pickleSave(cpart,cmatch)
-			print(']')
+			if not quiet: print(']')
 		dict_merge(instructors,ipart)
 		dict_merge(classlist,cpart)
 
