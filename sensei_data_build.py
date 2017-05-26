@@ -345,12 +345,13 @@ def rebuild(matches,classlist,instructors,quiet):
 			j = 0
 			pbar = 0
 			files = glob.glob("evals/" + match)
-			print('[########################################]\n[',end='')
+			if not args.quiet: print('Rebuilding data libraries for specific glob')
+			if not args.quiet: print('[########################################]\n[',end='')
 			for filename in files:
 				try:
 					i = i + 1
 					if (int(i/len(files)*40) > pbar):
-						print("#",end='')
+						if not args.quiet: print("#",end='')
 						sys.stdout.flush()
 					pbar = int(i/len(files)*40)
 					processFile(filename,cpart,ipart)

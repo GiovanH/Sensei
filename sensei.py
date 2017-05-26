@@ -522,7 +522,7 @@ def makeargs():
 	global argswitch
 	argswitch = {
 		'rebuild':	nf.fn(rebuild,arglist),
-		'downloadevals':	nf.fn(snc.downloadEvals,None),
+		'downloadevals':	nf.fn(snc.downloadEvals,args),
 		'downloaddirlists': 	nf.fn(snc.downloadDirlists,arglist),
 		'setclasscodes':	nf.fn(snc.setClassCodes,arglist),
 		'scoreteacher':	nf.fn(deepscore,nf.fn(getInstructorByName,arglist[0])),
@@ -548,13 +548,14 @@ try:
 except KeyError:
 	print("Invalid command. Try with --help for a list.")
 
-print(args)
-if args.classcodes is not []:
+#print(args)
+if args.classcodes is not None:
 	snc.setClassCodes(args.classcodes)
-if args.yearrange is not []:
+if args.yearrange is not None:
 	snc.downloadDirlists(args.yearrange)
-if args.redownload is not []:
-	snc.downloadEvals()
-if args.glob is not []: 
+if args.redownload is not None:
+	snc.downloadEvals(args)
+if args.glob is not None: 
 	rebuild(args.glob)
+#print(arglist)
 cmd.exe()

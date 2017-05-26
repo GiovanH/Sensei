@@ -33,8 +33,8 @@ def setClassCodes(new):
 	else:
 		classcodes = new
 	ncpSave(classcodes,'classcodes')
-	print("Classcodes: ")
-	print(classcodes)
+	#print("Classcodes: ")
+	#print(classcodes)
 
 
 #classcodes = allclasscodes
@@ -51,7 +51,10 @@ def download(term, classcode):
 	localfile = "directorylisting/" + term + "_" + classcode + ".html"
 	save(localfile,url)
 
-def downloadDirlists(args):
+def downloadDirlists(rng):
+	#global args
+	#quiet = args.quiet
+	quiet = True
 	global classcodes
 	try:
 		filename = 'classcodes'
@@ -60,15 +63,15 @@ def downloadDirlists(args):
 	except TypeError:
 		print("No saved classcodes file, using defaults")
 		classcodes = ['CS','HONS','GOVT','PHYS','UNIV']
-	print(classcodes)
+	if not quiet: print(classcodes)
 	terms = []
 	#if args[0] == 'void': return
 	try:
-		print([int(args[0]),int(args[1])+1])
+		if not quiet: print([int(rng[0]),int(rng[1])+1])
 	except IndexError:
 		print("You must specify a year range!")
 		return
-	for year in range(int(args[0]),int(args[1])+1):
+	for year in range(int(rng[0]),int(rng[1])+1):
 		for term in ('s','u','f'):
 			terms.append(str(year).zfill(2) + term)
 	evalnames = []
@@ -80,7 +83,8 @@ def downloadDirlists(args):
 		for classcode in classcodes:
 			p1 = p1 + 1
 	pbar = 0
-	print('[####################]\n[',end='')
+	if not quiet: print('Downloading directory listings')
+	if not quiet: print('[####################]\n[',end='')
 	
 	
 	for term in terms:
@@ -91,7 +95,7 @@ def downloadDirlists(args):
 			#Progress bar code
 			p2 = p2 + 1
 			if (int(p2/p1*20) > pbar):
-				print("#",end='')
+				if not quiet: print("#",end='')
 				sys.stdout.flush()
 			pbar = int(p2/p1*20)
 			
@@ -134,7 +138,7 @@ def downloadDirlists(args):
 			#print(i)
 	#print(classes)
 	ncpSave(evalnames, 'evalnames')
-	print(']')
+	if not quiet: print(']')
 #Done
 
 def save(output, input):
@@ -147,7 +151,7 @@ def save(output, input):
 			handle.write(block)
 #Done
 
-def downloadEvals():
+def downloadEvals(args):
 	try:
 		evalnames = ncpLoad('evalnames')
 	except: 
@@ -159,12 +163,13 @@ def downloadEvals():
 	#Progress bar code
 	i = 0
 	pbar = 0
-	print('[####################]\n[',end='')
+	if not args.quiet: print('Downloading individual evals')
+	if not args.quiet: print('[####################]\n[',end='')
 	for c in evalnames:
 		#Progress bar code
 		i = i + 1
 		if (int(i/len(evalnames)*20) > pbar):
-			print("#",end='')
+			if not args.quiet: print("#",end='')
 			sys.stdout.flush()
 		pbar = int(i/len(evalnames)*20)
 		
@@ -174,8 +179,8 @@ def downloadEvals():
 		if not os.path.isfile("evals/" + year + "/" + c):
 			j = j + 1
 			save("evals/" + year + "/" + c,"https://coursebook.utdallas.edu/ues-report/" + c)
-	print(']') #Progress bar code
-	print("Downloaded " + str(j) + " new evalulation files.")
+	if not args.quiet: print(']') #Progress bar code
+	if not args.quiet: print("Downloaded " + str(j) + " new evalulation files.")
 
 def dict_merge(dct, merge_dct):
 	import collections
