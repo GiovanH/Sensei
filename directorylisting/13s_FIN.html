@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>UT Dallas CourseBook Class Search :: UT Dallas Class, Syllabus, Course Evaluation, and Textbook Database</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="UT Dallas CourseBook is an advanced tool for obtaining information about classes at The University of Texas at Dallas (UTD). Lookup course and catalog information, Class Syllabi (Syllabus), Course Evaluations, Instructor Evaluations, and submit syllabus files from a single central location." />
+	<meta name="keywords" content="UTD, University of Texas, University of Texas at Dallas, Dallas, Texas, CourseBook, Syllabi, Syllabus, Evaluations, Submit Syllabus, OpenSearch, Course Lookup">
+	<meta name="viewport" content="width=850">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/clems+ptools+alertify+chosen+eforms+clarus+catbook-orion+fira+font-awesome+tooltipster4"/>
+
+	<link rel="stylesheet" href="/js/jquery/jquery-ui-1.8.4.custom/css/smoothness/jquery-ui-1.8.4.custom.css" type="text/css" media="screen" />
+
+	<link rel="shortcut icon" type="image/ico" href="https://provost.utdallas.edu/images/utd-favicon-gs.ico" />
+
+	<script src="/js/jquery/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="/js/jquery/tablesorter-2.0.3/jquery.tablesorter.min.js" type="text/javascript"></script>
+	<script src="/js/jquery/form-2.69/jquery.form.js" type="text/javascript"></script>
+	<script src="/js/jquery/jquery-ui-1.8.4.custom/js/jquery-ui-1.8.4.custom.min.js" type="text/javascript"></script>
+
+
+	<!-- ckeditor - used by coursebook mail -->
+	<script src="//cdn.ckeditor.com/4.4.5/standard/ckeditor.js"></script>
+	<script src="//cdn.ckeditor.com/4.4.5/standard/adapters/jquery.js"></script>
+
+	<!-- catbook uses arbor graphs -->
+	<script src="/js/jquery/arbor-0.92/arbor.js" type="text/javascript"></script>
+	<script src="/js/jquery/arbor-0.92/arbor-tween.js" type="text/javascript"></script>
+	<script src="/js/jquery/arbor-0.92/graphics.js" type="text/javascript"></script>
+	<script src="/js/jquery/arbor-0.92/renderer.js" type="text/javascript"></script>
+
+	<script>var ptools_js=[]; var ptools_data={};</script>
+	<script src="/js/alertify+tooltipster+ptools?v=1" type="text/javascript"></script>
+	<script src="/js/wdiff/wdiff.js" type="text/javascript"></script>
+
+	<style>
+	.actionitem { display: block; }
+	</style>
+
+
+	<script>
+	  // google analytics 
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-19668321-9', 'auto'); ga('send', 'pageview');
+	</script>
+</head>
+
+<body id="main">
+	<div id="page-all">
+	<div id="page-left"></div>
+	<div id="page-middle">
+
+		<div id="header" class="hideforprint">
+			<div id="header-logo"><a href="https://www.utdallas.edu"><img src="/images/barsoom/header-logo.png" border="0" \></a></div>
+			<div id="header-title"><a href="https://coursebook.utdallas.edu">CourseBook</a></div>
+		</div>
+	
+		<div id="menus" class="hideforprint">
+<div id="lev1-menubar"><ul>
+<li class="lev1-active"><a href="http://coursebook.utdallas.edu/" id="level1-1" title="Course Tools">Course Tools</a></li>
+<li style="float: right; margin-right: 10px;" class="lev1-logout"><a href="https://coursebook.utdallas.edu/login/coursebook">login</a></li>
+</ul></div>
+<div id="lev2-menubar"><ul>
+<li class="lev2-active"><a href="http://coursebook.utdallas.edu" id="level2-1" title="CourseBook">CourseBook</a></li>
+<li><a href="https://coursebook.utdallas.edu/syllabus-policies" id="level2-2" title="Syllabus Policies">Syllabus Policies</a></li>
+<li><a href="http://provost.utdallas.edu/home/syllabus-templates" id="level2-3" title="Syllabus Templates">Syllabus Templates</a></li>
+</ul></div>
+</div>
+
+
+		<div id="page-content">
+			<div class="search-panel-div">
+		
+		<div class="search-panel-title-div2">
+			<b>CourseBook :: Class Search</b>
+		</div>
+
+		<div id='panel_1'>
+		
+			<div class="search-panel-menu-div2">				
+				<div id="tabset-menubar"><ul>
+					<div class="expandblock-tabs"><ul><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/aboutcoursebook">about</a></li><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/coursebookhelp">help</a></li><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/syllabussubmit">syllabus submission</a></li><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/advancedsearch">advanced search</a></li><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/myclasses">my classes</a></li><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/guidedsearch">guided search</a></li><li class="lev3-active lev3-first"><a href="https://coursebook.utdallas.edu/search">class search</a></li></ul></div>
+				</ul></div>
+			</div>
+	
+			<div class="search-panel-form-div" align="center">
+
+ 				<div id="topmsg"><div style="width: 600px; padding: 0 0 10px 0; margin: 0 auto; color: red; font-weight: bold; font-size: 12px; text-align: center; ">Summer 2017 final exams will be available for viewing after June 8, 2017</div></div>
+
+				<div id="classsearch">
+	
+					<form method="get" name="searchform" id="searchform" action="https://coursebook.utdallas.edu/coursebook" onsubmit="dosearch(); return false;" class="search-panel-form" >
+					
+						<div style="width: 455px; margin: 0 auto;">
+							<div style="float: left; width: 150px;">
+								<input type="text" size="20" id="srch" name="s" value="cp_FIN" style="width: 140px;" class="focushere" />
+							</div>
+							
+							<div style="float: left; padding: 0 0 0 7px;">
+								<select class="term-popup" id="srch_term" name="t"><option value="term_all" >Search All Terms</option><option value="_2017" >---------------</option><option value="term_17f" >2017 Fall (17f)</option><option value="term_17u" >2017 Summer (17u)</option><option value="term_17s" >2017 Spring (17s)</option><option value="_2016" >---------------</option><option value="term_16f" >2016 Fall (16f)</option><option value="term_16u" >2016 Summer (16u)</option><option value="term_16s" >2016 Spring (16s)</option><option value="_2015" >---------------</option><option value="term_15f" >2015 Fall (15f)</option><option value="term_15u" >2015 Summer (15u)</option><option value="term_15s" >2015 Spring (15s)</option><option value="_2014" >---------------</option><option value="term_14f" >2014 Fall (14f)</option><option value="term_14u" >2014 Summer (14u)</option><option value="term_14s" >2014 Spring (14s)</option><option value="_2013" >---------------</option><option value="term_13f" >2013 Fall (13f)</option><option value="term_13u" >2013 Summer (13u)</option><option value="term_13s" selected>2013 Spring (13s)</option><option value="_2012" >---------------</option><option value="term_12f" >2012 Fall (12f)</option><option value="term_12u" >2012 Summer (12u)</option><option value="term_12s" >2012 Spring (12s)</option><option value="_2011" >---------------</option><option value="term_11f" >2011 Fall (11f)</option><option value="term_11u" >2011 Summer (11u)</option><option value="term_11s" >2011 Spring (11s)</option><option value="_2010" >---------------</option><option value="term_10f" >2010 Fall (10f)</option><option value="term_10u" >2010 Summer (10u)</option><option value="term_10s" >2010 Spring (10s)</option></select>			
+							</div>
+	
+							<div style="float: left; padding: 0 0 0 7px;">
+								<a class="button-link" href="" onclick="dosearch(); return false;" style="width: 100px">search</a>
+							</div>
+
+							<div style="clear: both;"></div>
+							
+							<div style="padding: 10px 0 0 0">
+								<input id="has_syllabus" type="checkbox" name="has_syllabus" value="1"  /> <label for="has_syllabus" >has syllabus</label> <i class="fa fa-question-circle ptools-popover" aria-hidden="true" title="Check the HAS SYLLABUS box to limit search to classes with syllabi."></i>
+								&nbsp; 
+								<input id="has_evaluation" type="checkbox" name="has_evaluation" value="1" checked="checked" /> <label for="has_evaluation">has evaluation</label> <i class="fa fa-question-circle ptools-popover" aria-hidden="true" title="Check the HAS EVALUATION box to limit searches to classes with evaluations."></i>
+								&nbsp;
+								<input id="include_independent_study" type="checkbox" name="include_independent_study" value="1"  /> <label for="include_independent_study">include special classes</label> <i class="fa fa-question-circle ptools-popover" aria-hidden="true" title="Check this box to show 'special classes' such as independant study, executive education, and other special programs."></i>
+							</div>
+
+						</div>
+						
+					</form>
+
+					<form method="get" name="proxysearch" id="proxysearch" action="https://coursebook.utdallas.edu/coursebook" style="display: none"> </form>
+
+					<div id="searchhelp" style="display: none">
+						<div class="search-instructions">Use CourseBook to find classes, courses, syllabi (syllabus), and evaluation data for classes at UT Dallas.</div>
+						<div class="search-instructions">Search by course prefix, number, instructor name, email address, course title, or other search phrase.</div>
+						<div class="search-instructions">Click on a row to expand it and download syllabus and evaluation reports</div>
+					</div>
+
+					<div style="font-size: 10px; color: black; text-align: center; margin: 0 0 10px 0; ">Not sure what to search for? <a href="https://coursebook.utdallas.edu/guidedsearch">Click here to try <b>Guided Search</b> to find classes or build a schedule</a>.</div>
+
+					<div style="font-size: 10px; color: #ccc; text-align: center;">Search Counter: 13,750,361 (since 2014-10-08).</div>					
+				</div>
+
+			</div>
+						
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		// $('img.tt').tooltip();
+	</script>	
+	<div class="search-panel-div">
+		
+		<div class="search-panel-title-div2" id="searchresults">
+			<b>Search Results (71 items) <a href="https://coursebook.utdallas.edu/reportmonkey/coursebook-export" class=button-link>download excel</a></b>
+		</div>
+
+		<div id='panel_1'>
+		
+			<div class="search-panel-menu-div2">				
+				<div id="tabset-menubar"><ul>
+					<div class="expandblock-tabs"><ul><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/myevents">my events</a></li><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/mysavedclasses">saved classes</a></li><li class="lev3-active lev3-first"><a href="https://coursebook.utdallas.edu/searchresults">search results</a></li></ul></div>
+				</ul></div>
+			</div>
+	
+			<div class="search-panel-form-div" align="center">
+				<div id=sr data-rowcount=71><div class="section-list"><table border="0" cellspacing="1" cellpadding="0"  width="100%" class="sortable resizable">
+<thead><tr>  <th width="34">Term<br>Status</th> <th width="91">Class Section<br>Class Number</th> <th width="259">Class Title</th> <th width="90">Instructor(s)</th> <th width="181">Schedule &amp;<br>Location</th> <th width="30">Fill</th> <th width="110">Action(s)</th> </tr></thead><tbody>
+<tr id="r-1" data-id="fin3100.051.13s" onclick="open_subrow(event, 'r-1', 'clip-section', 'fin3100.051.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3100.051.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin3100.051.13s" title="View details for section fin3100.051.13s" class="stopbubble">FIN 3100.051</a><br />25858</td><td>PROFESSIONAL DEVELOPMENT (1 Credit)</td><td><a href=http://coursebook.utdallas.edu/search/jhp102000 class="ptools-popover" title="Jared Pickens ">Jared Pickens</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Tues</span><span class="clstbl__resultrow__time">10:00am - 11:50am</span>
+<div class="clstbl__resultrow__location">JSOM 2.803</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -240px transparent; " title="80% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-1', 'clip-section', 'fin3100.051.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-1', 'clip-syllabus', 'fin3100.051.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-1', 'clip-pcv', 'fin3100.051.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-2" data-id="fin3100.091.13s" onclick="open_subrow(event, 'r-2', 'clip-section', 'fin3100.091.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3100.091.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin3100.091.13s" title="View details for section fin3100.091.13s" class="stopbubble">FIN 3100.091</a><br />25859</td><td>PROFESSIONAL DEVELOPMENT (1 Credit)</td><td><a href=http://coursebook.utdallas.edu/search/jhp102000 class="ptools-popover" title="Jared Pickens ">Jared Pickens</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Tues</span><span class="clstbl__resultrow__time">10:00am - 11:50am</span>
+<div class="clstbl__resultrow__location">JSOM 2.803</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -32px transparent; " title="10% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-2', 'clip-section', 'fin3100.091.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-2', 'clip-syllabus', 'fin3100.091.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-2', 'clip-pcv', 'fin3100.091.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-3" data-id="fin3100.551.13s" onclick="open_subrow(event, 'r-3', 'clip-section', 'fin3100.551.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3100.551.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin3100.551.13s" title="View details for section fin3100.551.13s" class="stopbubble">FIN 3100.551</a><br />25860</td><td>PROFESSIONAL DEVELOPMENT (1 Credit)</td><td><a href=http://coursebook.utdallas.edu/search/jhp102000 class="ptools-popover" title="Jared Pickens ">Jared Pickens</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Thurs</span><span class="clstbl__resultrow__time">7:00pm - 8:50pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.801</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -224px transparent; " title="70% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-3', 'clip-section', 'fin3100.551.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-3', 'clip-syllabus', 'fin3100.551.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-3', 'clip-pcv', 'fin3100.551.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-4" data-id="fin3300.001.13s" onclick="open_subrow(event, 'r-4', 'clip-section', 'fin3300.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3300.001.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin3300.001.13s" title="View details for section fin3300.001.13s" class="stopbubble">FIN 3300.001</a><br />25861</td><td>PERSONAL FINANCE (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/rxg112530 class="ptools-popover" title="Randall Guttery ">Randall Guttery</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Tues</span><span class="clstbl__resultrow__time">4:00pm - 6:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.802</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -304px transparent; " title="100% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-4', 'clip-section', 'fin3300.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-4', 'clip-syllabus', 'fin3300.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-4', 'clip-textbooks', 'fin3300.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-4', 'clip-pcv', 'fin3300.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-5" data-id="fin3320.001.13s" onclick="open_subrow(event, 'r-5', 'clip-section', 'fin3320.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3320.001.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin3320.001.13s" title="View details for section fin3320.001.13s" class="stopbubble">FIN 3320.001</a><br />25862</td><td>BUSINESS FINANCE (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/jrr013500 class="ptools-popover" title="James Richards ">James Richards</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Fri</span><span class="clstbl__resultrow__time">4:00pm - 6:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.717</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -208px transparent; " title="60% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-5', 'clip-section', 'fin3320.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-5', 'clip-syllabus', 'fin3320.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-5', 'clip-textbooks', 'fin3320.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-5', 'clip-pcv', 'fin3320.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-6" data-id="fin3320.003.13s" onclick="open_subrow(event, 'r-6', 'clip-section', 'fin3320.003.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3320.003.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin3320.003.13s" title="View details for section fin3320.003.13s" class="stopbubble">FIN 3320.003</a><br />25864</td><td>BUSINESS FINANCE (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/hxm111930 class="ptools-popover" title="Harini Mittal ">Harini Mittal</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Mon & Wed</span><span class="clstbl__resultrow__time">2:30pm - 3:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.901</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -240px transparent; " title="80% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-6', 'clip-section', 'fin3320.003.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-6', 'clip-syllabus', 'fin3320.003.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-6', 'clip-textbooks', 'fin3320.003.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-6', 'clip-pcv', 'fin3320.003.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-7" data-id="fin3320.004.13s" onclick="open_subrow(event, 'r-7', 'clip-section', 'fin3320.004.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3320.004.13s odd" ><td>13S<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/fin3320.004.13s" title="View details for section fin3320.004.13s" class="stopbubble">FIN 3320.004</a><br />25865</td><td>BUSINESS FINANCE (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/rcb013000 class="ptools-popover" title="Robert Bender ">Robert Bender</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Mon & Wed</span><span class="clstbl__resultrow__time">4:00pm - 5:15pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.115</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -320px transparent; " title="100% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-7', 'clip-section', 'fin3320.004.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-7', 'clip-syllabus', 'fin3320.004.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-7', 'clip-textbooks', 'fin3320.004.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-7', 'clip-pcv', 'fin3320.004.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-8" data-id="fin3320.002.13s" onclick="open_subrow(event, 'r-8', 'clip-section', 'fin3320.002.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3320.002.13s even" ><td>13S<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/fin3320.002.13s" title="View details for section fin3320.002.13s" class="stopbubble">FIN 3320.002</a><br />25863</td><td>BUSINESS FINANCE (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/wxs091020 class="ptools-popover" title="Wenyun Shi ">Wenyun Shi</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Mon & Wed</span><span class="clstbl__resultrow__time">10:00am - 11:15am</span>
+<div class="clstbl__resultrow__location">JSOM 1.110</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -320px transparent; " title="100% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-8', 'clip-section', 'fin3320.002.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-8', 'clip-syllabus', 'fin3320.002.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-8', 'clip-textbooks', 'fin3320.002.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-8', 'clip-pcv', 'fin3320.002.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-9" data-id="fin3320.005.13s" onclick="open_subrow(event, 'r-9', 'clip-section', 'fin3320.005.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3320.005.13s odd" ><td>13S<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/fin3320.005.13s" title="View details for section fin3320.005.13s" class="stopbubble">FIN 3320.005</a><br />25866</td><td>BUSINESS FINANCE (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/jrr013500 class="ptools-popover" title="James Richards ">James Richards</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Tues & Thurs</span><span class="clstbl__resultrow__time">11:30am - 12:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.106</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -320px transparent; " title="100% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-9', 'clip-section', 'fin3320.005.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-9', 'clip-syllabus', 'fin3320.005.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-9', 'clip-textbooks', 'fin3320.005.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-9', 'clip-pcv', 'fin3320.005.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-10" data-id="fin3320.006.13s" onclick="open_subrow(event, 'r-10', 'clip-section', 'fin3320.006.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3320.006.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin3320.006.13s" title="View details for section fin3320.006.13s" class="stopbubble">FIN 3320.006</a><br />25867</td><td>BUSINESS FINANCE (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/jrr013500 class="ptools-popover" title="James Richards ">James Richards</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Tues & Thurs</span><span class="clstbl__resultrow__time">4:00pm - 5:15pm</span>
+<div class="clstbl__resultrow__location">JSOM 1.117</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -304px transparent; " title="100% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-10', 'clip-section', 'fin3320.006.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-10', 'clip-syllabus', 'fin3320.006.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-10', 'clip-pcv', 'fin3320.006.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-11" data-id="fin3320.5e1.13s" onclick="open_subrow(event, 'r-11', 'clip-section', 'fin3320.5e1.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3320.5e1.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin3320.5e1.13s" title="View details for section fin3320.5e1.13s" class="stopbubble">FIN 3320.5E1</a><br />25868</td><td>BUSINESS FINANCE (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/jrr013500 class="ptools-popover" title="James Richards ">James Richards</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Wed</span><span class="clstbl__resultrow__time">7:15pm - 10:00pm</span>
+<div class="clstbl__resultrow__location">CHEC 219</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -176px transparent; " title="50% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-11', 'clip-section', 'fin3320.5e1.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-11', 'clip-syllabus', 'fin3320.5e1.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-11', 'clip-pcv', 'fin3320.5e1.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-12" data-id="fin3320.501.13s" onclick="open_subrow(event, 'r-12', 'clip-section', 'fin3320.501.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3320.501.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin3320.501.13s" title="View details for section fin3320.501.13s" class="stopbubble">FIN 3320.501</a><br />25869</td><td>BUSINESS FINANCE (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/hxm111930 class="ptools-popover" title="Harini Mittal ">Harini Mittal</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Wed</span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">ECSS 2.201</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -128px transparent; " title="40% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-12', 'clip-section', 'fin3320.501.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-12', 'clip-syllabus', 'fin3320.501.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-12', 'clip-textbooks', 'fin3320.501.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-12', 'clip-pcv', 'fin3320.501.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-13" data-id="fin3320.502.13s" onclick="open_subrow(event, 'r-13', 'clip-section', 'fin3320.502.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3320.502.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin3320.502.13s" title="View details for section fin3320.502.13s" class="stopbubble">FIN 3320.502</a><br />25870</td><td>BUSINESS FINANCE (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/gad075000 class="ptools-popover" title="George DeCourcy ">George DeCourcy</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Tues</span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.717</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -240px transparent; " title="80% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-13', 'clip-section', 'fin3320.502.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-13', 'clip-syllabus', 'fin3320.502.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-13', 'clip-textbooks', 'fin3320.502.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-13', 'clip-pcv', 'fin3320.502.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-14" data-id="fin3330.001.13s" onclick="open_subrow(event, 'r-14', 'clip-section', 'fin3330.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3330.001.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin3330.001.13s" title="View details for section fin3330.001.13s" class="stopbubble">FIN 3330.001</a><br />25871</td><td>PERSONAL FINANCIAL PLANNING (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/jhp102000 class="ptools-popover" title="Jared Pickens ">Jared Pickens</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Tues & Thurs</span><span class="clstbl__resultrow__time">2:30pm - 3:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.106</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -224px transparent; " title="70% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-14', 'clip-section', 'fin3330.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-14', 'clip-syllabus', 'fin3330.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-14', 'clip-textbooks', 'fin3330.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-14', 'clip-pcv', 'fin3330.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-15" data-id="fin3340.001.13s" onclick="open_subrow(event, 'r-15', 'clip-section', 'fin3340.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3340.001.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin3340.001.13s" title="View details for section fin3340.001.13s" class="stopbubble">FIN 3340.001</a><br />25872</td><td>REGULATION OF BUSINESS AND FINANCIAL MARKETS (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/lmg106020 class="ptools-popover" title="Lisa Gibson ">Lisa Gibson</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Tues</span><span class="clstbl__resultrow__time">4:00pm - 6:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.904</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -304px transparent; " title="100% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-15', 'clip-section', 'fin3340.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-15', 'clip-syllabus', 'fin3340.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-15', 'clip-pcv', 'fin3340.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-16" data-id="fin3340.002.13s" onclick="open_subrow(event, 'r-16', 'clip-section', 'fin3340.002.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3340.002.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin3340.002.13s" title="View details for section fin3340.002.13s" class="stopbubble">FIN 3340.002</a><br />25873</td><td>REGULATION OF BUSINESS AND FINANCIAL MARKETS (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/plewin class="ptools-popover" title="Peter Lewin ">Peter Lewin</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Mon & Wed</span><span class="clstbl__resultrow__time">10:00am - 11:15am</span>
+<div class="clstbl__resultrow__location">JSOM 2.115</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -64px transparent; " title="20% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-16', 'clip-section', 'fin3340.002.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-16', 'clip-syllabus', 'fin3340.002.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-16', 'clip-pcv', 'fin3340.002.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-17" data-id="fin3350.001.13s" onclick="open_subrow(event, 'r-17', 'clip-section', 'fin3350.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3350.001.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin3350.001.13s" title="View details for section fin3350.001.13s" class="stopbubble">FIN 3350.001</a><br />25874</td><td>FINANCIAL MARKETS & INSTITUTIO (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/plewin class="ptools-popover" title="Peter Lewin ">Peter Lewin</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Tues & Thurs</span><span class="clstbl__resultrow__time">10:00am - 11:15am</span>
+<div class="clstbl__resultrow__location">JSOM 1.117</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -128px transparent; " title="40% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-17', 'clip-section', 'fin3350.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-17', 'clip-syllabus', 'fin3350.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-17', 'clip-pcv', 'fin3350.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-18" data-id="fin3350.501.13s" onclick="open_subrow(event, 'r-18', 'clip-section', 'fin3350.501.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3350.501.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin3350.501.13s" title="View details for section fin3350.501.13s" class="stopbubble">FIN 3350.501</a><br />25875</td><td>FINANCIAL MARKETS & INSTITUTIO (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/axg119030 class="ptools-popover" title="Ayfer Gurun ">Ayfer Gurun</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Wed</span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.901</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -288px transparent; " title="90% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-18', 'clip-section', 'fin3350.501.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-18', 'clip-syllabus', 'fin3350.501.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-18', 'clip-pcv', 'fin3350.501.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-19" data-id="fin3360.001.13s" onclick="open_subrow(event, 'r-19', 'clip-section', 'fin3360.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3360.001.13s odd" ><td>13S<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/fin3360.001.13s" title="View details for section fin3360.001.13s" class="stopbubble">FIN 3360.001</a><br />25876</td><td>ENTREPRENEURIAL FINANCE (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/mfp013000 class="ptools-popover" title="Madison Pedigo ">Madison Pedigo</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Mon & Wed</span><span class="clstbl__resultrow__time">4:00pm - 5:15pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.103</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -272px transparent; " title="80% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-19', 'clip-section', 'fin3360.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-19', 'clip-syllabus', 'fin3360.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-19', 'clip-textbooks', 'fin3360.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-19', 'clip-pcv', 'fin3360.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-20" data-id="fin3365.001.13s" onclick="open_subrow(event, 'r-20', 'clip-section', 'fin3365.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3365.001.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin3365.001.13s" title="View details for section fin3365.001.13s" class="stopbubble">FIN 3365.001</a><br />25877</td><td>REAL ESTATE FINANCE (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/gad075000 class="ptools-popover" title="George DeCourcy ">George DeCourcy</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Mon & Wed</span><span class="clstbl__resultrow__time">11:30am - 12:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 1.117</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -128px transparent; " title="40% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-20', 'clip-section', 'fin3365.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-20', 'clip-syllabus', 'fin3365.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-20', 'clip-pcv', 'fin3365.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-21" data-id="fin3370.001.13s" onclick="open_subrow(event, 'r-21', 'clip-section', 'fin3370.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3370.001.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin3370.001.13s" title="View details for section fin3370.001.13s" class="stopbubble">FIN 3370.001</a><br />25878</td><td>INSURANCE & RISK MANAGEMENT (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/dmc012300 class="ptools-popover" title="David Cordell ">David Cordell</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Mon & Wed</span><span class="clstbl__resultrow__time">10:00am - 11:15am</span>
+<div class="clstbl__resultrow__location">JSOM 2.801</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -208px transparent; " title="70% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-21', 'clip-section', 'fin3370.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-21', 'clip-syllabus', 'fin3370.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-21', 'clip-textbooks', 'fin3370.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-21', 'clip-pcv', 'fin3370.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-22" data-id="fin3380.001.13s" onclick="open_subrow(event, 'r-22', 'clip-section', 'fin3380.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3380.001.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin3380.001.13s" title="View details for section fin3380.001.13s" class="stopbubble">FIN 3380.001</a><br />25879</td><td>INTERNATIONAL FINANCIAL MGMT (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/axg119030 class="ptools-popover" title="Ayfer Gurun ">Ayfer Gurun</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Tues & Thurs</span><span class="clstbl__resultrow__time">1:00pm - 2:15pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.106</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -272px transparent; " title="80% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-22', 'clip-section', 'fin3380.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-22', 'clip-syllabus', 'fin3380.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-22', 'clip-textbooks', 'fin3380.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-22', 'clip-pcv', 'fin3380.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-23" data-id="fin3390.002.13s" onclick="open_subrow(event, 'r-23', 'clip-section', 'fin3390.002.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3390.002.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin3390.002.13s" title="View details for section fin3390.002.13s" class="stopbubble">FIN 3390.002</a><br />25881</td><td>INTRODUCTION TO FINANCIAL MODELING (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/ahe013000 class="ptools-popover" title="Amal El-Ashmawi ">Amal El-Ashmawi</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Tues & Thurs</span><span class="clstbl__resultrow__time">2:30pm - 3:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.801</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -240px transparent; " title="80% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-23', 'clip-section', 'fin3390.002.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-23', 'clip-syllabus', 'fin3390.002.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-23', 'clip-textbooks', 'fin3390.002.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-23', 'clip-pcv', 'fin3390.002.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-24" data-id="fin3390.003.13s" onclick="open_subrow(event, 'r-24', 'clip-section', 'fin3390.003.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3390.003.13s even" ><td>13S<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/fin3390.003.13s" title="View details for section fin3390.003.13s" class="stopbubble">FIN 3390.003</a><br />25882</td><td>INTRODUCTION TO FINANCIAL MODELING (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/ahe013000 class="ptools-popover" title="Amal El-Ashmawi ">Amal El-Ashmawi</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Mon & Wed</span><span class="clstbl__resultrow__time">1:00pm - 2:15pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.801</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -320px transparent; " title="100% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-24', 'clip-section', 'fin3390.003.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-24', 'clip-syllabus', 'fin3390.003.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-24', 'clip-pcv', 'fin3390.003.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-25" data-id="fin3390.501.13s" onclick="open_subrow(event, 'r-25', 'clip-section', 'fin3390.501.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3390.501.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin3390.501.13s" title="View details for section fin3390.501.13s" class="stopbubble">FIN 3390.501</a><br />25883</td><td>INTRODUCTION TO FINANCIAL MODELING (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/ahe013000 class="ptools-popover" title="Amal El-Ashmawi ">Amal El-Ashmawi</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Tues</span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.801</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -224px transparent; " title="70% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-25', 'clip-section', 'fin3390.501.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-25', 'clip-syllabus', 'fin3390.501.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-25', 'clip-textbooks', 'fin3390.501.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-25', 'clip-pcv', 'fin3390.501.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-26" data-id="fin3390.001.13s" onclick="open_subrow(event, 'r-26', 'clip-section', 'fin3390.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin3390.001.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin3390.001.13s" title="View details for section fin3390.001.13s" class="stopbubble">FIN 3390.001</a><br />25880</td><td>INTRODUCTION TO FINANCIAL MODELING (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/ahe013000 class="ptools-popover" title="Amal El-Ashmawi ">Amal El-Ashmawi</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Mon & Wed</span><span class="clstbl__resultrow__time">8:30am - 9:45am</span>
+<div class="clstbl__resultrow__location">JSOM 2.801</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -144px transparent; " title="50% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-26', 'clip-section', 'fin3390.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-26', 'clip-syllabus', 'fin3390.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-26', 'clip-textbooks', 'fin3390.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-26', 'clip-pcv', 'fin3390.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-27" data-id="fin4300.001.13s" onclick="open_subrow(event, 'r-27', 'clip-section', 'fin4300.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin4300.001.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin4300.001.13s" title="View details for section fin4300.001.13s" class="stopbubble">FIN 4300.001</a><br />25884</td><td>INVESTMENT MANAGEMENT (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/dmc012300 class="ptools-popover" title="David Cordell ">David Cordell</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Tues & Thurs</span><span class="clstbl__resultrow__time">10:00am - 11:15am</span>
+<div class="clstbl__resultrow__location">JSOM 2.801</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -176px transparent; " title="60% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-27', 'clip-section', 'fin4300.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-27', 'clip-syllabus', 'fin4300.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-27', 'clip-textbooks', 'fin4300.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-27', 'clip-pcv', 'fin4300.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-28" data-id="fin4300.002.13s" onclick="open_subrow(event, 'r-28', 'clip-section', 'fin4300.002.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin4300.002.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin4300.002.13s" title="View details for section fin4300.002.13s" class="stopbubble">FIN 4300.002</a><br />25885</td><td>INVESTMENT MANAGEMENT (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/jxl128031 class="ptools-popover" title="Jun Li ">Jun Li</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Mon & Wed</span><span class="clstbl__resultrow__time">10:00am - 11:15am</span>
+<div class="clstbl__resultrow__location">JSOM 1.117</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -80px transparent; " title="30% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-28', 'clip-section', 'fin4300.002.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-28', 'clip-syllabus', 'fin4300.002.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-28', 'clip-textbooks', 'fin4300.002.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-28', 'clip-pcv', 'fin4300.002.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-29" data-id="fin4300.501.13s" onclick="open_subrow(event, 'r-29', 'clip-section', 'fin4300.501.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin4300.501.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin4300.501.13s" title="View details for section fin4300.501.13s" class="stopbubble">FIN 4300.501</a><br />25886</td><td>INVESTMENT MANAGEMENT (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/jxl128031 class="ptools-popover" title="Jun Li ">Jun Li</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Mon</span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">ECSS 2.306</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -112px transparent; " title="40% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-29', 'clip-section', 'fin4300.501.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-29', 'clip-syllabus', 'fin4300.501.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-29', 'clip-textbooks', 'fin4300.501.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-29', 'clip-pcv', 'fin4300.501.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-30" data-id="fin4310.002.13s" onclick="open_subrow(event, 'r-30', 'clip-section', 'fin4310.002.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin4310.002.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin4310.002.13s" title="View details for section fin4310.002.13s" class="stopbubble">FIN 4310.002</a><br />25888</td><td>APPLIED CORPORATE FINANCE (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/nxb043000 class="ptools-popover" title="Nina Baranchuk ">Nina Baranchuk</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Tues</span><span class="clstbl__resultrow__time">4:00pm - 6:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.107</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -96px transparent; " title="30% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-30', 'clip-section', 'fin4310.002.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-30', 'clip-syllabus', 'fin4310.002.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-30', 'clip-pcv', 'fin4310.002.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-31" data-id="fin4320.501.13s" onclick="open_subrow(event, 'r-31', 'clip-section', 'fin4320.501.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin4320.501.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin4320.501.13s" title="View details for section fin4320.501.13s" class="stopbubble">FIN 4320.501</a><br />25889</td><td>MGMT OF FINANCIAL INSTITUTIONS (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/sxs024500 class="ptools-popover" title="Scott Sanderson ">Scott Sanderson</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Thurs</span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.903</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -64px transparent; " title="20% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-31', 'clip-section', 'fin4320.501.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-31', 'clip-syllabus', 'fin4320.501.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-31', 'clip-pcv', 'fin4320.501.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-32" data-id="fin4340.501.13s" onclick="open_subrow(event, 'r-32', 'clip-section', 'fin4340.501.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin4340.501.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin4340.501.13s" title="View details for section fin4340.501.13s" class="stopbubble">FIN 4340.501</a><br />25891</td><td>OPTIONS & FUTURE MARKETS (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/axs125732 class="ptools-popover" title="Alessio Saretto ">Alessio Saretto</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Wed</span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.112</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -80px transparent; " title="30% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-32', 'clip-section', 'fin4340.501.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-32', 'clip-pcv', 'fin4340.501.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-33" data-id="fin4380.501.13s" onclick="open_subrow(event, 'r-33', 'clip-section', 'fin4380.501.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin4380.501.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin4380.501.13s" title="View details for section fin4380.501.13s" class="stopbubble">FIN 4380.501</a><br />26336</td><td>PRACTICUM IN INVESTMENT MGMT (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/bxf094000 class="ptools-popover" title="Benjamin Friedman ">Benjamin Friedman</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Thurs</span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.103</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -128px transparent; " title="40% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-33', 'clip-section', 'fin4380.501.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-33', 'clip-pcv', 'fin4380.501.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-34" data-id="fin4v90.002.13s" onclick="open_subrow(event, 'r-34', 'clip-section', 'fin4v90.002.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin4v90.002.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin4v90.002.13s" title="View details for section fin4v90.002.13s" class="stopbubble">FIN 4V90.002</a><br />27401</td><td>INDIVIDUAL STUDY FINANCE (1-3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/jhp102000 class="ptools-popover" title="Jared Pickens ">Jared Pickens</a>
+</td><td><div class=clstbl__resultrow__schedule--unavailable>Schedule Not Posted</div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -32px transparent; " title="10% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-34', 'clip-section', 'fin4v90.002.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-34', 'clip-pcv', 'fin4v90.002.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-35" data-id="fin6300.001.13s" onclick="open_subrow(event, 'r-35', 'clip-section', 'fin6300.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6300.001.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6300.001.13s" title="View details for section fin6300.001.13s" class="stopbubble">FIN 6300.001</a><br />25897</td><td>Personal Finance (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/rxg112530 class="ptools-popover" title="Randall Guttery ">Randall Guttery</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Mon</span><span class="clstbl__resultrow__time">4:00pm - 6:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.803</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -48px transparent; " title="20% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-35', 'clip-section', 'fin6300.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-35', 'clip-syllabus', 'fin6300.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-35', 'clip-pcv', 'fin6300.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-36" data-id="fin6300.0i2.13s" onclick="open_subrow(event, 'r-36', 'clip-section', 'fin6300.0i2.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6300.0i2.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6300.0i2.13s" title="View details for section fin6300.0i2.13s" class="stopbubble">FIN 6300.0I2</a><br />25898</td><td>Personal Finance (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/jhp102000 class="ptools-popover" title="Jared Pickens ">Jared Pickens</a>
+</td><td><div class=clstbl__resultrow__schedule--unavailable>Schedule Not Posted</div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -288px transparent; " title="90% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-36', 'clip-section', 'fin6300.0i2.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-36', 'clip-syllabus', 'fin6300.0i2.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-36', 'clip-pcv', 'fin6300.0i2.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-37" data-id="fin6301.001.13s" onclick="open_subrow(event, 'r-37', 'clip-section', 'fin6301.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6301.001.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6301.001.13s" title="View details for section fin6301.001.13s" class="stopbubble">FIN 6301.001</a><br />25713</td><td>Financial Management (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/nxb043000 class="ptools-popover" title="Nina Baranchuk ">Nina Baranchuk</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Thurs</span><span class="clstbl__resultrow__time">1:00pm - 3:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 1.102</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -112px transparent; " title="30% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-37', 'clip-section', 'fin6301.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-37', 'clip-syllabus', 'fin6301.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-37', 'clip-textbooks', 'fin6301.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-37', 'clip-pcv', 'fin6301.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-38" data-id="fin6301.504.13s" onclick="open_subrow(event, 'r-38', 'clip-section', 'fin6301.504.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6301.504.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6301.504.13s" title="View details for section fin6301.504.13s" class="stopbubble">FIN 6301.504</a><br />25717</td><td>Financial Management (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/mjr071000 class="ptools-popover" title="Michael Rebello ">Michael Rebello</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Thurs</span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.804</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -48px transparent; " title="10% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-38', 'clip-section', 'fin6301.504.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-38', 'clip-syllabus', 'fin6301.504.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-38', 'clip-textbooks', 'fin6301.504.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-38', 'clip-pcv', 'fin6301.504.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-39" data-id="fin6301.502.13s" onclick="open_subrow(event, 'r-39', 'clip-section', 'fin6301.502.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6301.502.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6301.502.13s" title="View details for section fin6301.502.13s" class="stopbubble">FIN 6301.502</a><br />25715</td><td>Financial Management (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/hjw100020 class="ptools-popover" title="Harry Wells ">Harry Wells</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Tues</span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 1.102</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -304px transparent; " title="90% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-39', 'clip-section', 'fin6301.502.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-39', 'clip-syllabus', 'fin6301.502.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-39', 'clip-textbooks', 'fin6301.502.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-39', 'clip-pcv', 'fin6301.502.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-40" data-id="fin6301.002.13s" onclick="open_subrow(event, 'r-40', 'clip-section', 'fin6301.002.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6301.002.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6301.002.13s" title="View details for section fin6301.002.13s" class="stopbubble">FIN 6301.002</a><br />25899</td><td>Financial Management (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/mxw116330 class="ptools-popover" title="Malcolm Wardlaw ">Malcolm Wardlaw</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Tues</span><span class="clstbl__resultrow__time">4:00pm - 6:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 1.102</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -256px transparent; " title="80% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-40', 'clip-section', 'fin6301.002.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-40', 'clip-syllabus', 'fin6301.002.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-40', 'clip-textbooks', 'fin6301.002.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-40', 'clip-pcv', 'fin6301.002.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-41" data-id="fin6301.0i1.13s" onclick="open_subrow(event, 'r-41', 'clip-section', 'fin6301.0i1.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6301.0i1.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6301.0i1.13s" title="View details for section fin6301.0i1.13s" class="stopbubble">FIN 6301.0I1</a><br />25900</td><td>Financial Management (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/tday class="ptools-popover" title="Theodore Day ">Theodore Day</a>
+</td><td><div class=clstbl__resultrow__schedule--unavailable>Schedule Not Posted</div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -320px transparent; " title="100% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-41', 'clip-section', 'fin6301.0i1.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-41', 'clip-syllabus', 'fin6301.0i1.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-41', 'clip-textbooks', 'fin6301.0i1.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-41', 'clip-pcv', 'fin6301.0i1.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-42" data-id="fin6301.501.13s" onclick="open_subrow(event, 'r-42', 'clip-section', 'fin6301.501.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6301.501.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6301.501.13s" title="View details for section fin6301.501.13s" class="stopbubble">FIN 6301.501</a><br />25714</td><td>Financial Management (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/mxw116330 class="ptools-popover" title="Malcolm Wardlaw ">Malcolm Wardlaw</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Mon</span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.112</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -320px transparent; " title="100% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-42', 'clip-section', 'fin6301.501.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-42', 'clip-syllabus', 'fin6301.501.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-42', 'clip-textbooks', 'fin6301.501.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-42', 'clip-pcv', 'fin6301.501.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-43" data-id="fin6306.001.13s" onclick="open_subrow(event, 'r-43', 'clip-section', 'fin6306.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6306.001.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6306.001.13s" title="View details for section fin6306.001.13s" class="stopbubble">FIN 6306.001</a><br />25902</td><td>Quantitative Methods in Finance (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/kls110030 class="ptools-popover" title="Kenneth Smith ">Kenneth Smith</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Wed</span><span class="clstbl__resultrow__time">1:00pm - 3:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.902</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -288px transparent; " title="90% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-43', 'clip-section', 'fin6306.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-43', 'clip-syllabus', 'fin6306.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-43', 'clip-pcv', 'fin6306.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-44" data-id="fin6306.501.13s" onclick="open_subrow(event, 'r-44', 'clip-section', 'fin6306.501.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6306.501.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6306.501.13s" title="View details for section fin6306.501.13s" class="stopbubble">FIN 6306.501</a><br />25904</td><td>Quantitative Methods in Finance (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/kls110030 class="ptools-popover" title="Kenneth Smith ">Kenneth Smith</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Mon</span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.714</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -80px transparent; " title="30% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-44', 'clip-section', 'fin6306.501.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-44', 'clip-syllabus', 'fin6306.501.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-44', 'clip-textbooks', 'fin6306.501.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-44', 'clip-pcv', 'fin6306.501.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-45" data-id="fin6306.502.13s" onclick="open_subrow(event, 'r-45', 'clip-section', 'fin6306.502.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6306.502.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6306.502.13s" title="View details for section fin6306.502.13s" class="stopbubble">FIN 6306.502</a><br />25905</td><td>Quantitative Methods in Finance (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/kls110030 class="ptools-popover" title="Kenneth Smith ">Kenneth Smith</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Wed</span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.902</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -160px transparent; " title="50% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-45', 'clip-section', 'fin6306.502.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-45', 'clip-syllabus', 'fin6306.502.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-45', 'clip-pcv', 'fin6306.502.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-46" data-id="fin6306.503.13s" onclick="open_subrow(event, 'r-46', 'clip-section', 'fin6306.503.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6306.503.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6306.503.13s" title="View details for section fin6306.503.13s" class="stopbubble">FIN 6306.503</a><br />25906</td><td>Quantitative Methods in Finance (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/kls110030 class="ptools-popover" title="Kenneth Smith ">Kenneth Smith</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Thurs</span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.902</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -256px transparent; " title="80% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-46', 'clip-section', 'fin6306.503.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-46', 'clip-syllabus', 'fin6306.503.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-46', 'clip-pcv', 'fin6306.503.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-47" data-id="fin6308.001.13s" onclick="open_subrow(event, 'r-47', 'clip-section', 'fin6308.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6308.001.13s odd" ><td>13S<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/fin6308.001.13s" title="View details for section fin6308.001.13s" class="stopbubble">FIN 6308.001</a><br />25907</td><td>Regulation of Business and Financial Markets (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/plewin class="ptools-popover" title="Peter Lewin ">Peter Lewin</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Mon</span><span class="clstbl__resultrow__time">4:00pm - 6:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.717</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -320px transparent; " title="100% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-47', 'clip-section', 'fin6308.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-47', 'clip-syllabus', 'fin6308.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-47', 'clip-pcv', 'fin6308.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-48" data-id="fin6308.0i1.13s" onclick="open_subrow(event, 'r-48', 'clip-section', 'fin6308.0i1.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6308.0i1.13s even" ><td>13S<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/fin6308.0i1.13s" title="View details for section fin6308.0i1.13s" class="stopbubble">FIN 6308.0I1</a><br />25908</td><td>Regulation of Business and Financial Markets (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/lmg106020 class="ptools-popover" title="Lisa Gibson ">Lisa Gibson</a>
+</td><td><div class=clstbl__resultrow__schedule--unavailable>Schedule Not Posted</div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -320px transparent; " title="100% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-48', 'clip-section', 'fin6308.0i1.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-48', 'clip-syllabus', 'fin6308.0i1.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-48', 'clip-textbooks', 'fin6308.0i1.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-48', 'clip-pcv', 'fin6308.0i1.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-49" data-id="fin6310.002.13s" onclick="open_subrow(event, 'r-49', 'clip-section', 'fin6310.002.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6310.002.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6310.002.13s" title="View details for section fin6310.002.13s" class="stopbubble">FIN 6310.002</a><br />25910</td><td>Investment Management (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/axo101000 class="ptools-popover" title="Arzu Ozoguz ">Arzu Ozoguz</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Tues</span><span class="clstbl__resultrow__time">4:00pm - 6:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 1.110</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -288px transparent; " title="90% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-49', 'clip-section', 'fin6310.002.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-49', 'clip-syllabus', 'fin6310.002.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-49', 'clip-pcv', 'fin6310.002.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-50" data-id="fin6310.003.13s" onclick="open_subrow(event, 'r-50', 'clip-section', 'fin6310.003.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6310.003.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6310.003.13s" title="View details for section fin6310.003.13s" class="stopbubble">FIN 6310.003</a><br />25911</td><td>Investment Management (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/axo101000 class="ptools-popover" title="Arzu Ozoguz ">Arzu Ozoguz</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Wed</span><span class="clstbl__resultrow__time">1:00pm - 3:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.717</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -320px transparent; " title="100% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-50', 'clip-section', 'fin6310.003.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-50', 'clip-syllabus', 'fin6310.003.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-50', 'clip-pcv', 'fin6310.003.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-51" data-id="fin6310.502.13s" onclick="open_subrow(event, 'r-51', 'clip-section', 'fin6310.502.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6310.502.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6310.502.13s" title="View details for section fin6310.502.13s" class="stopbubble">FIN 6310.502</a><br />25912</td><td>Investment Management (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/axo101000 class="ptools-popover" title="Arzu Ozoguz ">Arzu Ozoguz</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Mon</span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.722</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -224px transparent; " title="70% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-51', 'clip-section', 'fin6310.502.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-51', 'clip-syllabus', 'fin6310.502.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-51', 'clip-pcv', 'fin6310.502.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-52" data-id="fin6310.0i1.13s" onclick="open_subrow(event, 'r-52', 'clip-section', 'fin6310.0i1.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6310.0i1.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6310.0i1.13s" title="View details for section fin6310.0i1.13s" class="stopbubble">FIN 6310.0I1</a><br />25913</td><td>Investment Management (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/tday class="ptools-popover" title="Theodore Day ">Theodore Day</a>
+</td><td><div class=clstbl__resultrow__schedule--unavailable>Schedule Not Posted</div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -96px transparent; " title="30% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-52', 'clip-section', 'fin6310.0i1.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-52', 'clip-syllabus', 'fin6310.0i1.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-52', 'clip-pcv', 'fin6310.0i1.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-53" data-id="fin6311.001.13s" onclick="open_subrow(event, 'r-53', 'clip-section', 'fin6311.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6311.001.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6311.001.13s" title="View details for section fin6311.001.13s" class="stopbubble">FIN 6311.001</a><br />25914</td><td>Valuation Models and Practices (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/hjw100020 class="ptools-popover" title="Harry Wells ">Harry Wells</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Thurs</span><span class="clstbl__resultrow__time">4:00pm - 6:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.902</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -288px transparent; " title="90% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-53', 'clip-section', 'fin6311.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-53', 'clip-syllabus', 'fin6311.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-53', 'clip-textbooks', 'fin6311.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-53', 'clip-pcv', 'fin6311.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-54" data-id="fin6311.501.13s" onclick="open_subrow(event, 'r-54', 'clip-section', 'fin6311.501.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6311.501.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6311.501.13s" title="View details for section fin6311.501.13s" class="stopbubble">FIN 6311.501</a><br />25915</td><td>Valuation Models and Practices (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/hjw100020 class="ptools-popover" title="Harry Wells ">Harry Wells</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Mon</span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 1.110</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -288px transparent; " title="90% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-54', 'clip-section', 'fin6311.501.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-54', 'clip-syllabus', 'fin6311.501.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-54', 'clip-textbooks', 'fin6311.501.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-54', 'clip-pcv', 'fin6311.501.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-55" data-id="fin6315.0i1.13s" onclick="open_subrow(event, 'r-55', 'clip-section', 'fin6315.0i1.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6315.0i1.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6315.0i1.13s" title="View details for section fin6315.0i1.13s" class="stopbubble">FIN 6315.0I1</a><br />25728</td><td>Entrepreneurial Finance (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/mfp013000 class="ptools-popover" title="Madison Pedigo ">Madison Pedigo</a>
+</td><td><div class=clstbl__resultrow__schedule--unavailable>Schedule Not Posted</div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -160px transparent; " title="50% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-55', 'clip-section', 'fin6315.0i1.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-55', 'clip-syllabus', 'fin6315.0i1.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-55', 'clip-pcv', 'fin6315.0i1.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-56" data-id="fin6316.001.13s" onclick="open_subrow(event, 'r-56', 'clip-section', 'fin6316.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6316.001.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6316.001.13s" title="View details for section fin6316.001.13s" class="stopbubble">FIN 6316.001</a><br />25727</td><td>Private Equity Finance (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/spring8 class="ptools-popover" title="David Springate ">David Springate</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Wed</span><span class="clstbl__resultrow__time">4:00pm - 6:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.902</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -144px transparent; " title="40% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-56', 'clip-section', 'fin6316.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-56', 'clip-syllabus', 'fin6316.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-56', 'clip-pcv', 'fin6316.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-57" data-id="fin6320.001.13s" onclick="open_subrow(event, 'r-57', 'clip-section', 'fin6320.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6320.001.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6320.001.13s" title="View details for section fin6320.001.13s" class="stopbubble">FIN 6320.001</a><br />25916</td><td>Financial Markets and Institutions (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/hxx110930 class="ptools-popover" title="Han (Victor) Xia ">Han (Victor) Xia</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Tues</span><span class="clstbl__resultrow__time">1:00pm - 3:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 1.102</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -176px transparent; " title="60% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-57', 'clip-section', 'fin6320.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-57', 'clip-textbooks', 'fin6320.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-57', 'clip-pcv', 'fin6320.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-58" data-id="fin6320.501.13s" onclick="open_subrow(event, 'r-58', 'clip-section', 'fin6320.501.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6320.501.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6320.501.13s" title="View details for section fin6320.501.13s" class="stopbubble">FIN 6320.501</a><br />25917</td><td>Financial Markets and Institutions (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/hxx110930 class="ptools-popover" title="Han (Victor) Xia ">Han (Victor) Xia</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Mon</span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.804</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -208px transparent; " title="60% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-58', 'clip-section', 'fin6320.501.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-58', 'clip-pcv', 'fin6320.501.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-59" data-id="fin6322.501.13s" onclick="open_subrow(event, 'r-59', 'clip-section', 'fin6322.501.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6322.501.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6322.501.13s" title="View details for section fin6322.501.13s" class="stopbubble">FIN 6322.501</a><br />25918</td><td>Real Estate Finance and Investment (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/gad075000 class="ptools-popover" title="George DeCourcy ">George DeCourcy</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Wed</span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 1.102</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -256px transparent; " title="80% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-59', 'clip-section', 'fin6322.501.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-59', 'clip-syllabus', 'fin6322.501.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-59', 'clip-pcv', 'fin6322.501.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-60" data-id="fin6350.001.13s" onclick="open_subrow(event, 'r-60', 'clip-section', 'fin6350.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6350.001.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6350.001.13s" title="View details for section fin6350.001.13s" class="stopbubble">FIN 6350.001</a><br />25919</td><td>Advanced Financial Management (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/carolyn class="ptools-popover" title="Carolyn Reichert ">Carolyn Reichert</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Mon</span><span class="clstbl__resultrow__time">1:00pm - 3:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.717</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -272px transparent; " title="80% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-60', 'clip-section', 'fin6350.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-60', 'clip-syllabus', 'fin6350.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-60', 'clip-textbooks', 'fin6350.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-60', 'clip-pcv', 'fin6350.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-61" data-id="fin6350.002.13s" onclick="open_subrow(event, 'r-61', 'clip-section', 'fin6350.002.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6350.002.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6350.002.13s" title="View details for section fin6350.002.13s" class="stopbubble">FIN 6350.002</a><br />25920</td><td>Advanced Financial Management (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/carolyn class="ptools-popover" title="Carolyn Reichert ">Carolyn Reichert</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Thurs</span><span class="clstbl__resultrow__time">4:00pm - 6:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 1.110</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -240px transparent; " title="70% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-61', 'clip-section', 'fin6350.002.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-61', 'clip-syllabus', 'fin6350.002.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-61', 'clip-textbooks', 'fin6350.002.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-61', 'clip-pcv', 'fin6350.002.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-62" data-id="fin6352.501.13s" onclick="open_subrow(event, 'r-62', 'clip-section', 'fin6352.501.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6352.501.13s even" ><td>13S<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/fin6352.501.13s" title="View details for section fin6352.501.13s" class="stopbubble">FIN 6352.501</a><br />25921</td><td>Financial Modeling (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/jxn125330 class="ptools-popover" title="Jeff Noland ">Jeff Noland</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Thurs</span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.717</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -320px transparent; " title="100% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-62', 'clip-section', 'fin6352.501.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-62', 'clip-syllabus', 'fin6352.501.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-62', 'clip-textbooks', 'fin6352.501.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-62', 'clip-pcv', 'fin6352.501.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-63" data-id="fin6360.001.13s" onclick="open_subrow(event, 'r-63', 'clip-section', 'fin6360.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6360.001.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6360.001.13s" title="View details for section fin6360.001.13s" class="stopbubble">FIN 6360.001</a><br />25923</td><td>Options and Futures Markets (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/axs125732 class="ptools-popover" title="Alessio Saretto ">Alessio Saretto</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Mon</span><span class="clstbl__resultrow__time">4:00pm - 6:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.714</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -176px transparent; " title="60% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-63', 'clip-section', 'fin6360.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-63', 'clip-textbooks', 'fin6360.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-63', 'clip-pcv', 'fin6360.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-64" data-id="fin6364.001.13s" onclick="open_subrow(event, 'r-64', 'clip-section', 'fin6364.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6364.001.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6364.001.13s" title="View details for section fin6364.001.13s" class="stopbubble">FIN 6364.001</a><br />25924</td><td>Advanced Investment Management (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/mxm115231 class="ptools-popover" title="Mark McNabb ">Mark McNabb</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Thurs</span><span class="clstbl__resultrow__time">1:00pm - 3:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 1.110</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -64px transparent; " title="20% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-64', 'clip-section', 'fin6364.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-64', 'clip-syllabus', 'fin6364.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-64', 'clip-textbooks', 'fin6364.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-64', 'clip-pcv', 'fin6364.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-65" data-id="fin6366.501.13s" onclick="open_subrow(event, 'r-65', 'clip-section', 'fin6366.501.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6366.501.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6366.501.13s" title="View details for section fin6366.501.13s" class="stopbubble">FIN 6366.501</a><br />25925</td><td>International Financial Management (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/axg119030 class="ptools-popover" title="Ayfer Gurun ">Ayfer Gurun</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Tues</span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.102</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -320px transparent; " title="100% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-65', 'clip-section', 'fin6366.501.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-65', 'clip-syllabus', 'fin6366.501.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-65', 'clip-textbooks', 'fin6366.501.13s', false, null, 'expandedrow'); return false;" href="" title="View Textbooks" class="stopbubble actionitem"><b>View Textbooks</b></a><a onclick="open_subrow(event, 'r-65', 'clip-pcv', 'fin6366.501.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-66" data-id="fin6375.001.13s" onclick="open_subrow(event, 'r-66', 'clip-section', 'fin6375.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6375.001.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6375.001.13s" title="View details for section fin6375.001.13s" class="stopbubble">FIN 6375.001</a><br />25926</td><td>Finance Workshop (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/hxx110930 class="ptools-popover" title="Han (Victor) Xia ">Han (Victor) Xia</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Fri</span><span class="clstbl__resultrow__time">1:00pm - 3:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.803</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -64px transparent; " title="20% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-66', 'clip-section', 'fin6375.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-66', 'clip-pcv', 'fin6375.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-67" data-id="fin6380.501.13s" onclick="open_subrow(event, 'r-67', 'clip-section', 'fin6380.501.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6380.501.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6380.501.13s" title="View details for section fin6380.501.13s" class="stopbubble">FIN 6380.501</a><br />25927</td><td>Practicum in Investment Management (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/mxm115231 class="ptools-popover" title="Mark McNabb ">Mark McNabb</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Thurs</span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.802</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -80px transparent; " title="30% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-67', 'clip-section', 'fin6380.501.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-67', 'clip-syllabus', 'fin6380.501.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-67', 'clip-pcv', 'fin6380.501.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-68" data-id="fin6v99.003.13s" onclick="open_subrow(event, 'r-68', 'clip-section', 'fin6v99.003.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6v99.003.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6v99.003.13s" title="View details for section fin6v99.003.13s" class="stopbubble">FIN 6V99.003</a><br />26515</td><td>Special Topics in Finance - <i>Numerical Methods for Finance</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/rxs079000 class="ptools-popover" title="Rajiv Shah ">Rajiv Shah</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Wed</span><span class="clstbl__resultrow__time">4:00pm - 6:45pm</span>
+<div class="clstbl__resultrow__location">SLC 1.202A</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -144px transparent; " title="40% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-68', 'clip-section', 'fin6v99.003.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-68', 'clip-syllabus', 'fin6v99.003.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-68', 'clip-pcv', 'fin6v99.003.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-69" data-id="fin6v99.002.13s" onclick="open_subrow(event, 'r-69', 'clip-section', 'fin6v99.002.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6v99.002.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6v99.002.13s" title="View details for section fin6v99.002.13s" class="stopbubble">FIN 6V99.002</a><br />25931</td><td>Special Topics in Finance - <i>Special Topics: Emerging Mkts</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/mxm115231 class="ptools-popover" title="Mark McNabb ">Mark McNabb</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Fri</span><span class="clstbl__resultrow__time">1:00pm - 3:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 1.102</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -16px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-69', 'clip-section', 'fin6v99.002.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-69', 'clip-syllabus', 'fin6v99.002.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-69', 'clip-pcv', 'fin6v99.002.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-70" data-id="fin6v99.001.13s" onclick="open_subrow(event, 'r-70', 'clip-section', 'fin6v99.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin6v99.001.13s even" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin6v99.001.13s" title="View details for section fin6v99.001.13s" class="stopbubble">FIN 6V99.001</a><br />25930</td><td>Special Topics in Finance - <i>Special Topics: Hedge Funds</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/dxh131130 class="ptools-popover" title="David Houston ">David Houston</a>
+<a href=http://coursebook.utdallas.edu/search/bxv130730 class="ptools-popover" title="Bernard Vonderhaar ">Bernard Vonderhaar</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Thurs</span><span class="clstbl__resultrow__time">4:00pm - 6:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.714</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -288px transparent; " title="90% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-70', 'clip-section', 'fin6v99.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-70', 'clip-syllabus', 'fin6v99.001.13s', false, null, 'expandedrow'); return false;" href="" title="View Syllabus" class="stopbubble actionitem"><b>View Syllabus</b></a><a onclick="open_subrow(event, 'r-70', 'clip-pcv', 'fin6v99.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a><a onclick="open_subrow(event, 'r-70', 'clip-pcv', 'fin6v99.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr><tr id="r-71" data-id="fin7340.001.13s" onclick="open_subrow(event, 'r-71', 'clip-section', 'fin7340.001.13s', true, 'section', 'expandedrow'); return false;" class="cb_row fin7340.001.13s odd" ><td>13S<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/fin7340.001.13s" title="View details for section fin7340.001.13s" class="stopbubble">FIN 7340.001</a><br />25932</td><td>Topics in Theoretical Corporate Finance (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/mxw116330 class="ptools-popover" title="Malcolm Wardlaw ">Malcolm Wardlaw</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day">Wed</span><span class="clstbl__resultrow__time">10:00am - 12:45pm</span>
+<div class="clstbl__resultrow__location">JSOM 2.803</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -64px transparent; " title="20% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-71', 'clip-section', 'fin7340.001.13s', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a><a onclick="open_subrow(event, 'r-71', 'clip-pcv', 'fin7340.001.13s', false, null, 'expandedrow'); return false;" href="" title="Instructor CV" class="stopbubble actionitem"><b>Instructor CV</b></a></td></tr></tbody></table>
+<div class="clear directaddress">The direct link to this search is: <a href="https://coursebook.utdallas.edu/search/searchresults/term_13s/cp_FIN/hasevaluation_1">https://coursebook.utdallas.edu/search/searchresults/term_13s/cp_FIN/hasevaluation_1</a><br />You can also: <a href="https://coursebook.utdallas.edu/reportmonkey/coursebook-export">Download this list in Excel format</a></div>  </div></div>
+			</div>
+
+		</div>
+	</div>
+		
+			
+			<div id="footer" class="hideforprint">
+				<div class="links">
+					<a href="https://www.utdallas.edu">UT Dallas Homepage</a> | <a href="https://provost.utdallas.edu">UT Dallas Office of the Provost</a> | <a href="https://coursebook.utdallas.edu">CourseBook</a> | <a href="mailto:ptg@utdallas.edu">Contact Provost&#39;s Technology Group</a> | <a href="https://www.utdallas.edu/privacy/">UT Dallas Privacy Policy</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="page-right" style="width: 8px; float: left;"></div>
+	<div style="clear:both;"></div>
+
+	<!-- bottom cap -->
+	<div id="page-bottomcap"></div>
+	
+	</div>
+
+	<!-- jslive: ajax javascript -->
+	<div id="jslive"></div>
+	
+
+	<script type="text/javascript" language="javascript">
+
+	  // focus cursor
+		$(".focushere").focus();
+
+	  // after the dom is loaded - execute these functions
+		$(document).ready( function()
+		{
+		  // buttons: add button styles 
+		  	$(".gbutton")
+		  	.mouseover( function() { $(this).css("backgroundPosition","0 -16px").css("cursor","pointer"); } )
+		  	.mouseout( function() { $(this).css("backgroundPosition","0 0"); } )
+		  	.mousedown( function() { $(this).css("backgroundPosition","0 -32px"); } )
+		  	.mouseup( function() { $(this).css("backgroundPosition","0 -16px"); } );
+
+		  // buttons: add button styles 
+		  	$(".gbutton2")
+		  	.mouseover( function() { $(this).css("backgroundPosition","0 -22px").css("cursor","pointer"); } )
+		  	.mouseout( function() { $(this).css("backgroundPosition","0 0"); } )
+		  	.mousedown( function() { $(this).css("backgroundPosition","0 -44px"); } )
+		  	.mouseup( function() { $(this).css("backgroundPosition","0 -22px"); } );
+
+		  // kill event propagation
+			$(".stopbubble").click( function(e){ e.stopPropagation();} );
+
+		  // table: add table sorting
+			$(".sortable").tablesorter();
+			//$(".sortable").tablesorter( {sortList: [[1,0], [2,0]] } );
+			//$(".sortable").tablesorter( {sortList: [[1,0], [2,0]], widgets: ['zebra'] } );
+			//$(".sortable").tablesorter( {widgets: ['zebra']} );
+			$(".sortable tr").mouseover( function() { $(this).addClass("hilite").css("cursor","pointer"); } ).mouseout( function() { $(this).removeClass("hilite"); } );
+
+		  // table: remove expanded rows before sorting table rows
+			$(".sortable th").mouseup( function() { $(".expandedrow").remove(); } );
+			
+		  // float divs
+		  	//$(".floatdiv").makeFloat({x:"current",y: 100});
+
+		  // ptools inits
+		  	ptools_init_popovers();
+
+			update_actions();
+		});
+		
+		function activate_buttons()
+		{
+		  // buttons: add button styles 
+		  	$(".gbutton")
+		  	.mouseover( function() { $(this).css("backgroundPosition","0 -16px").css("cursor","pointer"); } )
+		  	.mouseout( function() { $(this).css("backgroundPosition","0 0"); } )
+		  	.mousedown( function() { $(this).css("backgroundPosition","0 -32px"); } )
+		  	.mouseup( function() { $(this).css("backgroundPosition","0 -16px"); } );
+		}
+		
+
+
+
+		function do_cmd(cmd, id)
+		{
+			$('#jslive').load('https://coursebook.utdallas.edu/clips/clip-catbook_command.zog', { id: id, cmd: cmd });
+		}
+
+		var last_clip_catbook = 'clip-catbook_edit';
+		var last_clip_coursebook = 'clip-section';
+
+
+
+		function open_subrow(event, xparent_row_id, clip_type, data_id, toggle, subaction, row_class)
+		{
+			var parent_row_id = $(event.currentTarget).closest('tr').attr('id');	
+
+		  // get div ids
+			child_id = parent_row_id + 'child';
+			childcontent_id = parent_row_id + 'childcontent';
+			control_icon_id = parent_row_id + '-i';
+
+		  // switch clip type to last used
+			if (row_class == 'expandedrow catbook')
+			{
+				if (clip_type == 'last')
+			  	{
+					clip_type = last_clip_catbook;
+				}
+				else
+				{
+					last_clip_catbook = clip_type;
+				}
+		  	}
+		  	else
+		  	{
+				if (clip_type == 'last')
+			  	{
+					clip_type = last_clip_coursebook;
+				}
+				else
+				{
+					last_clip_coursebook = clip_type;
+				}
+		  	}
+
+		  // check if a child row exists, if not - create one
+			if ( $('#'+child_id).length === 0 )
+			{
+			  // close all other expanded rows
+				if (!event.shiftKey) 
+				{
+					$('.'+row_class).remove();
+				}
+	
+		  	  // insert child row below the parent_row
+		  	 	rows_in_parent = $('#'+parent_row_id).prop("cells").length;
+				$('#'+parent_row_id).after('<tr id="' + child_id + '" class="' + row_class + '"><td colspan="' + rows_in_parent + '" id="' +childcontent_id + '"><p align="center"><img src="/images/ajax-loader.gif" /></p></td></tr>');
+	
+			  // change +/- control to minus
+			  	$('#'+control_icon_id).attr({ src: "/images/foldicon-minus.gif"});
+
+			  // load clip file into child
+			  	$('#'+childcontent_id).load('https://coursebook.utdallas.edu/clips/'+clip_type+'.zog', { id: data_id, div: childcontent_id, subaction: subaction } );
+			}
+
+		  // if toggle is ON and row exists - remove the child row (i.e. toggle its display)
+			else if (toggle)
+			{
+			  // remove child row
+				$('#'+child_id).remove();
+				
+			  // change +/- control to plus
+			  	$('#'+control_icon_id).attr({ src: "/images/foldicon-plus.gif"});
+			}
+
+		  // if toggle is OFF and row exists - reload the child row
+			else
+			{
+			  // load clip file into child
+			  	$('#'+childcontent_id).load('https://coursebook.utdallas.edu/clips/'+clip_type+'.zog', { id: data_id, div: childcontent_id, subaction: subaction } ).hide().fadeIn('slow');
+			}
+
+		  // scroll to subrow
+		  	var scrollto=$('#'+childcontent_id).offset().top;
+			$('body,html,document').animate({ scrollTop: scrollto }, 1000);
+
+		}
+	
+		function dosearch(srch_type)
+		{
+			var srch = $('#srch').val().replace(/[^\w\-\.\!\: ]/gi, '');
+
+		  // advanced search - add items from selection lists
+			if (srch_type == 'adv')
+			{
+				$.each( $('.selectlist-list'), function(i, o) { v = $(o).val(); if (v != null) { srch += ' ' + v; }; } );
+				//$('.selectlist-list').each( function() { alert(this.val()); } );
+			}
+		  // catbook search
+			else if (srch_type == 'cat')
+			{
+			  // check for commands
+				var match = /(cmd_)([\w]*) ?([\w]*)?/.exec(srch);
+				if (match != null)
+				{
+					alertify.log(match[2]+" command received");
+					do_cmd(match[2], match[3]);
+					exit; 
+				}
+
+				srch += ' ' + $('#y').val();
+				$.each( $('.options'), function(i, o) { if ( $(o).is(':checked') ) { srch += ' ' + $(o).attr('id') } } );
+			}
+		  // standard coursebook search
+			else
+			{
+				srch += ' ' + $('#srch_term').val()
+				if ( $('#has_syllabus').is(':checked')==true ) srch += ' hassyllabus_1';
+				if ( $('#has_evaluation').is(':checked')==true ) srch += ' hasevaluation_1';
+				if ( $('#include_independent_study').is(':checked')==true ) srch += ' includeindstudy_1';
+			}
+			
+		  // substitute token words
+			srch = srch.replace(/^\s+|\s+$/g,'');
+			srch = srch.replace(/[, ]+/gi, '/');
+			srch = srch.replace(/benchmark/gi, 'kw_bm');
+			srch = srch.replace(/union/gi, 'kw_un');
+			srch = srch.replace(/select/gi, 'kw_sel');
+			srch = srch.replace(/insert/gi, 'kw_ins');
+			srch = srch.replace(/declare/gi, 'kw_dec');
+			srch = srch.replace(/drop/gi, 'kw_drp');
+			srch = srch.replace(/update/gi, 'kw_upd');
+			srch = srch.replace(/system/gi, 'kw_sys');
+			srch = srch.replace(/database/gi, 'kw_db');
+			srch = srch.replace(/data/gi, 'kw_dt');
+			
+		  // set url
+			if (srch_type == 'adv')
+			{
+				var srch_url = 'https://coursebook.utdallas.edu/' + srch + '#searchresults';
+			}
+			else
+			{			
+				var srch_url = 'https://coursebook.utdallas.edu/' + srch;
+			}
+
+		  // setup proxy redirect
+			$('#proxysearch').attr('action', srch_url);
+			$('#proxysearch').submit();
+		}
+
+  // get grade info. a = section_address,  n = notify
+  	function peek_grade(a, n)
+  	{
+		$.getJSON(
+			'https://coursebook.utdallas.edu/clips/clip-gradepeek.zog', 
+			{'a':a, 'n':n}, 
+			function(data)
+			{	
+				if (data.type == 'prompt')
+				{
+					// alertify.set({ buttonFocus: "ok", labels: { ok: "Notify Me", cancel: "Cancel"} } ); 
+					alertify.prompt(
+						data.response, 
+						data.default_value,
+						function (e, n) { 
+							if (e) { peek_grade(a, n) } 
+							else { console.log('x') } 
+						} 
+					);
+				}
+				else if (data.reponse_type == 'notify')
+				{
+					// alertify.set({ buttonFocus: "ok", labels: { ok: "OK" } } ); 
+					alertify.alert(data.response);
+				}
+				else
+				{
+					// alertify.set({ buttonFocus: "ok", labels: { ok: "OK" } } ); 
+					alertify.alert(data.response);						
+				}
+		});
+  	}
+
+
+
+  // confirm grade peek
+  	confirm_peek = function(e) {
+  		e.stopPropagation();
+
+		alertify.confirm(
+			"Warning: Viewing your grade will lock open evalautions for this class. Complete the class evaluations before viewing grade.", 
+			function () { peek_grade(' ', 'none') },
+			function() { alertify.error('Cancel'); }
+		);
+	}
+
+
+
+  // update dom document using ptools reply object
+	function ptools_dom_push(reply)
+	{
+		console.log(reply);
+		if (typeof reply.alert !== 'undefined' && reply.alert !== null) {
+			alertify.alert(reply.alert);
+		}
+		if (typeof reply.alert_success !== 'undefined' && reply.alert_success !== null) {
+			alertify.success(reply.alert_success);
+		}
+		if (typeof reply.alert_error !== 'undefined' && reply.alert_error !== null) {
+			alertify.error(reply.alert_error);
+		}
+
+		if (typeof reply.switchclass !== 'undefined' && reply.switchclass !== null) {
+			$.each(reply.switchclass, function (key, value) {
+				console.log('switchclass: ' + key + ', ' + value[0] + '->' +value[1]);
+
+				$(key).addClass(value[1]);
+				$(key).removeClass(value[0]);
+			});
+		}
+
+		if (typeof reply.addclass !== 'undefined' && reply.addclass !== null) {
+			$.each(reply.addclass, function (key, value) {
+				console.log('addclass: ' + key + ', ' + value);
+
+				$(key).addClass(value);
+			});
+		}
+
+		if (typeof reply.setdata !== 'undefined' && reply.setdata !== null) {
+			$.each(reply.setdata, function (key, value) {
+				console.log('setdata: ' + key + ', ' + value[0] + '->' +value[1]);
+
+				$(key).data(value[0], value[1]);
+				$(key).attr('data-'+value[0], value[1]);
+			});
+		}
+
+		if (typeof reply.replace !== 'undefined' && reply.replace !== null) {
+			$.each(reply.replace, function (key, value) { 
+				$(key).replaceWith(value);
+			});
+		}
+
+		if (typeof reply.after !== 'undefined' && reply.after !== null) {
+			$.each(reply.after, function (key, value) {
+				console.log('after: ' + key + ', ' + value);
+				$(key).after(value);
+			});
+		}
+
+		if (typeof reply.before !== 'undefined' && reply.before !== null) {
+			$.each(reply.before, function (key, value) {
+				console.log('before: ' + key + ', ' + value);
+				$(key).before(value);
+			});
+		}
+
+		if (typeof reply.append !== 'undefined' && reply.append !== null) {
+			$.each(reply.append, function (key, value) {
+				console.log('append: ' + key + ', ' + value);
+				$(key).append(value);
+			});
+		}
+
+		if (typeof reply.html !== 'undefined' && reply.html !== null) {
+			$.each(reply.html, function (key, value) {
+				console.log('html: ' + key + ', ' + value);
+				$(key).html(value);
+			});
+		}
+
+		if (typeof reply.remove !== 'undefined' && reply.remove !== null) {
+			$.each(reply.remove, function (key, value) {
+				console.log('remove: ' + key + ', ' + value);
+				$(key).remove();
+			});
+		}
+
+		if (typeof reply.attr !== 'undefined' && reply.attr !== null) {
+			$.each(reply.attr, function (key, value) {
+				console.log('attr: ' + key + ', ' + value[0] + '->' +value[1]);
+
+				$(key).attr(value[0], value[1]);
+			});
+		}
+
+		if (typeof reply.tinymce !== 'undefined' && reply.tinymce !== null) {
+			console.log('tinymce: init');
+			$('.notinit').tiny_init();
+		}
+
+			$(".stopbubble").click( function(e){ e.stopPropagation();} );
+	}
+
+  // update action links
+	function update_actions()
+	{
+	  // get list of section_addresses on page
+		var all_sections = $('.cb_row').map(function(){
+		    return $(this).data('id');
+		}).get();
+
+		$.ajax({
+            type: "POST",
+            url: 'https://coursebook.utdallas.edu/clips/clip-coursebook.zog',
+            data: {action: "update-actions", id: "data", data: all_sections},
+            success: function(data) {
+            	ptools_dom_push(data);
+            }
+        });
+	}
+
+
+	</script>
+
+
+</body>
+
+</html>

@@ -44,6 +44,8 @@ Utility Commands:
   3. rebuild [list of glob matches within /evals]
      Build datasets out of evalulation files for use in main program.
   
+  Also availible as --classcodes, --yearrange, --redownload, and --glob, respectively. 
+  
 Development Commands:
   dump
      Print a full list of saved variables to stdout
@@ -63,6 +65,8 @@ parser.add_argument('--redownload', action='store_true')
 parser.add_argument('--quiet','-q', action='store_true')
 parser.add_argument('--offline','-o', action='store_true')
 args = parser.parse_args()
+snc.args(args)
+sdat.args(args)
 #print(args)
 
 
@@ -464,7 +468,7 @@ def rebuild(rargs):
 	global instructors
 	instructors = dict()
 	classlist = dict()
-	sdat.rebuild(rargs,classlist,instructors,args.quiet)
+	sdat.rebuild(rargs,classlist,instructors)
 	pickleSave(instructors,'instructors')
 	pickleSave(classlist,'classlist')
 	

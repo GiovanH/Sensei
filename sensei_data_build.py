@@ -11,6 +11,10 @@ import queue
 import urllib3
 import sys,traceback
 
+def args(a):
+	global args
+	args = a
+
 def enums():
 	final = dict();
 	ues_label_enum = {
@@ -318,17 +322,17 @@ def dict_merge(dct, merge_dct):
 		else:
 			dct[k] = merge_dct[k]	
 	
-def rebuild(matches,classlist,instructors,quiet):
+def rebuild(matches,classlist,instructors):
 	# global instructors
 	# global classlist
 	# instructors = dict();
 	# classlist = dict();
 	#Example usage:  rebuild(["cs*","*.15f"])
 	i = 0
-	quiet = True
+	global args
 	for match in matches:
 		i = i + 1
-	if not quiet: print("Loaded " + str(i) + " individual globs. Processing...")
+	if not args.quiet: print("Loaded " + str(i) + " individual globs. Processing...")
 	
 	for match in matches:
 		imatch = "part/" + match.translate({ord('*'):'_',ord('/'):'.'}) + ".ipt"
@@ -336,7 +340,7 @@ def rebuild(matches,classlist,instructors,quiet):
 		try:
 			ipart = pickleLoad(imatch)
 			cpart = pickleLoad(cmatch)
-			if not quiet: print(imatch)
+			if not args.quiet: print(imatch)
 		except:
 			print('No cached data, building.')
 			ipart = dict()
@@ -346,13 +350,13 @@ def rebuild(matches,classlist,instructors,quiet):
 			j = 0
 			pbar = 0
 			files = glob.glob("evals/" + match)
-			if not quiet: print('Rebuilding data libraries for specific glob')
-			if not quiet: print('[########################################]\n[',end='')
+			if not args.quiet: print('Rebuilding data libraries for specific glob')
+			if not args.quiet: print('[########################################]\n[',end='')
 			for filename in files:
 				try:
 					i = i + 1
 					if (int(i/len(files)*40) > pbar):
-						if not quiet: print("#",end='')
+						if not args.quiet: print("#",end='')
 						sys.stdout.flush()
 					pbar = int(i/len(files)*40)
 					processFile(filename,cpart,ipart)
@@ -369,7 +373,7 @@ def rebuild(matches,classlist,instructors,quiet):
 					j = j + 1
 			pickleSave(ipart,imatch)
 			pickleSave(cpart,cmatch)
-			if not quiet: print(']')
+			if not args.quiet: print(']')
 		dict_merge(instructors,ipart)
 		dict_merge(classlist,cpart)
 

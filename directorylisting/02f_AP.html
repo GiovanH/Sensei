@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>UT Dallas CourseBook Class Search :: UT Dallas Class, Syllabus, Course Evaluation, and Textbook Database</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="UT Dallas CourseBook is an advanced tool for obtaining information about classes at The University of Texas at Dallas (UTD). Lookup course and catalog information, Class Syllabi (Syllabus), Course Evaluations, Instructor Evaluations, and submit syllabus files from a single central location." />
+	<meta name="keywords" content="UTD, University of Texas, University of Texas at Dallas, Dallas, Texas, CourseBook, Syllabi, Syllabus, Evaluations, Submit Syllabus, OpenSearch, Course Lookup">
+	<meta name="viewport" content="width=850">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/clems+ptools+alertify+chosen+eforms+clarus+catbook-orion+fira+font-awesome+tooltipster4"/>
+
+	<link rel="stylesheet" href="/js/jquery/jquery-ui-1.8.4.custom/css/smoothness/jquery-ui-1.8.4.custom.css" type="text/css" media="screen" />
+
+	<link rel="shortcut icon" type="image/ico" href="https://provost.utdallas.edu/images/utd-favicon-gs.ico" />
+
+	<script src="/js/jquery/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="/js/jquery/tablesorter-2.0.3/jquery.tablesorter.min.js" type="text/javascript"></script>
+	<script src="/js/jquery/form-2.69/jquery.form.js" type="text/javascript"></script>
+	<script src="/js/jquery/jquery-ui-1.8.4.custom/js/jquery-ui-1.8.4.custom.min.js" type="text/javascript"></script>
+
+
+	<!-- ckeditor - used by coursebook mail -->
+	<script src="//cdn.ckeditor.com/4.4.5/standard/ckeditor.js"></script>
+	<script src="//cdn.ckeditor.com/4.4.5/standard/adapters/jquery.js"></script>
+
+	<!-- catbook uses arbor graphs -->
+	<script src="/js/jquery/arbor-0.92/arbor.js" type="text/javascript"></script>
+	<script src="/js/jquery/arbor-0.92/arbor-tween.js" type="text/javascript"></script>
+	<script src="/js/jquery/arbor-0.92/graphics.js" type="text/javascript"></script>
+	<script src="/js/jquery/arbor-0.92/renderer.js" type="text/javascript"></script>
+
+	<script>var ptools_js=[]; var ptools_data={};</script>
+	<script src="/js/alertify+tooltipster+ptools?v=1" type="text/javascript"></script>
+	<script src="/js/wdiff/wdiff.js" type="text/javascript"></script>
+
+	<style>
+	.actionitem { display: block; }
+	</style>
+
+
+	<script>
+	  // google analytics 
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-19668321-9', 'auto'); ga('send', 'pageview');
+	</script>
+</head>
+
+<body id="main">
+	<div id="page-all">
+	<div id="page-left"></div>
+	<div id="page-middle">
+
+		<div id="header" class="hideforprint">
+			<div id="header-logo"><a href="https://www.utdallas.edu"><img src="/images/barsoom/header-logo.png" border="0" \></a></div>
+			<div id="header-title"><a href="https://coursebook.utdallas.edu">CourseBook</a></div>
+		</div>
+	
+		<div id="menus" class="hideforprint">
+<div id="lev1-menubar"><ul>
+<li class="lev1-active"><a href="http://coursebook.utdallas.edu/" id="level1-1" title="Course Tools">Course Tools</a></li>
+<li style="float: right; margin-right: 10px;" class="lev1-logout"><a href="https://coursebook.utdallas.edu/login/coursebook">login</a></li>
+</ul></div>
+<div id="lev2-menubar"><ul>
+<li class="lev2-active"><a href="http://coursebook.utdallas.edu" id="level2-1" title="CourseBook">CourseBook</a></li>
+<li><a href="https://coursebook.utdallas.edu/syllabus-policies" id="level2-2" title="Syllabus Policies">Syllabus Policies</a></li>
+<li><a href="http://provost.utdallas.edu/home/syllabus-templates" id="level2-3" title="Syllabus Templates">Syllabus Templates</a></li>
+</ul></div>
+</div>
+
+
+		<div id="page-content">
+			<div class="search-panel-div">
+		
+		<div class="search-panel-title-div2">
+			<b>CourseBook :: Class Search</b>
+		</div>
+
+		<div id='panel_1'>
+		
+			<div class="search-panel-menu-div2">				
+				<div id="tabset-menubar"><ul>
+					<div class="expandblock-tabs"><ul><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/aboutcoursebook">about</a></li><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/coursebookhelp">help</a></li><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/syllabussubmit">syllabus submission</a></li><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/advancedsearch">advanced search</a></li><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/myclasses">my classes</a></li><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/guidedsearch">guided search</a></li><li class="lev3-active lev3-first"><a href="https://coursebook.utdallas.edu/search">class search</a></li></ul></div>
+				</ul></div>
+			</div>
+	
+			<div class="search-panel-form-div" align="center">
+
+ 				<div id="topmsg"><div style="width: 600px; padding: 0 0 10px 0; margin: 0 auto; color: red; font-weight: bold; font-size: 12px; text-align: center; ">Summer 2017 final exams will be available for viewing after June 8, 2017</div></div>
+
+				<div id="classsearch">
+	
+					<form method="get" name="searchform" id="searchform" action="https://coursebook.utdallas.edu/coursebook" onsubmit="dosearch(); return false;" class="search-panel-form" >
+					
+						<div style="width: 455px; margin: 0 auto;">
+							<div style="float: left; width: 150px;">
+								<input type="text" size="20" id="srch" name="s" value="cp_AP" style="width: 140px;" class="focushere" />
+							</div>
+							
+							<div style="float: left; padding: 0 0 0 7px;">
+								<select class="term-popup" id="srch_term" name="t"><option value="term_all" >Search All Terms</option><option value="_2017" >---------------</option><option value="term_17f" >2017 Fall (17f)</option><option value="term_17u" >2017 Summer (17u)</option><option value="term_17s" >2017 Spring (17s)</option><option value="_2016" >---------------</option><option value="term_16f" >2016 Fall (16f)</option><option value="term_16u" >2016 Summer (16u)</option><option value="term_16s" >2016 Spring (16s)</option><option value="_2015" >---------------</option><option value="term_15f" >2015 Fall (15f)</option><option value="term_15u" >2015 Summer (15u)</option><option value="term_15s" >2015 Spring (15s)</option><option value="_2014" >---------------</option><option value="term_14f" >2014 Fall (14f)</option><option value="term_14u" >2014 Summer (14u)</option><option value="term_14s" >2014 Spring (14s)</option><option value="_2013" >---------------</option><option value="term_13f" >2013 Fall (13f)</option><option value="term_13u" >2013 Summer (13u)</option><option value="term_13s" >2013 Spring (13s)</option><option value="_2012" >---------------</option><option value="term_12f" >2012 Fall (12f)</option><option value="term_12u" >2012 Summer (12u)</option><option value="term_12s" >2012 Spring (12s)</option><option value="_2011" >---------------</option><option value="term_11f" >2011 Fall (11f)</option><option value="term_11u" >2011 Summer (11u)</option><option value="term_11s" >2011 Spring (11s)</option><option value="_2010" >---------------</option><option value="term_10f" >2010 Fall (10f)</option><option value="term_10u" >2010 Summer (10u)</option><option value="term_10s" >2010 Spring (10s)</option></select>			
+							</div>
+	
+							<div style="float: left; padding: 0 0 0 7px;">
+								<a class="button-link" href="" onclick="dosearch(); return false;" style="width: 100px">search</a>
+							</div>
+
+							<div style="clear: both;"></div>
+							
+							<div style="padding: 10px 0 0 0">
+								<input id="has_syllabus" type="checkbox" name="has_syllabus" value="1"  /> <label for="has_syllabus" >has syllabus</label> <i class="fa fa-question-circle ptools-popover" aria-hidden="true" title="Check the HAS SYLLABUS box to limit search to classes with syllabi."></i>
+								&nbsp; 
+								<input id="has_evaluation" type="checkbox" name="has_evaluation" value="1" checked="checked" /> <label for="has_evaluation">has evaluation</label> <i class="fa fa-question-circle ptools-popover" aria-hidden="true" title="Check the HAS EVALUATION box to limit searches to classes with evaluations."></i>
+								&nbsp;
+								<input id="include_independent_study" type="checkbox" name="include_independent_study" value="1"  /> <label for="include_independent_study">include special classes</label> <i class="fa fa-question-circle ptools-popover" aria-hidden="true" title="Check this box to show 'special classes' such as independant study, executive education, and other special programs."></i>
+							</div>
+
+						</div>
+						
+					</form>
+
+					<form method="get" name="proxysearch" id="proxysearch" action="https://coursebook.utdallas.edu/coursebook" style="display: none"> </form>
+
+					<div id="searchhelp" style="display: none">
+						<div class="search-instructions">Use CourseBook to find classes, courses, syllabi (syllabus), and evaluation data for classes at UT Dallas.</div>
+						<div class="search-instructions">Search by course prefix, number, instructor name, email address, course title, or other search phrase.</div>
+						<div class="search-instructions">Click on a row to expand it and download syllabus and evaluation reports</div>
+					</div>
+
+					<div style="font-size: 10px; color: black; text-align: center; margin: 0 0 10px 0; ">Not sure what to search for? <a href="https://coursebook.utdallas.edu/guidedsearch">Click here to try <b>Guided Search</b> to find classes or build a schedule</a>.</div>
+
+					<div style="font-size: 10px; color: #ccc; text-align: center;">Search Counter: 13,717,308 (since 2014-10-08).</div>					
+				</div>
+
+			</div>
+						
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		// $('img.tt').tooltip();
+	</script>	
+	<div class="search-panel-div">
+		
+		<div class="search-panel-title-div2" id="searchresults">
+			<b>Search Results (64 items) <a href="https://coursebook.utdallas.edu/reportmonkey/coursebook-export" class=button-link>download excel</a></b>
+		</div>
+
+		<div id='panel_1'>
+		
+			<div class="search-panel-menu-div2">				
+				<div id="tabset-menubar"><ul>
+					<div class="expandblock-tabs"><ul><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/myevents">my events</a></li><li class="lev3-notactive"><a href="https://coursebook.utdallas.edu/mysavedclasses">saved classes</a></li><li class="lev3-active lev3-first"><a href="https://coursebook.utdallas.edu/searchresults">search results</a></li></ul></div>
+				</ul></div>
+			</div>
+	
+			<div class="search-panel-form-div" align="center">
+				<div id=sr data-rowcount=64><div class="section-list"><table border="0" cellspacing="1" cellpadding="0"  width="100%" class="sortable resizable">
+<thead><tr>  <th width="34">Term<br>Status</th> <th width="91">Class Section<br>Class Number</th> <th width="259">Class Title</th> <th width="90">Instructor(s)</th> <th width="181">Schedule &amp;<br>Location</th> <th width="30">Fill</th> <th width="110">Action(s)</th> </tr></thead><tbody>
+<tr id="r-1" data-id="ap1301.001.02f" onclick="open_subrow(event, 'r-1', 'clip-section', 'ap1301.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap1301.001.02f odd" ><td>02F<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/ap1301.001.02f" title="View details for section ap1301.001.02f" class="stopbubble">AP 1301.001</a><br />10082</td><td>EXPLORATION OF THE ARTS (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/kxg027000 class="ptools-popover" title="Kelly Gordon ">Kelly Gordon</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">9:00am - 9:50am</span>
+<div class="clstbl__resultrow__location">JO 2.604</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -32px transparent; " title="10% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-1', 'clip-section', 'ap1301.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-2" data-id="ap1301.002.02f" onclick="open_subrow(event, 'r-2', 'clip-section', 'ap1301.002.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap1301.002.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap1301.002.02f" title="View details for section ap1301.002.02f" class="stopbubble">AP 1301.002</a><br />10083</td><td>EXPLORATION OF THE ARTS (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/kxg027000 class="ptools-popover" title="Kelly Gordon ">Kelly Gordon</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">10:00am - 10:50am</span>
+<div class="clstbl__resultrow__location">JO 2.604</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -32px transparent; " title="10% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-2', 'clip-section', 'ap1301.002.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-3" data-id="ap1301.003.02f" onclick="open_subrow(event, 'r-3', 'clip-section', 'ap1301.003.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap1301.003.02f odd" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap1301.003.02f" title="View details for section ap1301.003.02f" class="stopbubble">AP 1301.003</a><br />10084</td><td>EXPLORATION OF THE ARTS - <i>Cv Honors: Exploration of Arts</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/clayr class="ptools-popover" title="Clay Reynolds ">Clay Reynolds</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">12:30pm - 3:15pm</span>
+<div class="clstbl__resultrow__location">AS 1.105</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-3', 'clip-section', 'ap1301.003.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-4" data-id="ap1301.004.02f" onclick="open_subrow(event, 'r-4', 'clip-section', 'ap1301.004.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap1301.004.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap1301.004.02f" title="View details for section ap1301.004.02f" class="stopbubble">AP 1301.004</a><br />13005</td><td>EXPLORATION OF THE ARTS (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/kxg027000 class="ptools-popover" title="Kelly Gordon ">Kelly Gordon</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">9:30am - 10:45am</span>
+<div class="clstbl__resultrow__location">JO 2.604</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -32px transparent; " title="10% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-4', 'clip-section', 'ap1301.004.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-5" data-id="ap1301.007.02f" onclick="open_subrow(event, 'r-5', 'clip-section', 'ap1301.007.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap1301.007.02f odd" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap1301.007.02f" title="View details for section ap1301.007.02f" class="stopbubble">AP 1301.007</a><br />13941</td><td>EXPLORATION OF THE ARTS (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/mam017200 class="ptools-popover" title="Mary Medrick ">Mary Medrick</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">2:00pm - 4:45pm</span>
+<div class="clstbl__resultrow__location">JO 2.604</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -16px transparent; " title="10% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-5', 'clip-section', 'ap1301.007.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-6" data-id="ap1301.501.02f" onclick="open_subrow(event, 'r-6', 'clip-section', 'ap1301.501.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap1301.501.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap1301.501.02f" title="View details for section ap1301.501.02f" class="stopbubble">AP 1301.501</a><br />13539</td><td>EXPLORATION OF THE ARTS (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/tel018000 class="ptools-popover" title="Thomas Linehan ">Thomas Linehan</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JO 2.604</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -32px transparent; " title="10% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-6', 'clip-section', 'ap1301.501.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-7" data-id="ap2310.001.02f" onclick="open_subrow(event, 'r-7', 'clip-section', 'ap2310.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap2310.001.02f odd" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap2310.001.02f" title="View details for section ap2310.001.02f" class="stopbubble">AP 2310.001</a><br />10085</td><td>SURV. ART HST:ANCIENT/MEDIEVAL (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/dgoode class="ptools-popover" title="Dianne Goode ">Dianne Goode</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">12:30pm - 1:45pm</span>
+<div class="clstbl__resultrow__location">MC 2.410</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -32px transparent; " title="10% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-7', 'clip-section', 'ap2310.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-8" data-id="ap3300.001.02f" onclick="open_subrow(event, 'r-8', 'clip-section', 'ap3300.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3300.001.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3300.001.02f" title="View details for section ap3300.001.02f" class="stopbubble">AP 3300.001</a><br />10088</td><td>ELEMENTS OF ART & PERFORMANCE (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/curchack class="ptools-popover" title="Fred Curchack ">Fred Curchack</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">3:30pm - 6:15pm</span>
+<div class="clstbl__resultrow__location">JO 1.216</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-8', 'clip-section', 'ap3300.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-9" data-id="ap3307.501.02f" onclick="open_subrow(event, 'r-9', 'clip-section', 'ap3307.501.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3307.501.02f odd" ><td>02F<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/ap3307.501.02f" title="View details for section ap3307.501.02f" class="stopbubble">AP 3307.501</a><br />10089</td><td>CREATING SHORT STORIES (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/bartlett class="ptools-popover" title="Daniel Bartlett ">Daniel Bartlett</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JO 3.908</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-9', 'clip-section', 'ap3307.501.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-10" data-id="ap3308.001.02f" onclick="open_subrow(event, 'r-10', 'clip-section', 'ap3308.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3308.001.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3308.001.02f" title="View details for section ap3308.001.02f" class="stopbubble">AP 3308.001</a><br />14059</td><td>CREATING NONFICTIONS - <i>Introduction to Journalism</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/ssteele class="ptools-popover" title="Stephanie Steele ">Stephanie Steele</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">3:00pm - 5:45pm</span>
+<div class="clstbl__resultrow__location">JO 3.114</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-10', 'clip-section', 'ap3308.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-11" data-id="ap3311.001.02f" onclick="open_subrow(event, 'r-11', 'clip-section', 'ap3311.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3311.001.02f odd" ><td>02F<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/ap3311.001.02f" title="View details for section ap3311.001.02f" class="stopbubble">AP 3311.001</a><br />10091</td><td>VISUAL ELEMENTS (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/glmetz class="ptools-popover" title="Greg Metz ">Greg Metz</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">1:00pm - 3:45pm</span>
+<div class="clstbl__resultrow__location">AS 1.116</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-11', 'clip-section', 'ap3311.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-12" data-id="ap3311.501.02f" onclick="open_subrow(event, 'r-12', 'clip-section', 'ap3311.501.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3311.501.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3311.501.02f" title="View details for section ap3311.501.02f" class="stopbubble">AP 3311.501</a><br />10092</td><td>VISUAL ELEMENTS (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/pomara class="ptools-popover" title="John Pomara ">John Pomara</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">AS 1.116</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-12', 'clip-section', 'ap3311.501.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-13" data-id="ap3316.501.02f" onclick="open_subrow(event, 'r-13', 'clip-section', 'ap3316.501.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3316.501.02f odd" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3316.501.02f" title="View details for section ap3316.501.02f" class="stopbubble">AP 3316.501</a><br />13418</td><td>ART OF THE BAROQUE (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/stott class="ptools-popover" title="Deborah Stott ">Deborah Stott</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">5:30pm - 6:45pm</span>
+<div class="clstbl__resultrow__location">AS 1.105</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-13', 'clip-section', 'ap3316.501.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-14" data-id="ap3320.001.02f" onclick="open_subrow(event, 'r-14', 'clip-section', 'ap3320.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3320.001.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3320.001.02f" title="View details for section ap3320.001.02f" class="stopbubble">AP 3320.001</a><br />13419</td><td>ART IN HISTORICAL CONTEXT - <i>Art of Greece & Rome</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/stott class="ptools-popover" title="Deborah Stott ">Deborah Stott</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">2:00pm - 3:15pm</span>
+<div class="clstbl__resultrow__location">AS 1.105</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -16px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-14', 'clip-section', 'ap3320.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-15" data-id="ap3322.001.02f" onclick="open_subrow(event, 'r-15', 'clip-section', 'ap3322.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3322.001.02f odd" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3322.001.02f" title="View details for section ap3322.001.02f" class="stopbubble">AP 3322.001</a><br />10095</td><td>MUSIC IN HISTORICAL CONTEXT (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/cxm013310 class="ptools-popover" title="Christopher Morgan ">Christopher Morgan</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">9:30am - 10:45am</span>
+<div class="clstbl__resultrow__location">AS 1.105</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -16px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-15', 'clip-section', 'ap3322.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-16" data-id="ap3322.002.02f" onclick="open_subrow(event, 'r-16', 'clip-section', 'ap3322.002.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3322.002.02f even" ><td>02F<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/ap3322.002.02f" title="View details for section ap3322.002.02f" class="stopbubble">AP 3322.002</a><br />10096</td><td>MUSIC IN HISTORICAL CONTEXT - <i>History of Jazz</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/kpdurbin class="ptools-popover" title="Kelly Durbin ">Kelly Durbin</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">11:00am - 12:15pm</span>
+<div class="clstbl__resultrow__location">AS 1.105</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -16px transparent; " title="10% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-16', 'clip-section', 'ap3322.002.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-17" data-id="ap3324.001.02f" onclick="open_subrow(event, 'r-17', 'clip-section', 'ap3324.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3324.001.02f odd" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3324.001.02f" title="View details for section ap3324.001.02f" class="stopbubble">AP 3324.001</a><br />13420</td><td>HISTORY OF PHOTOGRAPHY (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/waligore class="ptools-popover" title="Marilyn Waligore ">Marilyn Waligore</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">3:30pm - 4:45pm</span>
+<div class="clstbl__resultrow__location">AS 1.105</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-17', 'clip-section', 'ap3324.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-18" data-id="ap3331.001.02f" onclick="open_subrow(event, 'r-18', 'clip-section', 'ap3331.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3331.001.02f even" ><td>02F<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/ap3331.001.02f" title="View details for section ap3331.001.02f" class="stopbubble">AP 3331.001</a><br />10097</td><td>UNDERSTANDING ART (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/metheni class="ptools-popover" title="Marian Methenitis ">Marian Methenitis</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">11:00am - 12:15pm</span>
+<div class="clstbl__resultrow__location">MC 2.410</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -16px transparent; " title="10% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-18', 'clip-section', 'ap3331.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-19" data-id="ap3332.001.02f" onclick="open_subrow(event, 'r-19', 'clip-section', 'ap3332.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3332.001.02f odd" ><td>02F<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/ap3332.001.02f" title="View details for section ap3332.001.02f" class="stopbubble">AP 3332.001</a><br />10098</td><td>NATURE AND EXPERIENCE OF FILM - <i>Cv Honors: Intro to Film</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/amclean class="ptools-popover" title="Adrienne McLean ">Adrienne McLean</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">2:00pm - 4:45pm</span>
+<div class="clstbl__resultrow__location">MC 2.410</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-19', 'clip-section', 'ap3332.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-20" data-id="ap3332.501.02f" onclick="open_subrow(event, 'r-20', 'clip-section', 'ap3332.501.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3332.501.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3332.501.02f" title="View details for section ap3332.501.02f" class="stopbubble">AP 3332.501</a><br />13007</td><td>NATURE AND EXPERIENCE OF FILM - <i>Introduction to Film</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/amclean class="ptools-popover" title="Adrienne McLean ">Adrienne McLean</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">MC 2.410</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -32px transparent; " title="10% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-20', 'clip-section', 'ap3332.501.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-21" data-id="ap3333.001.02f" onclick="open_subrow(event, 'r-21', 'clip-section', 'ap3333.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3333.001.02f odd" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3333.001.02f" title="View details for section ap3333.001.02f" class="stopbubble">AP 3333.001</a><br />13688</td><td>UNDERSTANDING MUSIC (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/rxr014610 class="ptools-popover" title="Robert Rodriguez ">Robert Rodriguez</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">3:30pm - 4:45pm</span>
+<div class="clstbl__resultrow__location">AS 1.105</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-21', 'clip-section', 'ap3333.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-22" data-id="ap3335.001.02f" onclick="open_subrow(event, 'r-22', 'clip-section', 'ap3335.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3335.001.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3335.001.02f" title="View details for section ap3335.001.02f" class="stopbubble">AP 3335.001</a><br />10099</td><td>THE CREATIVE PROCESS (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/kxl018900 class="ptools-popover" title="Keitha Lowrance ">Keitha Lowrance</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">12:30pm - 3:15pm</span>
+<div class="clstbl__resultrow__location">AS 1.105</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -16px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-22', 'clip-section', 'ap3335.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-23" data-id="ap3340.501.02f" onclick="open_subrow(event, 'r-23', 'clip-section', 'ap3340.501.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3340.501.02f odd" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3340.501.02f" title="View details for section ap3340.501.02f" class="stopbubble">AP 3340.501</a><br />13421</td><td>TOPICS IN STUDIO ART - <i>Intro 3-d Comp Illustration</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/jmp022000 class="ptools-popover" title="Julian Pittman ">Julian Pittman</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">3:30pm - 6:15pm</span>
+<div class="clstbl__resultrow__location">HRA 1.102</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-23', 'clip-section', 'ap3340.501.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-24" data-id="ap3340.502.02f" onclick="open_subrow(event, 'r-24', 'clip-section', 'ap3340.502.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3340.502.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3340.502.02f" title="View details for section ap3340.502.02f" class="stopbubble">AP 3340.502</a><br />13541</td><td>TOPICS IN STUDIO ART - <i>Internet Studio</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/dxt023000 class="ptools-popover" title="Dean Terry ">Dean Terry</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">HRA 1.104</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -16px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-24', 'clip-section', 'ap3340.502.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-25" data-id="ap3340.503.02f" onclick="open_subrow(event, 'r-25', 'clip-section', 'ap3340.503.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3340.503.02f odd" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3340.503.02f" title="View details for section ap3340.503.02f" class="stopbubble">AP 3340.503</a><br />13540</td><td>TOPICS IN STUDIO ART - <i>Basic Interaction Design</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/dnajjab class="ptools-popover" title="David Najjab ">David Najjab</a>
+<a href=http://coursebook.utdallas.edu/search/dxh015000 class="ptools-popover" title="Daniel Hurley ">Daniel Hurley</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">HRA 1.104</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-25', 'clip-section', 'ap3340.503.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-26" data-id="ap3340.504.02f" onclick="open_subrow(event, 'r-26', 'clip-section', 'ap3340.504.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3340.504.02f even" ><td>02F<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/ap3340.504.02f" title="View details for section ap3340.504.02f" class="stopbubble">AP 3340.504</a><br />13542</td><td>TOPICS IN STUDIO ART - <i>Technical Photography</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/mgm013000 class="ptools-popover" title="Martin Menocal ">Martin Menocal</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">AS 1.105</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-26', 'clip-section', 'ap3340.504.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-27" data-id="ap3343.001.02f" onclick="open_subrow(event, 'r-27', 'clip-section', 'ap3343.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3343.001.02f odd" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3343.001.02f" title="View details for section ap3343.001.02f" class="stopbubble">AP 3343.001</a><br />10102</td><td>TOPICS IN MUSIC - <i>Fundamentals of Music</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/kpdurbin class="ptools-popover" title="Kelly Durbin ">Kelly Durbin</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">9:30am - 10:45am</span>
+<div class="clstbl__resultrow__location">AS 1.105</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -16px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-27', 'clip-section', 'ap3343.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-28" data-id="ap3345.001.02f" onclick="open_subrow(event, 'r-28', 'clip-section', 'ap3345.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3345.001.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3345.001.02f" title="View details for section ap3345.001.02f" class="stopbubble">AP 3345.001</a><br />13422</td><td>TOPICS IN THEATRE - <i>Stage Combat</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/rxa025100 class="ptools-popover" title="Robin Armstrong ">Robin Armstrong</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">9:30am - 10:45am</span>
+<div class="clstbl__resultrow__location">JO 1.216</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-28', 'clip-section', 'ap3345.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-29" data-id="ap3345.002.02f" onclick="open_subrow(event, 'r-29', 'clip-section', 'ap3345.002.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3345.002.02f odd" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3345.002.02f" title="View details for section ap3345.002.02f" class="stopbubble">AP 3345.002</a><br />10106</td><td>TOPICS IN THEATRE - <i>Technical Theatre</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/jas011220 class="ptools-popover" title="Jeff Stover ">Jeff Stover</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">12:30pm - 3:15pm</span>
+<div class="clstbl__resultrow__location">JO 3.114</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-29', 'clip-section', 'ap3345.002.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-30" data-id="ap3345.501.02f" onclick="open_subrow(event, 'r-30', 'clip-section', 'ap3345.501.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3345.501.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3345.501.02f" title="View details for section ap3345.501.02f" class="stopbubble">AP 3345.501</a><br />10107</td><td>TOPICS IN THEATRE - <i>Dance Performance</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/msaba class="ptools-popover" title="Monica Saba ">Monica Saba</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JO 1.216</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-30', 'clip-section', 'ap3345.501.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-31" data-id="ap3350.001.02f" onclick="open_subrow(event, 'r-31', 'clip-section', 'ap3350.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3350.001.02f odd" ><td>02F<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/ap3350.001.02f" title="View details for section ap3350.001.02f" class="stopbubble">AP 3350.001</a><br />10109</td><td>IMPROVISATION (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/rxa025100 class="ptools-popover" title="Robin Armstrong ">Robin Armstrong</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">12:30pm - 3:15pm</span>
+<div class="clstbl__resultrow__location">JO 1.216</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -16px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-31', 'clip-section', 'ap3350.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-32" data-id="ap3350.002.02f" onclick="open_subrow(event, 'r-32', 'clip-section', 'ap3350.002.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3350.002.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3350.002.02f" title="View details for section ap3350.002.02f" class="stopbubble">AP 3350.002</a><br />13543</td><td>IMPROVISATION (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/karent class="ptools-popover" title="Karen Bartlett ">Karen Bartlett</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">9:30am - 12:15pm</span>
+<div class="clstbl__resultrow__location">JO 1.216</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-32', 'clip-section', 'ap3350.002.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-33" data-id="ap3351.001.02f" onclick="open_subrow(event, 'r-33', 'clip-section', 'ap3351.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3351.001.02f odd" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3351.001.02f" title="View details for section ap3351.001.02f" class="stopbubble">AP 3351.001</a><br />10110</td><td>CREATING POETRY (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/aleavey class="ptools-popover" title="Andrea Leavey ">Andrea Leavey</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">9:30am - 12:15pm</span>
+<div class="clstbl__resultrow__location">JO 3.114</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-33', 'clip-section', 'ap3351.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-34" data-id="ap3353.001.02f" onclick="open_subrow(event, 'r-34', 'clip-section', 'ap3353.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3353.001.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3353.001.02f" title="View details for section ap3353.001.02f" class="stopbubble">AP 3353.001</a><br />10111</td><td>MOVEMENT AND THE BODY - <i>Movement & the Body: Dance</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/msaba class="ptools-popover" title="Monica Saba ">Monica Saba</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">3:30pm - 6:15pm</span>
+<div class="clstbl__resultrow__location">JO 1.216</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-34', 'clip-section', 'ap3353.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-35" data-id="ap3356.001.02f" onclick="open_subrow(event, 'r-35', 'clip-section', 'ap3356.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3356.001.02f odd" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3356.001.02f" title="View details for section ap3356.001.02f" class="stopbubble">AP 3356.001</a><br />13423</td><td>ACTING (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/bma015000 class="ptools-popover" title="Brandi Andrade ">Brandi Andrade</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">9:30am - 12:15pm</span>
+<div class="clstbl__resultrow__location">JO 1.216</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-35', 'clip-section', 'ap3356.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-36" data-id="ap3356.501.02f" onclick="open_subrow(event, 'r-36', 'clip-section', 'ap3356.501.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3356.501.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3356.501.02f" title="View details for section ap3356.501.02f" class="stopbubble">AP 3356.501</a><br />13425</td><td>ACTING (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/curchack class="ptools-popover" title="Fred Curchack ">Fred Curchack</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JO 1.216</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-36', 'clip-section', 'ap3356.501.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-37" data-id="ap3363.001.02f" onclick="open_subrow(event, 'r-37', 'clip-section', 'ap3363.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3363.001.02f odd" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3363.001.02f" title="View details for section ap3363.001.02f" class="stopbubble">AP 3363.001</a><br />13426</td><td>DESIGN - <i>Design, Color, Structure</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/moo018000 class="ptools-popover" title="Michael Odom ">Michael Odom</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">3:30pm - 6:15pm</span>
+<div class="clstbl__resultrow__location">AS 1.116</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-37', 'clip-section', 'ap3363.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-38" data-id="ap3365.001.02f" onclick="open_subrow(event, 'r-38', 'clip-section', 'ap3365.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3365.001.02f even" ><td>02F<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/ap3365.001.02f" title="View details for section ap3365.001.02f" class="stopbubble">AP 3365.001</a><br />10115</td><td>DRAWING - <i>Figure Drawing</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/glmetz class="ptools-popover" title="Greg Metz ">Greg Metz</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">12:30pm - 3:15pm</span>
+<div class="clstbl__resultrow__location">AS 1.118</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-38', 'clip-section', 'ap3365.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-39" data-id="ap3365.501.02f" onclick="open_subrow(event, 'r-39', 'clip-section', 'ap3365.501.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3365.501.02f odd" ><td>02F<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/ap3365.501.02f" title="View details for section ap3365.501.02f" class="stopbubble">AP 3365.501</a><br />10116</td><td>DRAWING - <i>Beginning Drawing</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/kxl018900 class="ptools-popover" title="Keitha Lowrance ">Keitha Lowrance</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">AS 1.118</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-39', 'clip-section', 'ap3365.501.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-40" data-id="ap3369.001.02f" onclick="open_subrow(event, 'r-40', 'clip-section', 'ap3369.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3369.001.02f even" ><td>02F<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/ap3369.001.02f" title="View details for section ap3369.001.02f" class="stopbubble">AP 3369.001</a><br />10117</td><td>PAINTING - <i>Beginning Painting</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/moo018000 class="ptools-popover" title="Michael Odom ">Michael Odom</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">1:00pm - 3:45pm</span>
+<div class="clstbl__resultrow__location">AS 1.118</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-40', 'clip-section', 'ap3369.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-41" data-id="ap3369.002.02f" onclick="open_subrow(event, 'r-41', 'clip-section', 'ap3369.002.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3369.002.02f odd" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3369.002.02f" title="View details for section ap3369.002.02f" class="stopbubble">AP 3369.002</a><br />10118</td><td>PAINTING - <i>Beginning Painting</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/meb025000 class="ptools-popover" title="Margaret Belcher ">Margaret Belcher</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">9:30am - 12:15pm</span>
+<div class="clstbl__resultrow__location">AS 1.118</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-41', 'clip-section', 'ap3369.002.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-42" data-id="ap3371.001.02f" onclick="open_subrow(event, 'r-42', 'clip-section', 'ap3371.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3371.001.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3371.001.02f" title="View details for section ap3371.001.02f" class="stopbubble">AP 3371.001</a><br />10121</td><td>BLACK AND WHITE PHOTOGRAPHY - <i>Black & White Photography</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/mgm013000 class="ptools-popover" title="Martin Menocal ">Martin Menocal</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">12:30pm - 3:15pm</span>
+<div class="clstbl__resultrow__location">AS 1.105</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-42', 'clip-section', 'ap3371.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-43" data-id="ap3371.501.02f" onclick="open_subrow(event, 'r-43', 'clip-section', 'ap3371.501.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3371.501.02f odd" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3371.501.02f" title="View details for section ap3371.501.02f" class="stopbubble">AP 3371.501</a><br />13427</td><td>BLACK AND WHITE PHOTOGRAPHY (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/waligore class="ptools-popover" title="Marilyn Waligore ">Marilyn Waligore</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">AS 1.105</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-43', 'clip-section', 'ap3371.501.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-44" data-id="ap3372.001.02f" onclick="open_subrow(event, 'r-44', 'clip-section', 'ap3372.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3372.001.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3372.001.02f" title="View details for section ap3372.001.02f" class="stopbubble">AP 3372.001</a><br />13428</td><td>COLOR PHOTOGRAPHY (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/jxm012000 class="ptools-popover" title="Jeffrey Martin ">Jeffrey Martin</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">9:30am - 12:15pm</span>
+<div class="clstbl__resultrow__location">AS 1.105</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-44', 'clip-section', 'ap3372.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-45" data-id="ap3375.501.02f" onclick="open_subrow(event, 'r-45', 'clip-section', 'ap3375.501.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3375.501.02f odd" ><td>02F<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/ap3375.501.02f" title="View details for section ap3375.501.02f" class="stopbubble">AP 3375.501</a><br />10124</td><td>SCULPTURE - <i>Figure Sculpture</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/glmetz class="ptools-popover" title="Greg Metz ">Greg Metz</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">AS 1.110</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-45', 'clip-section', 'ap3375.501.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-46" data-id="ap3380.001.02f" onclick="open_subrow(event, 'r-46', 'clip-section', 'ap3380.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3380.001.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3380.001.02f" title="View details for section ap3380.001.02f" class="stopbubble">AP 3380.001</a><br />10125</td><td>COMPUTER IMAGING - <i>Beginning Computer Imaging</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/dnajjab class="ptools-popover" title="David Najjab ">David Najjab</a>
+<a href=http://coursebook.utdallas.edu/search/mel024000 class="ptools-popover" title="Mary Lacy ">Mary Lacy</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">12:30pm - 3:15pm</span>
+<div class="clstbl__resultrow__location">HRA 1.104</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -16px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-46', 'clip-section', 'ap3380.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-47" data-id="ap3380.501.02f" onclick="open_subrow(event, 'r-47', 'clip-section', 'ap3380.501.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3380.501.02f odd" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3380.501.02f" title="View details for section ap3380.501.02f" class="stopbubble">AP 3380.501</a><br />10126</td><td>COMPUTER IMAGING - <i>Beginning Computer Imaging</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/hgw021000 class="ptools-popover" title="Harold Wood ">Harold Wood</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">HRA 1.104</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -16px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-47', 'clip-section', 'ap3380.501.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-48" data-id="ap3381.001.02f" onclick="open_subrow(event, 'r-48', 'clip-section', 'ap3381.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3381.001.02f even" ><td>02F<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/ap3381.001.02f" title="View details for section ap3381.001.02f" class="stopbubble">AP 3381.001</a><br />10128</td><td>GUITAR - <i>Beginning Guitar</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/efm011000 class="ptools-popover" title="Enric Madriguera ">Enric Madriguera</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">3:30pm - 6:15pm</span>
+<div class="clstbl__resultrow__location">JO 2.604</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -16px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-48', 'clip-section', 'ap3381.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-49" data-id="ap3382.001.02f" onclick="open_subrow(event, 'r-49', 'clip-section', 'ap3382.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3382.001.02f odd" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3382.001.02f" title="View details for section ap3382.001.02f" class="stopbubble">AP 3382.001</a><br />10129</td><td>DANCE - <i>Modern Dance</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/mhanlon class="ptools-popover" title="Michele Hanlon ">Michele Hanlon</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">11:00am - 12:15pm</span>
+<div class="clstbl__resultrow__location">JO 1.216</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-49', 'clip-section', 'ap3382.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-50" data-id="ap3382.002.02f" onclick="open_subrow(event, 'r-50', 'clip-section', 'ap3382.002.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3382.002.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3382.002.02f" title="View details for section ap3382.002.02f" class="stopbubble">AP 3382.002</a><br />10130</td><td>DANCE - <i>Jazz Dance</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/msaba class="ptools-popover" title="Monica Saba ">Monica Saba</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">2:00pm - 3:15pm</span>
+<div class="clstbl__resultrow__location">JO 1.216</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-50', 'clip-section', 'ap3382.002.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-51" data-id="ap3384.001.02f" onclick="open_subrow(event, 'r-51', 'clip-section', 'ap3384.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3384.001.02f odd" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3384.001.02f" title="View details for section ap3384.001.02f" class="stopbubble">AP 3384.001</a><br />10132</td><td>GROUP VOICE - <i>Beginning Group Voice</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/mam017200 class="ptools-popover" title="Mary Medrick ">Mary Medrick</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">2:00pm - 4:45pm</span>
+<div class="clstbl__resultrow__location">JO 2.604</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-51', 'clip-section', 'ap3384.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-52" data-id="ap3385.001.02f" onclick="open_subrow(event, 'r-52', 'clip-section', 'ap3385.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3385.001.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3385.001.02f" title="View details for section ap3385.001.02f" class="stopbubble">AP 3385.001</a><br />10133</td><td>CHAMBER SINGERS (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/kcevans class="ptools-popover" title="Kathryn Evans ">Kathryn Evans</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">12:30pm - 1:45pm</span>
+<div class="clstbl__resultrow__location">JO 2.604</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-52', 'clip-section', 'ap3385.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-53" data-id="ap3386.001.02f" onclick="open_subrow(event, 'r-53', 'clip-section', 'ap3386.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3386.001.02f odd" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3386.001.02f" title="View details for section ap3386.001.02f" class="stopbubble">AP 3386.001</a><br />10134</td><td>BEGINNING JAZZ ENSEMBLE - <i>Jazz Band</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/kpdurbin class="ptools-popover" title="Kelly Durbin ">Kelly Durbin</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">12:30pm - 1:45pm</span>
+<div class="clstbl__resultrow__location">JO 2.604</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-53', 'clip-section', 'ap3386.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-54" data-id="ap3387.501.02f" onclick="open_subrow(event, 'r-54', 'clip-section', 'ap3387.501.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3387.501.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap3387.501.02f" title="View details for section ap3387.501.02f" class="stopbubble">AP 3387.501</a><br />10135</td><td>VOCAL ENSEMBLE - <i>Utd Community Chorale</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/hxy010100 class="ptools-popover" title="Ian Yeung ">Ian Yeung</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JO 2.604</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -32px transparent; " title="10% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-54', 'clip-section', 'ap3387.501.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-55" data-id="ap3388.001.02f" onclick="open_subrow(event, 'r-55', 'clip-section', 'ap3388.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3388.001.02f odd" ><td>02F<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/ap3388.001.02f" title="View details for section ap3388.001.02f" class="stopbubble">AP 3388.001</a><br />13429</td><td>KEYBOARDS - <i>Beginning Piano</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/jrl015600 class="ptools-popover" title="Jeff Lankov ">Jeff Lankov</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">3:30pm - 6:15pm</span>
+<div class="clstbl__resultrow__location">JO 2.604</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-55', 'clip-section', 'ap3388.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-56" data-id="ap3388.002.02f" onclick="open_subrow(event, 'r-56', 'clip-section', 'ap3388.002.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap3388.002.02f even" ><td>02F<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/ap3388.002.02f" title="View details for section ap3388.002.02f" class="stopbubble">AP 3388.002</a><br />13430</td><td>KEYBOARDS - <i>Midi Lab: Computer Music</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/kpdurbin class="ptools-popover" title="Kelly Durbin ">Kelly Durbin</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">9:30am - 12:15pm</span>
+<div class="clstbl__resultrow__location">JO 2.504</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-56', 'clip-section', 'ap3388.002.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-57" data-id="ap4308.001.02f" onclick="open_subrow(event, 'r-57', 'clip-section', 'ap4308.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap4308.001.02f odd" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap4308.001.02f" title="View details for section ap4308.001.02f" class="stopbubble">AP 4308.001</a><br />13545</td><td>IMAGE/TEXT - <i>Storytelling for New Media</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/dxt023000 class="ptools-popover" title="Dean Terry ">Dean Terry</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">12:30pm - 3:15pm</span>
+<div class="clstbl__resultrow__location">HRA 1.102</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-57', 'clip-section', 'ap4308.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-58" data-id="ap4312.002.02f" onclick="open_subrow(event, 'r-58', 'clip-section', 'ap4312.002.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap4312.002.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap4312.002.02f" title="View details for section ap4312.002.02f" class="stopbubble">AP 4312.002</a><br />13432</td><td>CHAMBER MUSIC ENSEMBLE - <i>Wind Ensemble</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/slw011000 class="ptools-popover" title="Scott Walzel ">Scott Walzel</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">11:00am - 12:15pm</span>
+<div class="clstbl__resultrow__location">JO 1.216</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-58', 'clip-section', 'ap4312.002.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-59" data-id="ap4314.001.02f" onclick="open_subrow(event, 'r-59', 'clip-section', 'ap4314.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap4314.001.02f odd" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap4314.001.02f" title="View details for section ap4314.001.02f" class="stopbubble">AP 4314.001</a><br />10148</td><td>ADVANCED ACTING/PERFORMANCE - <i>Continuing Dance: Cntemp Dance</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/mhanlon class="ptools-popover" title="Michele Hanlon ">Michele Hanlon</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">12:30pm - 1:45pm</span>
+<div class="clstbl__resultrow__location">JO 1.216</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-59', 'clip-section', 'ap4314.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-60" data-id="ap4345.501.02f" onclick="open_subrow(event, 'r-60', 'clip-section', 'ap4345.501.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap4345.501.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap4345.501.02f" title="View details for section ap4345.501.02f" class="stopbubble">AP 4345.501</a><br />10149</td><td>ADVANCED MUSIC PERFORMANCE - <i>Continuing Guitar</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/efm011000 class="ptools-popover" title="Enric Madriguera ">Enric Madriguera</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">JO 2.604</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-60', 'clip-section', 'ap4345.501.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-61" data-id="ap4368.001.02f" onclick="open_subrow(event, 'r-61', 'clip-section', 'ap4368.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap4368.001.02f odd" ><td>02F<br><span class="section-closed">Closed</span></td><td><a href="https://coursebook.utdallas.edu/ap4368.001.02f" title="View details for section ap4368.001.02f" class="stopbubble">AP 4368.001</a><br />13433</td><td>ADVANCED VISUAL ARTS - <i>Continuing Painting</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/pomara class="ptools-popover" title="John Pomara ">John Pomara</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">9:30am - 12:15pm</span>
+<div class="clstbl__resultrow__location">AS 1.118</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-red.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-61', 'clip-section', 'ap4368.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-62" data-id="ap4368.501.02f" onclick="open_subrow(event, 'r-62', 'clip-section', 'ap4368.501.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap4368.501.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap4368.501.02f" title="View details for section ap4368.501.02f" class="stopbubble">AP 4368.501</a><br />13547</td><td>ADVANCED VISUAL ARTS - <i>Adv.3-d Comp Illustration</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/txo018000 class="ptools-popover" title="Thomas Ottinger ">Thomas Ottinger</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">7:00pm - 9:45pm</span>
+<div class="clstbl__resultrow__location">HRA 1.102</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-62', 'clip-section', 'ap4368.501.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-63" data-id="ap4370.001.02f" onclick="open_subrow(event, 'r-63', 'clip-section', 'ap4370.001.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap4370.001.02f odd" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap4370.001.02f" title="View details for section ap4370.001.02f" class="stopbubble">AP 4370.001</a><br />13434</td><td>INTERDIS STUDIES IN ART & PERF - <i>Public & Professional Communic</i> (3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/ssteele class="ptools-popover" title="Stephanie Steele ">Stephanie Steele</a>
+</td><td><div class="clstbl__resultrow__schedule"><span class="clstbl__resultrow__day"></span><span class="clstbl__resultrow__time">9:30am - 10:45am</span>
+<div class="clstbl__resultrow__location">JO 4.504</div></div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-63', 'clip-section', 'ap4370.001.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr><tr id="r-64" data-id="ap4v71.581.02f" onclick="open_subrow(event, 'r-64', 'clip-section', 'ap4v71.581.02f', true, 'section', 'expandedrow'); return false;" class="cb_row ap4v71.581.02f even" ><td>02F<br><span class="section-open">Open</span></td><td><a href="https://coursebook.utdallas.edu/ap4v71.581.02f" title="View details for section ap4v71.581.02f" class="stopbubble">AP 4V71.581</a><br />14173</td><td>INDEPT STUDY:ART & PERFORMANCE (1-3 Credits)</td><td><a href=http://coursebook.utdallas.edu/search/agf011100 class="ptools-popover" title="Arkady Fomin ">Arkady Fomin</a>
+</td><td><div class=clstbl__resultrow__schedule--unavailable>Schedule Not Posted</div>
+</td><td> <div style="width: 16px; height: 16px; margin: 0 auto; background: url('https://coursebook.utdallas.edu/images/progress-dials-green.gif') no-repeat 0 -0px transparent; " title="0% Filled"></div> </td><td class="actions" style="text-align: center;"><a onclick="open_subrow(event, 'r-64', 'clip-section', 'ap4v71.581.02f', false, 'overview', 'expandedrow'); return false;" href="" title="View Class Detail" class="stopbubble actionitem"><b>View Class Detail</b></a></td></tr></tbody></table>
+<div class="clear directaddress">The direct link to this search is: <a href="https://coursebook.utdallas.edu/search/searchresults/term_02f/cp_AP/hasevaluation_1">https://coursebook.utdallas.edu/search/searchresults/term_02f/cp_AP/hasevaluation_1</a><br />You can also: <a href="https://coursebook.utdallas.edu/reportmonkey/coursebook-export">Download this list in Excel format</a></div>  </div>
+
+<!-- ajax lookup: https://provost.utdallas.edu/bots/apisbot # jrandi -->
+
+</div>
+			</div>
+
+		</div>
+	</div>
+		
+			
+			<div id="footer" class="hideforprint">
+				<div class="links">
+					<a href="https://www.utdallas.edu">UT Dallas Homepage</a> | <a href="https://provost.utdallas.edu">UT Dallas Office of the Provost</a> | <a href="https://coursebook.utdallas.edu">CourseBook</a> | <a href="mailto:ptg@utdallas.edu">Contact Provost&#39;s Technology Group</a> | <a href="https://www.utdallas.edu/privacy/">UT Dallas Privacy Policy</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="page-right" style="width: 8px; float: left;"></div>
+	<div style="clear:both;"></div>
+
+	<!-- bottom cap -->
+	<div id="page-bottomcap"></div>
+	
+	</div>
+
+	<!-- jslive: ajax javascript -->
+	<div id="jslive"></div>
+	
+
+	<script type="text/javascript" language="javascript">
+
+	  // focus cursor
+		$(".focushere").focus();
+
+	  // after the dom is loaded - execute these functions
+		$(document).ready( function()
+		{
+		  // buttons: add button styles 
+		  	$(".gbutton")
+		  	.mouseover( function() { $(this).css("backgroundPosition","0 -16px").css("cursor","pointer"); } )
+		  	.mouseout( function() { $(this).css("backgroundPosition","0 0"); } )
+		  	.mousedown( function() { $(this).css("backgroundPosition","0 -32px"); } )
+		  	.mouseup( function() { $(this).css("backgroundPosition","0 -16px"); } );
+
+		  // buttons: add button styles 
+		  	$(".gbutton2")
+		  	.mouseover( function() { $(this).css("backgroundPosition","0 -22px").css("cursor","pointer"); } )
+		  	.mouseout( function() { $(this).css("backgroundPosition","0 0"); } )
+		  	.mousedown( function() { $(this).css("backgroundPosition","0 -44px"); } )
+		  	.mouseup( function() { $(this).css("backgroundPosition","0 -22px"); } );
+
+		  // kill event propagation
+			$(".stopbubble").click( function(e){ e.stopPropagation();} );
+
+		  // table: add table sorting
+			$(".sortable").tablesorter();
+			//$(".sortable").tablesorter( {sortList: [[1,0], [2,0]] } );
+			//$(".sortable").tablesorter( {sortList: [[1,0], [2,0]], widgets: ['zebra'] } );
+			//$(".sortable").tablesorter( {widgets: ['zebra']} );
+			$(".sortable tr").mouseover( function() { $(this).addClass("hilite").css("cursor","pointer"); } ).mouseout( function() { $(this).removeClass("hilite"); } );
+
+		  // table: remove expanded rows before sorting table rows
+			$(".sortable th").mouseup( function() { $(".expandedrow").remove(); } );
+			
+		  // float divs
+		  	//$(".floatdiv").makeFloat({x:"current",y: 100});
+
+		  // ptools inits
+		  	ptools_init_popovers();
+
+			update_actions();
+		});
+		
+		function activate_buttons()
+		{
+		  // buttons: add button styles 
+		  	$(".gbutton")
+		  	.mouseover( function() { $(this).css("backgroundPosition","0 -16px").css("cursor","pointer"); } )
+		  	.mouseout( function() { $(this).css("backgroundPosition","0 0"); } )
+		  	.mousedown( function() { $(this).css("backgroundPosition","0 -32px"); } )
+		  	.mouseup( function() { $(this).css("backgroundPosition","0 -16px"); } );
+		}
+		
+
+
+
+		function do_cmd(cmd, id)
+		{
+			$('#jslive').load('https://coursebook.utdallas.edu/clips/clip-catbook_command.zog', { id: id, cmd: cmd });
+		}
+
+		var last_clip_catbook = 'clip-catbook_edit';
+		var last_clip_coursebook = 'clip-section';
+
+
+
+		function open_subrow(event, xparent_row_id, clip_type, data_id, toggle, subaction, row_class)
+		{
+			var parent_row_id = $(event.currentTarget).closest('tr').attr('id');	
+
+		  // get div ids
+			child_id = parent_row_id + 'child';
+			childcontent_id = parent_row_id + 'childcontent';
+			control_icon_id = parent_row_id + '-i';
+
+		  // switch clip type to last used
+			if (row_class == 'expandedrow catbook')
+			{
+				if (clip_type == 'last')
+			  	{
+					clip_type = last_clip_catbook;
+				}
+				else
+				{
+					last_clip_catbook = clip_type;
+				}
+		  	}
+		  	else
+		  	{
+				if (clip_type == 'last')
+			  	{
+					clip_type = last_clip_coursebook;
+				}
+				else
+				{
+					last_clip_coursebook = clip_type;
+				}
+		  	}
+
+		  // check if a child row exists, if not - create one
+			if ( $('#'+child_id).length === 0 )
+			{
+			  // close all other expanded rows
+				if (!event.shiftKey) 
+				{
+					$('.'+row_class).remove();
+				}
+	
+		  	  // insert child row below the parent_row
+		  	 	rows_in_parent = $('#'+parent_row_id).prop("cells").length;
+				$('#'+parent_row_id).after('<tr id="' + child_id + '" class="' + row_class + '"><td colspan="' + rows_in_parent + '" id="' +childcontent_id + '"><p align="center"><img src="/images/ajax-loader.gif" /></p></td></tr>');
+	
+			  // change +/- control to minus
+			  	$('#'+control_icon_id).attr({ src: "/images/foldicon-minus.gif"});
+
+			  // load clip file into child
+			  	$('#'+childcontent_id).load('https://coursebook.utdallas.edu/clips/'+clip_type+'.zog', { id: data_id, div: childcontent_id, subaction: subaction } );
+			}
+
+		  // if toggle is ON and row exists - remove the child row (i.e. toggle its display)
+			else if (toggle)
+			{
+			  // remove child row
+				$('#'+child_id).remove();
+				
+			  // change +/- control to plus
+			  	$('#'+control_icon_id).attr({ src: "/images/foldicon-plus.gif"});
+			}
+
+		  // if toggle is OFF and row exists - reload the child row
+			else
+			{
+			  // load clip file into child
+			  	$('#'+childcontent_id).load('https://coursebook.utdallas.edu/clips/'+clip_type+'.zog', { id: data_id, div: childcontent_id, subaction: subaction } ).hide().fadeIn('slow');
+			}
+
+		  // scroll to subrow
+		  	var scrollto=$('#'+childcontent_id).offset().top;
+			$('body,html,document').animate({ scrollTop: scrollto }, 1000);
+
+		}
+	
+		function dosearch(srch_type)
+		{
+			var srch = $('#srch').val().replace(/[^\w\-\.\!\: ]/gi, '');
+
+		  // advanced search - add items from selection lists
+			if (srch_type == 'adv')
+			{
+				$.each( $('.selectlist-list'), function(i, o) { v = $(o).val(); if (v != null) { srch += ' ' + v; }; } );
+				//$('.selectlist-list').each( function() { alert(this.val()); } );
+			}
+		  // catbook search
+			else if (srch_type == 'cat')
+			{
+			  // check for commands
+				var match = /(cmd_)([\w]*) ?([\w]*)?/.exec(srch);
+				if (match != null)
+				{
+					alertify.log(match[2]+" command received");
+					do_cmd(match[2], match[3]);
+					exit; 
+				}
+
+				srch += ' ' + $('#y').val();
+				$.each( $('.options'), function(i, o) { if ( $(o).is(':checked') ) { srch += ' ' + $(o).attr('id') } } );
+			}
+		  // standard coursebook search
+			else
+			{
+				srch += ' ' + $('#srch_term').val()
+				if ( $('#has_syllabus').is(':checked')==true ) srch += ' hassyllabus_1';
+				if ( $('#has_evaluation').is(':checked')==true ) srch += ' hasevaluation_1';
+				if ( $('#include_independent_study').is(':checked')==true ) srch += ' includeindstudy_1';
+			}
+			
+		  // substitute token words
+			srch = srch.replace(/^\s+|\s+$/g,'');
+			srch = srch.replace(/[, ]+/gi, '/');
+			srch = srch.replace(/benchmark/gi, 'kw_bm');
+			srch = srch.replace(/union/gi, 'kw_un');
+			srch = srch.replace(/select/gi, 'kw_sel');
+			srch = srch.replace(/insert/gi, 'kw_ins');
+			srch = srch.replace(/declare/gi, 'kw_dec');
+			srch = srch.replace(/drop/gi, 'kw_drp');
+			srch = srch.replace(/update/gi, 'kw_upd');
+			srch = srch.replace(/system/gi, 'kw_sys');
+			srch = srch.replace(/database/gi, 'kw_db');
+			srch = srch.replace(/data/gi, 'kw_dt');
+			
+		  // set url
+			if (srch_type == 'adv')
+			{
+				var srch_url = 'https://coursebook.utdallas.edu/' + srch + '#searchresults';
+			}
+			else
+			{			
+				var srch_url = 'https://coursebook.utdallas.edu/' + srch;
+			}
+
+		  // setup proxy redirect
+			$('#proxysearch').attr('action', srch_url);
+			$('#proxysearch').submit();
+		}
+
+  // get grade info. a = section_address,  n = notify
+  	function peek_grade(a, n)
+  	{
+		$.getJSON(
+			'https://coursebook.utdallas.edu/clips/clip-gradepeek.zog', 
+			{'a':a, 'n':n}, 
+			function(data)
+			{	
+				if (data.type == 'prompt')
+				{
+					// alertify.set({ buttonFocus: "ok", labels: { ok: "Notify Me", cancel: "Cancel"} } ); 
+					alertify.prompt(
+						data.response, 
+						data.default_value,
+						function (e, n) { 
+							if (e) { peek_grade(a, n) } 
+							else { console.log('x') } 
+						} 
+					);
+				}
+				else if (data.reponse_type == 'notify')
+				{
+					// alertify.set({ buttonFocus: "ok", labels: { ok: "OK" } } ); 
+					alertify.alert(data.response);
+				}
+				else
+				{
+					// alertify.set({ buttonFocus: "ok", labels: { ok: "OK" } } ); 
+					alertify.alert(data.response);						
+				}
+		});
+  	}
+
+
+
+  // confirm grade peek
+  	confirm_peek = function(e) {
+  		e.stopPropagation();
+
+		alertify.confirm(
+			"Warning: Viewing your grade will lock open evalautions for this class. Complete the class evaluations before viewing grade.", 
+			function () { peek_grade(' ', 'none') },
+			function() { alertify.error('Cancel'); }
+		);
+	}
+
+
+
+  // update dom document using ptools reply object
+	function ptools_dom_push(reply)
+	{
+		console.log(reply);
+		if (typeof reply.alert !== 'undefined' && reply.alert !== null) {
+			alertify.alert(reply.alert);
+		}
+		if (typeof reply.alert_success !== 'undefined' && reply.alert_success !== null) {
+			alertify.success(reply.alert_success);
+		}
+		if (typeof reply.alert_error !== 'undefined' && reply.alert_error !== null) {
+			alertify.error(reply.alert_error);
+		}
+
+		if (typeof reply.switchclass !== 'undefined' && reply.switchclass !== null) {
+			$.each(reply.switchclass, function (key, value) {
+				console.log('switchclass: ' + key + ', ' + value[0] + '->' +value[1]);
+
+				$(key).addClass(value[1]);
+				$(key).removeClass(value[0]);
+			});
+		}
+
+		if (typeof reply.addclass !== 'undefined' && reply.addclass !== null) {
+			$.each(reply.addclass, function (key, value) {
+				console.log('addclass: ' + key + ', ' + value);
+
+				$(key).addClass(value);
+			});
+		}
+
+		if (typeof reply.setdata !== 'undefined' && reply.setdata !== null) {
+			$.each(reply.setdata, function (key, value) {
+				console.log('setdata: ' + key + ', ' + value[0] + '->' +value[1]);
+
+				$(key).data(value[0], value[1]);
+				$(key).attr('data-'+value[0], value[1]);
+			});
+		}
+
+		if (typeof reply.replace !== 'undefined' && reply.replace !== null) {
+			$.each(reply.replace, function (key, value) { 
+				$(key).replaceWith(value);
+			});
+		}
+
+		if (typeof reply.after !== 'undefined' && reply.after !== null) {
+			$.each(reply.after, function (key, value) {
+				console.log('after: ' + key + ', ' + value);
+				$(key).after(value);
+			});
+		}
+
+		if (typeof reply.before !== 'undefined' && reply.before !== null) {
+			$.each(reply.before, function (key, value) {
+				console.log('before: ' + key + ', ' + value);
+				$(key).before(value);
+			});
+		}
+
+		if (typeof reply.append !== 'undefined' && reply.append !== null) {
+			$.each(reply.append, function (key, value) {
+				console.log('append: ' + key + ', ' + value);
+				$(key).append(value);
+			});
+		}
+
+		if (typeof reply.html !== 'undefined' && reply.html !== null) {
+			$.each(reply.html, function (key, value) {
+				console.log('html: ' + key + ', ' + value);
+				$(key).html(value);
+			});
+		}
+
+		if (typeof reply.remove !== 'undefined' && reply.remove !== null) {
+			$.each(reply.remove, function (key, value) {
+				console.log('remove: ' + key + ', ' + value);
+				$(key).remove();
+			});
+		}
+
+		if (typeof reply.attr !== 'undefined' && reply.attr !== null) {
+			$.each(reply.attr, function (key, value) {
+				console.log('attr: ' + key + ', ' + value[0] + '->' +value[1]);
+
+				$(key).attr(value[0], value[1]);
+			});
+		}
+
+		if (typeof reply.tinymce !== 'undefined' && reply.tinymce !== null) {
+			console.log('tinymce: init');
+			$('.notinit').tiny_init();
+		}
+
+			$(".stopbubble").click( function(e){ e.stopPropagation();} );
+	}
+
+  // update action links
+	function update_actions()
+	{
+	  // get list of section_addresses on page
+		var all_sections = $('.cb_row').map(function(){
+		    return $(this).data('id');
+		}).get();
+
+		$.ajax({
+            type: "POST",
+            url: 'https://coursebook.utdallas.edu/clips/clip-coursebook.zog',
+            data: {action: "update-actions", id: "data", data: all_sections},
+            success: function(data) {
+            	ptools_dom_push(data);
+            }
+        });
+	}
+
+
+	</script>
+
+
+</body>
+
+</html>

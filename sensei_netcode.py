@@ -9,6 +9,10 @@ import os
 #print("Defining user variables")
 global classcodes
 
+def args(a):
+	global args
+	args = a
+	
 def ncpLoad(filename):
 	try:
 		filehandler = open("obj/" + filename + ".obj", 'rb')
@@ -52,9 +56,8 @@ def download(term, classcode):
 	save(localfile,url)
 
 def downloadDirlists(rng):
-	#global args
-	#quiet = args.quiet
-	quiet = True
+	global args
+	quiet = args.quiet
 	global classcodes
 	try:
 		filename = 'classcodes'
@@ -142,7 +145,7 @@ def downloadDirlists(rng):
 #Done
 
 def save(output, input):
-	#print("Saving " + input + " as " + output)
+	print("Saving " + input + " as " + output)
 	with open(output, 'wb') as handle:
 		response = requests.get(input, stream=True)
 		if not response.ok:
