@@ -552,6 +552,7 @@ try:
 except KeyError:
 	print("Invalid command. Try with --help for a list.")
 
+	
 #print(args)
 if args.classcodes is not None:
 	if not args.quiet: print('Setting codes')

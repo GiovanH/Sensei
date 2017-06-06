@@ -66,6 +66,7 @@ def downloadDirlists(rng):
 	except TypeError:
 		print("No saved classcodes file, using defaults")
 		classcodes = ['CS','HONS','GOVT','PHYS','UNIV']
+	if not quiet: print("snc.downloadDirlists: Working variable classcodes:")
 	if not quiet: print(classcodes)
 	terms = []
 	#if args[0] == 'void': return
@@ -86,7 +87,7 @@ def downloadDirlists(rng):
 		for classcode in classcodes:
 			p1 = p1 + 1
 	pbar = 0
-	if not quiet: print('Downloading directory listings')
+	if not quiet: print('Validating directory listings and caching eval filenames')
 	if not quiet: print('[####################]\n[',end='')
 	
 	
@@ -157,6 +158,9 @@ def save(output, input):
 def downloadEvals(args):
 	try:
 		evalnames = ncpLoad('evalnames')
+		if not args.quiet:
+			print("Working variable evalnames:")
+			print(evalnames)
 	except: 
 		print("You need to run downloadDirlists first!")
 		return
@@ -166,7 +170,7 @@ def downloadEvals(args):
 	#Progress bar code
 	i = 0
 	pbar = 0
-	if not args.quiet: print('Downloading individual evals')
+	if not args.quiet: print('snc.downloadEvals: Downloading individual evals')
 	if not args.quiet: print('[####################]\n[',end='')
 	for c in evalnames:
 		#Progress bar code

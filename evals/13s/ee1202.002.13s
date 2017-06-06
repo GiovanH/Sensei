@@ -1,0 +1,1356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" lang="en-US">
+
+<head>
+	<title>UT Dallas Course Evaluation for EE1202.002.13S.DODGE.PUBLIC</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<link href="https://provost.utdallas.edu/images/utd-favicon-gs.ico" rel="shortcut icon" type="image/ico" />
+	<link href="https://provost.utdallas.edu/css/reset+ues2-screen+ues3-screen" rel="stylesheet" media="screen" />
+	<link href="https://provost.utdallas.edu/css/reset+ues2-print+ues3-print" rel="stylesheet" media="print" />
+
+</head>
+
+<body>
+	<div id="page">
+		<table class="page-header" width="100%" border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td width="15%">
+				<img src='https://provost.utdallas.edu/images/eval-header-logo.png' width='150' alt='The University of Texas at Dallas'/>
+			</td>
+			<td width="8%">
+				<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Created with qrencode 3.4.4 (http://fukuchi.org/works/qrencode/index.html.en) -->
+<svg width="1.31cm" height="1.31cm" viewBox="0 0 37 37" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+	<g id="QRcode">
+		<rect x="0" y="0" width="37" height="37" fill="#ffffff" />
+		<g id="Pattern">
+			<rect x="4" y="4" width="1" height="1" fill="#000000" />
+			<rect x="5" y="4" width="1" height="1" fill="#000000" />
+			<rect x="6" y="4" width="1" height="1" fill="#000000" />
+			<rect x="7" y="4" width="1" height="1" fill="#000000" />
+			<rect x="8" y="4" width="1" height="1" fill="#000000" />
+			<rect x="9" y="4" width="1" height="1" fill="#000000" />
+			<rect x="10" y="4" width="1" height="1" fill="#000000" />
+			<rect x="14" y="4" width="1" height="1" fill="#000000" />
+			<rect x="17" y="4" width="1" height="1" fill="#000000" />
+			<rect x="18" y="4" width="1" height="1" fill="#000000" />
+			<rect x="20" y="4" width="1" height="1" fill="#000000" />
+			<rect x="23" y="4" width="1" height="1" fill="#000000" />
+			<rect x="26" y="4" width="1" height="1" fill="#000000" />
+			<rect x="27" y="4" width="1" height="1" fill="#000000" />
+			<rect x="28" y="4" width="1" height="1" fill="#000000" />
+			<rect x="29" y="4" width="1" height="1" fill="#000000" />
+			<rect x="30" y="4" width="1" height="1" fill="#000000" />
+			<rect x="31" y="4" width="1" height="1" fill="#000000" />
+			<rect x="32" y="4" width="1" height="1" fill="#000000" />
+			<rect x="4" y="5" width="1" height="1" fill="#000000" />
+			<rect x="10" y="5" width="1" height="1" fill="#000000" />
+			<rect x="13" y="5" width="1" height="1" fill="#000000" />
+			<rect x="17" y="5" width="1" height="1" fill="#000000" />
+			<rect x="20" y="5" width="1" height="1" fill="#000000" />
+			<rect x="21" y="5" width="1" height="1" fill="#000000" />
+			<rect x="22" y="5" width="1" height="1" fill="#000000" />
+			<rect x="23" y="5" width="1" height="1" fill="#000000" />
+			<rect x="26" y="5" width="1" height="1" fill="#000000" />
+			<rect x="32" y="5" width="1" height="1" fill="#000000" />
+			<rect x="4" y="6" width="1" height="1" fill="#000000" />
+			<rect x="6" y="6" width="1" height="1" fill="#000000" />
+			<rect x="7" y="6" width="1" height="1" fill="#000000" />
+			<rect x="8" y="6" width="1" height="1" fill="#000000" />
+			<rect x="10" y="6" width="1" height="1" fill="#000000" />
+			<rect x="12" y="6" width="1" height="1" fill="#000000" />
+			<rect x="15" y="6" width="1" height="1" fill="#000000" />
+			<rect x="18" y="6" width="1" height="1" fill="#000000" />
+			<rect x="26" y="6" width="1" height="1" fill="#000000" />
+			<rect x="28" y="6" width="1" height="1" fill="#000000" />
+			<rect x="29" y="6" width="1" height="1" fill="#000000" />
+			<rect x="30" y="6" width="1" height="1" fill="#000000" />
+			<rect x="32" y="6" width="1" height="1" fill="#000000" />
+			<rect x="4" y="7" width="1" height="1" fill="#000000" />
+			<rect x="6" y="7" width="1" height="1" fill="#000000" />
+			<rect x="7" y="7" width="1" height="1" fill="#000000" />
+			<rect x="8" y="7" width="1" height="1" fill="#000000" />
+			<rect x="10" y="7" width="1" height="1" fill="#000000" />
+			<rect x="13" y="7" width="1" height="1" fill="#000000" />
+			<rect x="16" y="7" width="1" height="1" fill="#000000" />
+			<rect x="17" y="7" width="1" height="1" fill="#000000" />
+			<rect x="20" y="7" width="1" height="1" fill="#000000" />
+			<rect x="23" y="7" width="1" height="1" fill="#000000" />
+			<rect x="26" y="7" width="1" height="1" fill="#000000" />
+			<rect x="28" y="7" width="1" height="1" fill="#000000" />
+			<rect x="29" y="7" width="1" height="1" fill="#000000" />
+			<rect x="30" y="7" width="1" height="1" fill="#000000" />
+			<rect x="32" y="7" width="1" height="1" fill="#000000" />
+			<rect x="4" y="8" width="1" height="1" fill="#000000" />
+			<rect x="6" y="8" width="1" height="1" fill="#000000" />
+			<rect x="7" y="8" width="1" height="1" fill="#000000" />
+			<rect x="8" y="8" width="1" height="1" fill="#000000" />
+			<rect x="10" y="8" width="1" height="1" fill="#000000" />
+			<rect x="13" y="8" width="1" height="1" fill="#000000" />
+			<rect x="16" y="8" width="1" height="1" fill="#000000" />
+			<rect x="18" y="8" width="1" height="1" fill="#000000" />
+			<rect x="21" y="8" width="1" height="1" fill="#000000" />
+			<rect x="22" y="8" width="1" height="1" fill="#000000" />
+			<rect x="23" y="8" width="1" height="1" fill="#000000" />
+			<rect x="26" y="8" width="1" height="1" fill="#000000" />
+			<rect x="28" y="8" width="1" height="1" fill="#000000" />
+			<rect x="29" y="8" width="1" height="1" fill="#000000" />
+			<rect x="30" y="8" width="1" height="1" fill="#000000" />
+			<rect x="32" y="8" width="1" height="1" fill="#000000" />
+			<rect x="4" y="9" width="1" height="1" fill="#000000" />
+			<rect x="10" y="9" width="1" height="1" fill="#000000" />
+			<rect x="14" y="9" width="1" height="1" fill="#000000" />
+			<rect x="15" y="9" width="1" height="1" fill="#000000" />
+			<rect x="16" y="9" width="1" height="1" fill="#000000" />
+			<rect x="17" y="9" width="1" height="1" fill="#000000" />
+			<rect x="19" y="9" width="1" height="1" fill="#000000" />
+			<rect x="22" y="9" width="1" height="1" fill="#000000" />
+			<rect x="23" y="9" width="1" height="1" fill="#000000" />
+			<rect x="24" y="9" width="1" height="1" fill="#000000" />
+			<rect x="26" y="9" width="1" height="1" fill="#000000" />
+			<rect x="32" y="9" width="1" height="1" fill="#000000" />
+			<rect x="4" y="10" width="1" height="1" fill="#000000" />
+			<rect x="5" y="10" width="1" height="1" fill="#000000" />
+			<rect x="6" y="10" width="1" height="1" fill="#000000" />
+			<rect x="7" y="10" width="1" height="1" fill="#000000" />
+			<rect x="8" y="10" width="1" height="1" fill="#000000" />
+			<rect x="9" y="10" width="1" height="1" fill="#000000" />
+			<rect x="10" y="10" width="1" height="1" fill="#000000" />
+			<rect x="12" y="10" width="1" height="1" fill="#000000" />
+			<rect x="14" y="10" width="1" height="1" fill="#000000" />
+			<rect x="16" y="10" width="1" height="1" fill="#000000" />
+			<rect x="18" y="10" width="1" height="1" fill="#000000" />
+			<rect x="20" y="10" width="1" height="1" fill="#000000" />
+			<rect x="22" y="10" width="1" height="1" fill="#000000" />
+			<rect x="24" y="10" width="1" height="1" fill="#000000" />
+			<rect x="26" y="10" width="1" height="1" fill="#000000" />
+			<rect x="27" y="10" width="1" height="1" fill="#000000" />
+			<rect x="28" y="10" width="1" height="1" fill="#000000" />
+			<rect x="29" y="10" width="1" height="1" fill="#000000" />
+			<rect x="30" y="10" width="1" height="1" fill="#000000" />
+			<rect x="31" y="10" width="1" height="1" fill="#000000" />
+			<rect x="32" y="10" width="1" height="1" fill="#000000" />
+			<rect x="12" y="11" width="1" height="1" fill="#000000" />
+			<rect x="15" y="11" width="1" height="1" fill="#000000" />
+			<rect x="17" y="11" width="1" height="1" fill="#000000" />
+			<rect x="18" y="11" width="1" height="1" fill="#000000" />
+			<rect x="19" y="11" width="1" height="1" fill="#000000" />
+			<rect x="21" y="11" width="1" height="1" fill="#000000" />
+			<rect x="22" y="11" width="1" height="1" fill="#000000" />
+			<rect x="23" y="11" width="1" height="1" fill="#000000" />
+			<rect x="24" y="11" width="1" height="1" fill="#000000" />
+			<rect x="4" y="12" width="1" height="1" fill="#000000" />
+			<rect x="5" y="12" width="1" height="1" fill="#000000" />
+			<rect x="6" y="12" width="1" height="1" fill="#000000" />
+			<rect x="8" y="12" width="1" height="1" fill="#000000" />
+			<rect x="9" y="12" width="1" height="1" fill="#000000" />
+			<rect x="10" y="12" width="1" height="1" fill="#000000" />
+			<rect x="11" y="12" width="1" height="1" fill="#000000" />
+			<rect x="12" y="12" width="1" height="1" fill="#000000" />
+			<rect x="16" y="12" width="1" height="1" fill="#000000" />
+			<rect x="17" y="12" width="1" height="1" fill="#000000" />
+			<rect x="20" y="12" width="1" height="1" fill="#000000" />
+			<rect x="21" y="12" width="1" height="1" fill="#000000" />
+			<rect x="24" y="12" width="1" height="1" fill="#000000" />
+			<rect x="25" y="12" width="1" height="1" fill="#000000" />
+			<rect x="26" y="12" width="1" height="1" fill="#000000" />
+			<rect x="30" y="12" width="1" height="1" fill="#000000" />
+			<rect x="4" y="13" width="1" height="1" fill="#000000" />
+			<rect x="5" y="13" width="1" height="1" fill="#000000" />
+			<rect x="6" y="13" width="1" height="1" fill="#000000" />
+			<rect x="7" y="13" width="1" height="1" fill="#000000" />
+			<rect x="9" y="13" width="1" height="1" fill="#000000" />
+			<rect x="13" y="13" width="1" height="1" fill="#000000" />
+			<rect x="15" y="13" width="1" height="1" fill="#000000" />
+			<rect x="16" y="13" width="1" height="1" fill="#000000" />
+			<rect x="17" y="13" width="1" height="1" fill="#000000" />
+			<rect x="18" y="13" width="1" height="1" fill="#000000" />
+			<rect x="19" y="13" width="1" height="1" fill="#000000" />
+			<rect x="21" y="13" width="1" height="1" fill="#000000" />
+			<rect x="24" y="13" width="1" height="1" fill="#000000" />
+			<rect x="26" y="13" width="1" height="1" fill="#000000" />
+			<rect x="29" y="13" width="1" height="1" fill="#000000" />
+			<rect x="32" y="13" width="1" height="1" fill="#000000" />
+			<rect x="4" y="14" width="1" height="1" fill="#000000" />
+			<rect x="10" y="14" width="1" height="1" fill="#000000" />
+			<rect x="11" y="14" width="1" height="1" fill="#000000" />
+			<rect x="12" y="14" width="1" height="1" fill="#000000" />
+			<rect x="14" y="14" width="1" height="1" fill="#000000" />
+			<rect x="15" y="14" width="1" height="1" fill="#000000" />
+			<rect x="16" y="14" width="1" height="1" fill="#000000" />
+			<rect x="17" y="14" width="1" height="1" fill="#000000" />
+			<rect x="24" y="14" width="1" height="1" fill="#000000" />
+			<rect x="25" y="14" width="1" height="1" fill="#000000" />
+			<rect x="26" y="14" width="1" height="1" fill="#000000" />
+			<rect x="27" y="14" width="1" height="1" fill="#000000" />
+			<rect x="28" y="14" width="1" height="1" fill="#000000" />
+			<rect x="30" y="14" width="1" height="1" fill="#000000" />
+			<rect x="31" y="14" width="1" height="1" fill="#000000" />
+			<rect x="32" y="14" width="1" height="1" fill="#000000" />
+			<rect x="5" y="15" width="1" height="1" fill="#000000" />
+			<rect x="6" y="15" width="1" height="1" fill="#000000" />
+			<rect x="8" y="15" width="1" height="1" fill="#000000" />
+			<rect x="11" y="15" width="1" height="1" fill="#000000" />
+			<rect x="13" y="15" width="1" height="1" fill="#000000" />
+			<rect x="14" y="15" width="1" height="1" fill="#000000" />
+			<rect x="16" y="15" width="1" height="1" fill="#000000" />
+			<rect x="17" y="15" width="1" height="1" fill="#000000" />
+			<rect x="20" y="15" width="1" height="1" fill="#000000" />
+			<rect x="21" y="15" width="1" height="1" fill="#000000" />
+			<rect x="22" y="15" width="1" height="1" fill="#000000" />
+			<rect x="24" y="15" width="1" height="1" fill="#000000" />
+			<rect x="25" y="15" width="1" height="1" fill="#000000" />
+			<rect x="31" y="15" width="1" height="1" fill="#000000" />
+			<rect x="6" y="16" width="1" height="1" fill="#000000" />
+			<rect x="7" y="16" width="1" height="1" fill="#000000" />
+			<rect x="8" y="16" width="1" height="1" fill="#000000" />
+			<rect x="9" y="16" width="1" height="1" fill="#000000" />
+			<rect x="10" y="16" width="1" height="1" fill="#000000" />
+			<rect x="12" y="16" width="1" height="1" fill="#000000" />
+			<rect x="14" y="16" width="1" height="1" fill="#000000" />
+			<rect x="15" y="16" width="1" height="1" fill="#000000" />
+			<rect x="17" y="16" width="1" height="1" fill="#000000" />
+			<rect x="18" y="16" width="1" height="1" fill="#000000" />
+			<rect x="19" y="16" width="1" height="1" fill="#000000" />
+			<rect x="20" y="16" width="1" height="1" fill="#000000" />
+			<rect x="21" y="16" width="1" height="1" fill="#000000" />
+			<rect x="23" y="16" width="1" height="1" fill="#000000" />
+			<rect x="24" y="16" width="1" height="1" fill="#000000" />
+			<rect x="25" y="16" width="1" height="1" fill="#000000" />
+			<rect x="26" y="16" width="1" height="1" fill="#000000" />
+			<rect x="27" y="16" width="1" height="1" fill="#000000" />
+			<rect x="29" y="16" width="1" height="1" fill="#000000" />
+			<rect x="31" y="16" width="1" height="1" fill="#000000" />
+			<rect x="32" y="16" width="1" height="1" fill="#000000" />
+			<rect x="4" y="17" width="1" height="1" fill="#000000" />
+			<rect x="5" y="17" width="1" height="1" fill="#000000" />
+			<rect x="8" y="17" width="1" height="1" fill="#000000" />
+			<rect x="9" y="17" width="1" height="1" fill="#000000" />
+			<rect x="11" y="17" width="1" height="1" fill="#000000" />
+			<rect x="12" y="17" width="1" height="1" fill="#000000" />
+			<rect x="13" y="17" width="1" height="1" fill="#000000" />
+			<rect x="14" y="17" width="1" height="1" fill="#000000" />
+			<rect x="15" y="17" width="1" height="1" fill="#000000" />
+			<rect x="17" y="17" width="1" height="1" fill="#000000" />
+			<rect x="18" y="17" width="1" height="1" fill="#000000" />
+			<rect x="21" y="17" width="1" height="1" fill="#000000" />
+			<rect x="22" y="17" width="1" height="1" fill="#000000" />
+			<rect x="25" y="17" width="1" height="1" fill="#000000" />
+			<rect x="26" y="17" width="1" height="1" fill="#000000" />
+			<rect x="29" y="17" width="1" height="1" fill="#000000" />
+			<rect x="32" y="17" width="1" height="1" fill="#000000" />
+			<rect x="5" y="18" width="1" height="1" fill="#000000" />
+			<rect x="6" y="18" width="1" height="1" fill="#000000" />
+			<rect x="9" y="18" width="1" height="1" fill="#000000" />
+			<rect x="10" y="18" width="1" height="1" fill="#000000" />
+			<rect x="12" y="18" width="1" height="1" fill="#000000" />
+			<rect x="13" y="18" width="1" height="1" fill="#000000" />
+			<rect x="18" y="18" width="1" height="1" fill="#000000" />
+			<rect x="20" y="18" width="1" height="1" fill="#000000" />
+			<rect x="21" y="18" width="1" height="1" fill="#000000" />
+			<rect x="25" y="18" width="1" height="1" fill="#000000" />
+			<rect x="26" y="18" width="1" height="1" fill="#000000" />
+			<rect x="29" y="18" width="1" height="1" fill="#000000" />
+			<rect x="31" y="18" width="1" height="1" fill="#000000" />
+			<rect x="32" y="18" width="1" height="1" fill="#000000" />
+			<rect x="5" y="19" width="1" height="1" fill="#000000" />
+			<rect x="6" y="19" width="1" height="1" fill="#000000" />
+			<rect x="7" y="19" width="1" height="1" fill="#000000" />
+			<rect x="11" y="19" width="1" height="1" fill="#000000" />
+			<rect x="13" y="19" width="1" height="1" fill="#000000" />
+			<rect x="14" y="19" width="1" height="1" fill="#000000" />
+			<rect x="15" y="19" width="1" height="1" fill="#000000" />
+			<rect x="19" y="19" width="1" height="1" fill="#000000" />
+			<rect x="21" y="19" width="1" height="1" fill="#000000" />
+			<rect x="25" y="19" width="1" height="1" fill="#000000" />
+			<rect x="28" y="19" width="1" height="1" fill="#000000" />
+			<rect x="29" y="19" width="1" height="1" fill="#000000" />
+			<rect x="31" y="19" width="1" height="1" fill="#000000" />
+			<rect x="7" y="20" width="1" height="1" fill="#000000" />
+			<rect x="9" y="20" width="1" height="1" fill="#000000" />
+			<rect x="10" y="20" width="1" height="1" fill="#000000" />
+			<rect x="11" y="20" width="1" height="1" fill="#000000" />
+			<rect x="16" y="20" width="1" height="1" fill="#000000" />
+			<rect x="19" y="20" width="1" height="1" fill="#000000" />
+			<rect x="21" y="20" width="1" height="1" fill="#000000" />
+			<rect x="25" y="20" width="1" height="1" fill="#000000" />
+			<rect x="26" y="20" width="1" height="1" fill="#000000" />
+			<rect x="29" y="20" width="1" height="1" fill="#000000" />
+			<rect x="31" y="20" width="1" height="1" fill="#000000" />
+			<rect x="32" y="20" width="1" height="1" fill="#000000" />
+			<rect x="5" y="21" width="1" height="1" fill="#000000" />
+			<rect x="7" y="21" width="1" height="1" fill="#000000" />
+			<rect x="8" y="21" width="1" height="1" fill="#000000" />
+			<rect x="9" y="21" width="1" height="1" fill="#000000" />
+			<rect x="12" y="21" width="1" height="1" fill="#000000" />
+			<rect x="13" y="21" width="1" height="1" fill="#000000" />
+			<rect x="15" y="21" width="1" height="1" fill="#000000" />
+			<rect x="16" y="21" width="1" height="1" fill="#000000" />
+			<rect x="17" y="21" width="1" height="1" fill="#000000" />
+			<rect x="18" y="21" width="1" height="1" fill="#000000" />
+			<rect x="19" y="21" width="1" height="1" fill="#000000" />
+			<rect x="20" y="21" width="1" height="1" fill="#000000" />
+			<rect x="21" y="21" width="1" height="1" fill="#000000" />
+			<rect x="24" y="21" width="1" height="1" fill="#000000" />
+			<rect x="25" y="21" width="1" height="1" fill="#000000" />
+			<rect x="26" y="21" width="1" height="1" fill="#000000" />
+			<rect x="27" y="21" width="1" height="1" fill="#000000" />
+			<rect x="29" y="21" width="1" height="1" fill="#000000" />
+			<rect x="30" y="21" width="1" height="1" fill="#000000" />
+			<rect x="32" y="21" width="1" height="1" fill="#000000" />
+			<rect x="4" y="22" width="1" height="1" fill="#000000" />
+			<rect x="6" y="22" width="1" height="1" fill="#000000" />
+			<rect x="7" y="22" width="1" height="1" fill="#000000" />
+			<rect x="8" y="22" width="1" height="1" fill="#000000" />
+			<rect x="9" y="22" width="1" height="1" fill="#000000" />
+			<rect x="10" y="22" width="1" height="1" fill="#000000" />
+			<rect x="15" y="22" width="1" height="1" fill="#000000" />
+			<rect x="16" y="22" width="1" height="1" fill="#000000" />
+			<rect x="18" y="22" width="1" height="1" fill="#000000" />
+			<rect x="20" y="22" width="1" height="1" fill="#000000" />
+			<rect x="22" y="22" width="1" height="1" fill="#000000" />
+			<rect x="26" y="22" width="1" height="1" fill="#000000" />
+			<rect x="27" y="22" width="1" height="1" fill="#000000" />
+			<rect x="31" y="22" width="1" height="1" fill="#000000" />
+			<rect x="32" y="22" width="1" height="1" fill="#000000" />
+			<rect x="5" y="23" width="1" height="1" fill="#000000" />
+			<rect x="9" y="23" width="1" height="1" fill="#000000" />
+			<rect x="13" y="23" width="1" height="1" fill="#000000" />
+			<rect x="14" y="23" width="1" height="1" fill="#000000" />
+			<rect x="16" y="23" width="1" height="1" fill="#000000" />
+			<rect x="17" y="23" width="1" height="1" fill="#000000" />
+			<rect x="19" y="23" width="1" height="1" fill="#000000" />
+			<rect x="21" y="23" width="1" height="1" fill="#000000" />
+			<rect x="22" y="23" width="1" height="1" fill="#000000" />
+			<rect x="23" y="23" width="1" height="1" fill="#000000" />
+			<rect x="28" y="23" width="1" height="1" fill="#000000" />
+			<rect x="29" y="23" width="1" height="1" fill="#000000" />
+			<rect x="31" y="23" width="1" height="1" fill="#000000" />
+			<rect x="4" y="24" width="1" height="1" fill="#000000" />
+			<rect x="6" y="24" width="1" height="1" fill="#000000" />
+			<rect x="8" y="24" width="1" height="1" fill="#000000" />
+			<rect x="9" y="24" width="1" height="1" fill="#000000" />
+			<rect x="10" y="24" width="1" height="1" fill="#000000" />
+			<rect x="11" y="24" width="1" height="1" fill="#000000" />
+			<rect x="12" y="24" width="1" height="1" fill="#000000" />
+			<rect x="15" y="24" width="1" height="1" fill="#000000" />
+			<rect x="18" y="24" width="1" height="1" fill="#000000" />
+			<rect x="20" y="24" width="1" height="1" fill="#000000" />
+			<rect x="21" y="24" width="1" height="1" fill="#000000" />
+			<rect x="24" y="24" width="1" height="1" fill="#000000" />
+			<rect x="25" y="24" width="1" height="1" fill="#000000" />
+			<rect x="26" y="24" width="1" height="1" fill="#000000" />
+			<rect x="27" y="24" width="1" height="1" fill="#000000" />
+			<rect x="28" y="24" width="1" height="1" fill="#000000" />
+			<rect x="12" y="25" width="1" height="1" fill="#000000" />
+			<rect x="15" y="25" width="1" height="1" fill="#000000" />
+			<rect x="17" y="25" width="1" height="1" fill="#000000" />
+			<rect x="23" y="25" width="1" height="1" fill="#000000" />
+			<rect x="24" y="25" width="1" height="1" fill="#000000" />
+			<rect x="28" y="25" width="1" height="1" fill="#000000" />
+			<rect x="30" y="25" width="1" height="1" fill="#000000" />
+			<rect x="31" y="25" width="1" height="1" fill="#000000" />
+			<rect x="32" y="25" width="1" height="1" fill="#000000" />
+			<rect x="4" y="26" width="1" height="1" fill="#000000" />
+			<rect x="5" y="26" width="1" height="1" fill="#000000" />
+			<rect x="6" y="26" width="1" height="1" fill="#000000" />
+			<rect x="7" y="26" width="1" height="1" fill="#000000" />
+			<rect x="8" y="26" width="1" height="1" fill="#000000" />
+			<rect x="9" y="26" width="1" height="1" fill="#000000" />
+			<rect x="10" y="26" width="1" height="1" fill="#000000" />
+			<rect x="12" y="26" width="1" height="1" fill="#000000" />
+			<rect x="23" y="26" width="1" height="1" fill="#000000" />
+			<rect x="24" y="26" width="1" height="1" fill="#000000" />
+			<rect x="26" y="26" width="1" height="1" fill="#000000" />
+			<rect x="28" y="26" width="1" height="1" fill="#000000" />
+			<rect x="29" y="26" width="1" height="1" fill="#000000" />
+			<rect x="31" y="26" width="1" height="1" fill="#000000" />
+			<rect x="32" y="26" width="1" height="1" fill="#000000" />
+			<rect x="4" y="27" width="1" height="1" fill="#000000" />
+			<rect x="10" y="27" width="1" height="1" fill="#000000" />
+			<rect x="12" y="27" width="1" height="1" fill="#000000" />
+			<rect x="13" y="27" width="1" height="1" fill="#000000" />
+			<rect x="14" y="27" width="1" height="1" fill="#000000" />
+			<rect x="15" y="27" width="1" height="1" fill="#000000" />
+			<rect x="18" y="27" width="1" height="1" fill="#000000" />
+			<rect x="19" y="27" width="1" height="1" fill="#000000" />
+			<rect x="20" y="27" width="1" height="1" fill="#000000" />
+			<rect x="21" y="27" width="1" height="1" fill="#000000" />
+			<rect x="24" y="27" width="1" height="1" fill="#000000" />
+			<rect x="28" y="27" width="1" height="1" fill="#000000" />
+			<rect x="29" y="27" width="1" height="1" fill="#000000" />
+			<rect x="32" y="27" width="1" height="1" fill="#000000" />
+			<rect x="4" y="28" width="1" height="1" fill="#000000" />
+			<rect x="6" y="28" width="1" height="1" fill="#000000" />
+			<rect x="7" y="28" width="1" height="1" fill="#000000" />
+			<rect x="8" y="28" width="1" height="1" fill="#000000" />
+			<rect x="10" y="28" width="1" height="1" fill="#000000" />
+			<rect x="12" y="28" width="1" height="1" fill="#000000" />
+			<rect x="14" y="28" width="1" height="1" fill="#000000" />
+			<rect x="16" y="28" width="1" height="1" fill="#000000" />
+			<rect x="20" y="28" width="1" height="1" fill="#000000" />
+			<rect x="21" y="28" width="1" height="1" fill="#000000" />
+			<rect x="22" y="28" width="1" height="1" fill="#000000" />
+			<rect x="24" y="28" width="1" height="1" fill="#000000" />
+			<rect x="25" y="28" width="1" height="1" fill="#000000" />
+			<rect x="26" y="28" width="1" height="1" fill="#000000" />
+			<rect x="27" y="28" width="1" height="1" fill="#000000" />
+			<rect x="28" y="28" width="1" height="1" fill="#000000" />
+			<rect x="31" y="28" width="1" height="1" fill="#000000" />
+			<rect x="4" y="29" width="1" height="1" fill="#000000" />
+			<rect x="6" y="29" width="1" height="1" fill="#000000" />
+			<rect x="7" y="29" width="1" height="1" fill="#000000" />
+			<rect x="8" y="29" width="1" height="1" fill="#000000" />
+			<rect x="10" y="29" width="1" height="1" fill="#000000" />
+			<rect x="15" y="29" width="1" height="1" fill="#000000" />
+			<rect x="16" y="29" width="1" height="1" fill="#000000" />
+			<rect x="20" y="29" width="1" height="1" fill="#000000" />
+			<rect x="23" y="29" width="1" height="1" fill="#000000" />
+			<rect x="27" y="29" width="1" height="1" fill="#000000" />
+			<rect x="28" y="29" width="1" height="1" fill="#000000" />
+			<rect x="30" y="29" width="1" height="1" fill="#000000" />
+			<rect x="4" y="30" width="1" height="1" fill="#000000" />
+			<rect x="6" y="30" width="1" height="1" fill="#000000" />
+			<rect x="7" y="30" width="1" height="1" fill="#000000" />
+			<rect x="8" y="30" width="1" height="1" fill="#000000" />
+			<rect x="10" y="30" width="1" height="1" fill="#000000" />
+			<rect x="12" y="30" width="1" height="1" fill="#000000" />
+			<rect x="13" y="30" width="1" height="1" fill="#000000" />
+			<rect x="15" y="30" width="1" height="1" fill="#000000" />
+			<rect x="16" y="30" width="1" height="1" fill="#000000" />
+			<rect x="21" y="30" width="1" height="1" fill="#000000" />
+			<rect x="23" y="30" width="1" height="1" fill="#000000" />
+			<rect x="27" y="30" width="1" height="1" fill="#000000" />
+			<rect x="28" y="30" width="1" height="1" fill="#000000" />
+			<rect x="29" y="30" width="1" height="1" fill="#000000" />
+			<rect x="32" y="30" width="1" height="1" fill="#000000" />
+			<rect x="4" y="31" width="1" height="1" fill="#000000" />
+			<rect x="10" y="31" width="1" height="1" fill="#000000" />
+			<rect x="12" y="31" width="1" height="1" fill="#000000" />
+			<rect x="16" y="31" width="1" height="1" fill="#000000" />
+			<rect x="17" y="31" width="1" height="1" fill="#000000" />
+			<rect x="19" y="31" width="1" height="1" fill="#000000" />
+			<rect x="20" y="31" width="1" height="1" fill="#000000" />
+			<rect x="21" y="31" width="1" height="1" fill="#000000" />
+			<rect x="22" y="31" width="1" height="1" fill="#000000" />
+			<rect x="23" y="31" width="1" height="1" fill="#000000" />
+			<rect x="24" y="31" width="1" height="1" fill="#000000" />
+			<rect x="26" y="31" width="1" height="1" fill="#000000" />
+			<rect x="28" y="31" width="1" height="1" fill="#000000" />
+			<rect x="31" y="31" width="1" height="1" fill="#000000" />
+			<rect x="4" y="32" width="1" height="1" fill="#000000" />
+			<rect x="5" y="32" width="1" height="1" fill="#000000" />
+			<rect x="6" y="32" width="1" height="1" fill="#000000" />
+			<rect x="7" y="32" width="1" height="1" fill="#000000" />
+			<rect x="8" y="32" width="1" height="1" fill="#000000" />
+			<rect x="9" y="32" width="1" height="1" fill="#000000" />
+			<rect x="10" y="32" width="1" height="1" fill="#000000" />
+			<rect x="12" y="32" width="1" height="1" fill="#000000" />
+			<rect x="13" y="32" width="1" height="1" fill="#000000" />
+			<rect x="14" y="32" width="1" height="1" fill="#000000" />
+			<rect x="15" y="32" width="1" height="1" fill="#000000" />
+			<rect x="16" y="32" width="1" height="1" fill="#000000" />
+			<rect x="18" y="32" width="1" height="1" fill="#000000" />
+			<rect x="20" y="32" width="1" height="1" fill="#000000" />
+			<rect x="21" y="32" width="1" height="1" fill="#000000" />
+			<rect x="23" y="32" width="1" height="1" fill="#000000" />
+			<rect x="24" y="32" width="1" height="1" fill="#000000" />
+			<rect x="26" y="32" width="1" height="1" fill="#000000" />
+			<rect x="27" y="32" width="1" height="1" fill="#000000" />
+			<rect x="28" y="32" width="1" height="1" fill="#000000" />
+			<rect x="31" y="32" width="1" height="1" fill="#000000" />
+			<rect x="32" y="32" width="1" height="1" fill="#000000" />
+		</g>
+	</g>
+</svg>
+
+			</td>
+			<td width="33%">
+				<b>Term:</b> 2013 Spring (13s)<br>
+				<b>School:</b> Erik Jonsson School of Engineering and Computer Science<br>
+				<b>Dept:</b> 
+			</td>
+			<td width="33%">
+				<b>Class ID:</b> <strong><a href="https://go.utdallas.edu/ee1202.002.13s" target="_blank" title="Visit the CourseBook page for this class.">EE1202.002.13S</a></strong><br>
+				<b>Title:</b> Introduction to Electrical Engineering<br>
+				<b>Enrollment:</b> 44<br>
+				<b>Instructor:</b> <a href="https://go.utdallas.edu/eval/dodge" title="View all available evaluations for Nathan Dodge">Nathan Dodge</a><br>
+			</td>
+		</tr>
+	</table>	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="report-section">
+		<tr class="section-head center">
+			<td>Course Experience for EE1202.002.13S - Introduction to Electrical Engineering</td>
+		</tr>
+		<tr>
+			<td>
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr class="key">
+					<td class="info">Evaluation Scale is<br /><a href="https://en.wikipedia.org/wiki/Likert_scale" target="_blank">5 Level Likert Item</a></td>
+						<td class="spacer">&nbsp;</td>
+						<td colspan="5">
+							<table>
+								<tr>
+									<td class="chart-scale-heading center" title="Strongly Disagree">SD</td>
+									<td class="chart-scale-heading center" title="Disagree">D</td>
+									<td class="chart-scale-heading center" title="Neither Agree nor Disagree">N</td>
+									<td class="chart-scale-heading center" title="Agree">A</td>
+									<td class="chart-scale-heading center" title="Strongly Agree">SA</td>
+								</tr>
+							</table>
+						</td>
+						<td class="spacer">&nbsp;</td>
+						
+						<td colspan="7">
+							<table>
+								<tr>
+									<td class="count-table-heading center">%/#</td>
+									<td class="count-table-heading center" title="Strongly Disagree">SD</td>
+									<td class="count-table-heading center" title="Disagree">D</td>
+									<td class="count-table-heading center" title="Neither Agree nor Disagree">N</td>
+									<td class="count-table-heading center" title="Agree">A</td>
+									<td class="count-table-heading center" title="Strongly Agree">SA</td>
+									<td class="count-table-heading center">TOT</td>
+								</tr>
+							</table>
+						</td>
+						<td class="spacer">&nbsp;</td>
+						<td>
+							<table>
+								<tr>
+									<td class="summary-stat-heading center">Summary Statistics</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+										<tr class="statement-row odd-row">
+						<td class="statement">The course objectives were clearly defined.</td>
+						<td>&nbsp;</td>
+						<td colspan="5"><img src="https://provost.utdallas.edu/images/live/uescharts/5-10-10-24-52-4.10-4.55-1.22.svg" style="background-color: white; " alt="Evaluation Chart"/></td>
+						<td>&nbsp;</td>
+						<td colspan="7">
+							<table class="count-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark">%</td>
+									<td>5%</td>
+									<td>10%</td>
+									<td>10%</td>
+									<td>24%</td>
+									<td>52%</td>
+									<td class="dark">100%</td>
+								</tr>
+								<tr>
+									<td class="dark">#</td>
+									<td>1</td>
+									<td>2</td>
+									<td>2</td>
+									<td>5</td>
+									<td>11</td>
+									<td class="dark">21</td>
+								</tr>
+							</table>
+						</td>
+						<td>&nbsp;</td>
+						<td>
+							<table class="summary-stat-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark" title="Median (Interpolated)">M</td>
+									<td><b>4.55</b></td>
+								</tr>
+								<tr>
+									<td class="dark" title="Mean">&#956;</td>
+									<td>4.10</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Standard Deviation">&#963;</td>
+									<td>1.22</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Response Count">N</td>
+									<td>21</td>
+								</tr>
+							</table>
+						</td>
+					</tr>					<tr class="statement-row even-row">
+						<td class="statement">The course was well organized.</td>
+						<td>&nbsp;</td>
+						<td colspan="5"><img src="https://provost.utdallas.edu/images/live/uescharts/0-5-5-43-48-4.33-4.44-0.80.svg" style="background-color: white; " alt="Evaluation Chart"/></td>
+						<td>&nbsp;</td>
+						<td colspan="7">
+							<table class="count-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark">%</td>
+									<td>-</td>
+									<td>5%</td>
+									<td>5%</td>
+									<td>43%</td>
+									<td>48%</td>
+									<td class="dark">100%</td>
+								</tr>
+								<tr>
+									<td class="dark">#</td>
+									<td>-</td>
+									<td>1</td>
+									<td>1</td>
+									<td>9</td>
+									<td>10</td>
+									<td class="dark">21</td>
+								</tr>
+							</table>
+						</td>
+						<td>&nbsp;</td>
+						<td>
+							<table class="summary-stat-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark" title="Median (Interpolated)">M</td>
+									<td><b>4.44</b></td>
+								</tr>
+								<tr>
+									<td class="dark" title="Mean">&#956;</td>
+									<td>4.33</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Standard Deviation">&#963;</td>
+									<td>0.80</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Response Count">N</td>
+									<td>21</td>
+								</tr>
+							</table>
+						</td>
+					</tr>					<tr class="statement-row odd-row">
+						<td class="statement">Overall, the course was excellent.</td>
+						<td>&nbsp;</td>
+						<td colspan="5"><img src="https://provost.utdallas.edu/images/live/uescharts/0-5-10-29-57-4.38-4.63-0.86.svg" style="background-color: white; " alt="Evaluation Chart"/></td>
+						<td>&nbsp;</td>
+						<td colspan="7">
+							<table class="count-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark">%</td>
+									<td>-</td>
+									<td>5%</td>
+									<td>10%</td>
+									<td>29%</td>
+									<td>57%</td>
+									<td class="dark">100%</td>
+								</tr>
+								<tr>
+									<td class="dark">#</td>
+									<td>-</td>
+									<td>1</td>
+									<td>2</td>
+									<td>6</td>
+									<td>12</td>
+									<td class="dark">21</td>
+								</tr>
+							</table>
+						</td>
+						<td>&nbsp;</td>
+						<td>
+							<table class="summary-stat-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark" title="Median (Interpolated)">M</td>
+									<td><b>4.63</b></td>
+								</tr>
+								<tr>
+									<td class="dark" title="Mean">&#956;</td>
+									<td>4.38</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Standard Deviation">&#963;</td>
+									<td>0.86</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Response Count">N</td>
+									<td>21</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+							</table>
+				  		</td>
+					</tr>
+				</table>
+				<table width="100%" border="0" cellpadding="0" cellspacing="0" class="report-section">
+		<tr class="section-head center">
+			<td>Instructor Nathan Dodge (EE1202.002.13S)</td>
+		</tr>
+		<tr>
+			<td>
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr class="key">
+					<td class="info">Evaluation Scale is<br /><a href="https://en.wikipedia.org/wiki/Likert_scale" target="_blank">5 Level Likert Item</a></td>
+						<td class="spacer">&nbsp;</td>
+						<td colspan="5">
+							<table>
+								<tr>
+									<td class="chart-scale-heading center" title="Strongly Disagree">SD</td>
+									<td class="chart-scale-heading center" title="Disagree">D</td>
+									<td class="chart-scale-heading center" title="Neither Agree nor Disagree">N</td>
+									<td class="chart-scale-heading center" title="Agree">A</td>
+									<td class="chart-scale-heading center" title="Strongly Agree">SA</td>
+								</tr>
+							</table>
+						</td>
+						<td class="spacer">&nbsp;</td>
+						
+						<td colspan="7">
+							<table>
+								<tr>
+									<td class="count-table-heading center">%/#</td>
+									<td class="count-table-heading center" title="Strongly Disagree">SD</td>
+									<td class="count-table-heading center" title="Disagree">D</td>
+									<td class="count-table-heading center" title="Neither Agree nor Disagree">N</td>
+									<td class="count-table-heading center" title="Agree">A</td>
+									<td class="count-table-heading center" title="Strongly Agree">SA</td>
+									<td class="count-table-heading center">TOT</td>
+								</tr>
+							</table>
+						</td>
+						<td class="spacer">&nbsp;</td>
+						<td>
+							<table>
+								<tr>
+									<td class="summary-stat-heading center">Summary Statistics</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+										<tr class="statement-row odd-row">
+						<td class="statement">The instructor was well prepared in the subject area.</td>
+						<td>&nbsp;</td>
+						<td colspan="5"><img src="https://provost.utdallas.edu/images/live/uescharts/0-0-5-29-67-4.62-4.75-0.59.svg" style="background-color: white; " alt="Evaluation Chart"/></td>
+						<td>&nbsp;</td>
+						<td colspan="7">
+							<table class="count-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark">%</td>
+									<td>-</td>
+									<td>-</td>
+									<td>5%</td>
+									<td>29%</td>
+									<td>67%</td>
+									<td class="dark">100%</td>
+								</tr>
+								<tr>
+									<td class="dark">#</td>
+									<td>-</td>
+									<td>-</td>
+									<td>1</td>
+									<td>6</td>
+									<td>14</td>
+									<td class="dark">21</td>
+								</tr>
+							</table>
+						</td>
+						<td>&nbsp;</td>
+						<td>
+							<table class="summary-stat-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark" title="Median (Interpolated)">M</td>
+									<td><b>4.75</b></td>
+								</tr>
+								<tr>
+									<td class="dark" title="Mean">&#956;</td>
+									<td>4.62</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Standard Deviation">&#963;</td>
+									<td>0.59</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Response Count">N</td>
+									<td>21</td>
+								</tr>
+							</table>
+						</td>
+					</tr>					<tr class="statement-row even-row">
+						<td class="statement">The instructor communicated information effectively.</td>
+						<td>&nbsp;</td>
+						<td colspan="5"><img src="https://provost.utdallas.edu/images/live/uescharts/5-10-0-43-43-4.10-4.33-1.14.svg" style="background-color: white; " alt="Evaluation Chart"/></td>
+						<td>&nbsp;</td>
+						<td colspan="7">
+							<table class="count-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark">%</td>
+									<td>5%</td>
+									<td>10%</td>
+									<td>-</td>
+									<td>43%</td>
+									<td>43%</td>
+									<td class="dark">100%</td>
+								</tr>
+								<tr>
+									<td class="dark">#</td>
+									<td>1</td>
+									<td>2</td>
+									<td>-</td>
+									<td>9</td>
+									<td>9</td>
+									<td class="dark">21</td>
+								</tr>
+							</table>
+						</td>
+						<td>&nbsp;</td>
+						<td>
+							<table class="summary-stat-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark" title="Median (Interpolated)">M</td>
+									<td><b>4.33</b></td>
+								</tr>
+								<tr>
+									<td class="dark" title="Mean">&#956;</td>
+									<td>4.10</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Standard Deviation">&#963;</td>
+									<td>1.14</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Response Count">N</td>
+									<td>21</td>
+								</tr>
+							</table>
+						</td>
+					</tr>					<tr class="statement-row odd-row">
+						<td class="statement">The instructor seemed genuinely interested in teaching.</td>
+						<td>&nbsp;</td>
+						<td colspan="5"><img src="https://provost.utdallas.edu/images/live/uescharts/0-0-5-19-76-4.71-4.84-0.56.svg" style="background-color: white; " alt="Evaluation Chart"/></td>
+						<td>&nbsp;</td>
+						<td colspan="7">
+							<table class="count-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark">%</td>
+									<td>-</td>
+									<td>-</td>
+									<td>5%</td>
+									<td>19%</td>
+									<td>76%</td>
+									<td class="dark">100%</td>
+								</tr>
+								<tr>
+									<td class="dark">#</td>
+									<td>-</td>
+									<td>-</td>
+									<td>1</td>
+									<td>4</td>
+									<td>16</td>
+									<td class="dark">21</td>
+								</tr>
+							</table>
+						</td>
+						<td>&nbsp;</td>
+						<td>
+							<table class="summary-stat-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark" title="Median (Interpolated)">M</td>
+									<td><b>4.84</b></td>
+								</tr>
+								<tr>
+									<td class="dark" title="Mean">&#956;</td>
+									<td>4.71</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Standard Deviation">&#963;</td>
+									<td>0.56</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Response Count">N</td>
+									<td>21</td>
+								</tr>
+							</table>
+						</td>
+					</tr>					<tr class="statement-row even-row">
+						<td class="statement">The instructor provided timely feedback.</td>
+						<td>&nbsp;</td>
+						<td colspan="5"><img src="https://provost.utdallas.edu/images/live/uescharts/0-5-5-29-62-4.48-4.69-0.81.svg" style="background-color: white; " alt="Evaluation Chart"/></td>
+						<td>&nbsp;</td>
+						<td colspan="7">
+							<table class="count-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark">%</td>
+									<td>-</td>
+									<td>5%</td>
+									<td>5%</td>
+									<td>29%</td>
+									<td>62%</td>
+									<td class="dark">100%</td>
+								</tr>
+								<tr>
+									<td class="dark">#</td>
+									<td>-</td>
+									<td>1</td>
+									<td>1</td>
+									<td>6</td>
+									<td>13</td>
+									<td class="dark">21</td>
+								</tr>
+							</table>
+						</td>
+						<td>&nbsp;</td>
+						<td>
+							<table class="summary-stat-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark" title="Median (Interpolated)">M</td>
+									<td><b>4.69</b></td>
+								</tr>
+								<tr>
+									<td class="dark" title="Mean">&#956;</td>
+									<td>4.48</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Standard Deviation">&#963;</td>
+									<td>0.81</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Response Count">N</td>
+									<td>21</td>
+								</tr>
+							</table>
+						</td>
+					</tr>					<tr class="statement-row odd-row">
+						<td class="statement">The instructor was accessible outside of class.</td>
+						<td>&nbsp;</td>
+						<td colspan="5"><img src="https://provost.utdallas.edu/images/live/uescharts/0-0-10-19-71-4.62-4.80-0.67.svg" style="background-color: white; " alt="Evaluation Chart"/></td>
+						<td>&nbsp;</td>
+						<td colspan="7">
+							<table class="count-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark">%</td>
+									<td>-</td>
+									<td>-</td>
+									<td>10%</td>
+									<td>19%</td>
+									<td>71%</td>
+									<td class="dark">100%</td>
+								</tr>
+								<tr>
+									<td class="dark">#</td>
+									<td>-</td>
+									<td>-</td>
+									<td>2</td>
+									<td>4</td>
+									<td>15</td>
+									<td class="dark">21</td>
+								</tr>
+							</table>
+						</td>
+						<td>&nbsp;</td>
+						<td>
+							<table class="summary-stat-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark" title="Median (Interpolated)">M</td>
+									<td><b>4.80</b></td>
+								</tr>
+								<tr>
+									<td class="dark" title="Mean">&#956;</td>
+									<td>4.62</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Standard Deviation">&#963;</td>
+									<td>0.67</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Response Count">N</td>
+									<td>21</td>
+								</tr>
+							</table>
+						</td>
+					</tr>					<tr class="statement-row even-row">
+						<td class="statement">The instructor evaluated students fairly.</td>
+						<td>&nbsp;</td>
+						<td colspan="5"><img src="https://provost.utdallas.edu/images/live/uescharts/0-10-5-24-62-4.38-4.69-0.97.svg" style="background-color: white; " alt="Evaluation Chart"/></td>
+						<td>&nbsp;</td>
+						<td colspan="7">
+							<table class="count-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark">%</td>
+									<td>-</td>
+									<td>10%</td>
+									<td>5%</td>
+									<td>24%</td>
+									<td>62%</td>
+									<td class="dark">100%</td>
+								</tr>
+								<tr>
+									<td class="dark">#</td>
+									<td>-</td>
+									<td>2</td>
+									<td>1</td>
+									<td>5</td>
+									<td>13</td>
+									<td class="dark">21</td>
+								</tr>
+							</table>
+						</td>
+						<td>&nbsp;</td>
+						<td>
+							<table class="summary-stat-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark" title="Median (Interpolated)">M</td>
+									<td><b>4.69</b></td>
+								</tr>
+								<tr>
+									<td class="dark" title="Mean">&#956;</td>
+									<td>4.38</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Standard Deviation">&#963;</td>
+									<td>0.97</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Response Count">N</td>
+									<td>21</td>
+								</tr>
+							</table>
+						</td>
+					</tr>					<tr class="statement-row odd-row">
+						<td class="statement">Overall, this instructor was excellent.</td>
+						<td>&nbsp;</td>
+						<td colspan="5"><img src="https://provost.utdallas.edu/images/live/uescharts/5-0-5-29-62-4.43-4.69-0.98.svg" style="background-color: white; " alt="Evaluation Chart"/></td>
+						<td>&nbsp;</td>
+						<td colspan="7">
+							<table class="count-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark">%</td>
+									<td>5%</td>
+									<td>-</td>
+									<td>5%</td>
+									<td>29%</td>
+									<td>62%</td>
+									<td class="dark">100%</td>
+								</tr>
+								<tr>
+									<td class="dark">#</td>
+									<td>1</td>
+									<td>-</td>
+									<td>1</td>
+									<td>6</td>
+									<td>13</td>
+									<td class="dark">21</td>
+								</tr>
+							</table>
+						</td>
+						<td>&nbsp;</td>
+						<td>
+							<table class="summary-stat-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark" title="Median (Interpolated)">M</td>
+									<td><b>4.69</b></td>
+								</tr>
+								<tr>
+									<td class="dark" title="Mean">&#956;</td>
+									<td>4.43</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Standard Deviation">&#963;</td>
+									<td>0.98</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Response Count">N</td>
+									<td>21</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+							</table>
+				  		</td>
+					</tr>
+				</table>
+				<table width="100%" border="0" cellpadding="0" cellspacing="0" class="report-section">
+		<tr class="section-head center">
+			<td>Student Experience for EE1202.002.13S - Introduction to Electrical Engineering</td>
+		</tr>
+		<tr>
+			<td>
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr class="key">
+					<td class="info">Evaluation Scale is<br /><a href="https://en.wikipedia.org/wiki/Likert_scale" target="_blank">5 Level Likert Item</a></td>
+						<td class="spacer">&nbsp;</td>
+						<td colspan="5">
+							<table>
+								<tr>
+									<td class="chart-scale-heading center" title="Strongly Disagree">SD</td>
+									<td class="chart-scale-heading center" title="Disagree">D</td>
+									<td class="chart-scale-heading center" title="Neither Agree nor Disagree">N</td>
+									<td class="chart-scale-heading center" title="Agree">A</td>
+									<td class="chart-scale-heading center" title="Strongly Agree">SA</td>
+								</tr>
+							</table>
+						</td>
+						<td class="spacer">&nbsp;</td>
+						
+						<td colspan="7">
+							<table>
+								<tr>
+									<td class="count-table-heading center">%/#</td>
+									<td class="count-table-heading center" title="Strongly Disagree">SD</td>
+									<td class="count-table-heading center" title="Disagree">D</td>
+									<td class="count-table-heading center" title="Neither Agree nor Disagree">N</td>
+									<td class="count-table-heading center" title="Agree">A</td>
+									<td class="count-table-heading center" title="Strongly Agree">SA</td>
+									<td class="count-table-heading center">TOT</td>
+								</tr>
+							</table>
+						</td>
+						<td class="spacer">&nbsp;</td>
+						<td>
+							<table>
+								<tr>
+									<td class="summary-stat-heading center">Summary Statistics</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+										<tr class="statement-row odd-row">
+						<td class="statement">I was free to ask questions and express my opinions and ideas.</td>
+						<td>&nbsp;</td>
+						<td colspan="5"><img src="https://provost.utdallas.edu/images/live/uescharts/0-0-14-24-62-4.48-4.69-0.75.svg" style="background-color: white; " alt="Evaluation Chart"/></td>
+						<td>&nbsp;</td>
+						<td colspan="7">
+							<table class="count-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark">%</td>
+									<td>-</td>
+									<td>-</td>
+									<td>14%</td>
+									<td>24%</td>
+									<td>62%</td>
+									<td class="dark">100%</td>
+								</tr>
+								<tr>
+									<td class="dark">#</td>
+									<td>-</td>
+									<td>-</td>
+									<td>3</td>
+									<td>5</td>
+									<td>13</td>
+									<td class="dark">21</td>
+								</tr>
+							</table>
+						</td>
+						<td>&nbsp;</td>
+						<td>
+							<table class="summary-stat-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark" title="Median (Interpolated)">M</td>
+									<td><b>4.69</b></td>
+								</tr>
+								<tr>
+									<td class="dark" title="Mean">&#956;</td>
+									<td>4.48</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Standard Deviation">&#963;</td>
+									<td>0.75</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Response Count">N</td>
+									<td>21</td>
+								</tr>
+							</table>
+						</td>
+					</tr>					<tr class="statement-row even-row">
+						<td class="statement">My performance was evaluated fairly.</td>
+						<td>&nbsp;</td>
+						<td colspan="5"><img src="https://provost.utdallas.edu/images/live/uescharts/0-0-10-24-67-4.57-4.75-0.68.svg" style="background-color: white; " alt="Evaluation Chart"/></td>
+						<td>&nbsp;</td>
+						<td colspan="7">
+							<table class="count-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark">%</td>
+									<td>-</td>
+									<td>-</td>
+									<td>10%</td>
+									<td>24%</td>
+									<td>67%</td>
+									<td class="dark">100%</td>
+								</tr>
+								<tr>
+									<td class="dark">#</td>
+									<td>-</td>
+									<td>-</td>
+									<td>2</td>
+									<td>5</td>
+									<td>14</td>
+									<td class="dark">21</td>
+								</tr>
+							</table>
+						</td>
+						<td>&nbsp;</td>
+						<td>
+							<table class="summary-stat-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark" title="Median (Interpolated)">M</td>
+									<td><b>4.75</b></td>
+								</tr>
+								<tr>
+									<td class="dark" title="Mean">&#956;</td>
+									<td>4.57</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Standard Deviation">&#963;</td>
+									<td>0.68</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Response Count">N</td>
+									<td>21</td>
+								</tr>
+							</table>
+						</td>
+					</tr>					<tr class="statement-row odd-row">
+						<td class="statement">I discussed ideas from this course with others outside the classroom.</td>
+						<td>&nbsp;</td>
+						<td colspan="5"><img src="https://provost.utdallas.edu/images/live/uescharts/5-5-14-19-57-4.19-4.63-1.17.svg" style="background-color: white; " alt="Evaluation Chart"/></td>
+						<td>&nbsp;</td>
+						<td colspan="7">
+							<table class="count-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark">%</td>
+									<td>5%</td>
+									<td>5%</td>
+									<td>14%</td>
+									<td>19%</td>
+									<td>57%</td>
+									<td class="dark">100%</td>
+								</tr>
+								<tr>
+									<td class="dark">#</td>
+									<td>1</td>
+									<td>1</td>
+									<td>3</td>
+									<td>4</td>
+									<td>12</td>
+									<td class="dark">21</td>
+								</tr>
+							</table>
+						</td>
+						<td>&nbsp;</td>
+						<td>
+							<table class="summary-stat-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark" title="Median (Interpolated)">M</td>
+									<td><b>4.63</b></td>
+								</tr>
+								<tr>
+									<td class="dark" title="Mean">&#956;</td>
+									<td>4.19</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Standard Deviation">&#963;</td>
+									<td>1.17</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Response Count">N</td>
+									<td>21</td>
+								</tr>
+							</table>
+						</td>
+					</tr>					<tr class="statement-row even-row">
+						<td class="statement">This course has been (or will be) of value to me.</td>
+						<td>&nbsp;</td>
+						<td colspan="5"><img src="https://provost.utdallas.edu/images/live/uescharts/5-5-10-19-62-4.29-4.69-1.15.svg" style="background-color: white; " alt="Evaluation Chart"/></td>
+						<td>&nbsp;</td>
+						<td colspan="7">
+							<table class="count-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark">%</td>
+									<td>5%</td>
+									<td>5%</td>
+									<td>10%</td>
+									<td>19%</td>
+									<td>62%</td>
+									<td class="dark">100%</td>
+								</tr>
+								<tr>
+									<td class="dark">#</td>
+									<td>1</td>
+									<td>1</td>
+									<td>2</td>
+									<td>4</td>
+									<td>13</td>
+									<td class="dark">21</td>
+								</tr>
+							</table>
+						</td>
+						<td>&nbsp;</td>
+						<td>
+							<table class="summary-stat-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark" title="Median (Interpolated)">M</td>
+									<td><b>4.69</b></td>
+								</tr>
+								<tr>
+									<td class="dark" title="Mean">&#956;</td>
+									<td>4.29</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Standard Deviation">&#963;</td>
+									<td>1.15</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Response Count">N</td>
+									<td>21</td>
+								</tr>
+							</table>
+						</td>
+					</tr>					<tr class="statement-row odd-row">
+						<td class="statement">This course inspired me to learn more.</td>
+						<td>&nbsp;</td>
+						<td colspan="5"><img src="https://provost.utdallas.edu/images/live/uescharts/5-0-14-24-57-4.29-4.63-1.06.svg" style="background-color: white; " alt="Evaluation Chart"/></td>
+						<td>&nbsp;</td>
+						<td colspan="7">
+							<table class="count-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark">%</td>
+									<td>5%</td>
+									<td>-</td>
+									<td>14%</td>
+									<td>24%</td>
+									<td>57%</td>
+									<td class="dark">100%</td>
+								</tr>
+								<tr>
+									<td class="dark">#</td>
+									<td>1</td>
+									<td>-</td>
+									<td>3</td>
+									<td>5</td>
+									<td>12</td>
+									<td class="dark">21</td>
+								</tr>
+							</table>
+						</td>
+						<td>&nbsp;</td>
+						<td>
+							<table class="summary-stat-table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="dark" title="Median (Interpolated)">M</td>
+									<td><b>4.63</b></td>
+								</tr>
+								<tr>
+									<td class="dark" title="Mean">&#956;</td>
+									<td>4.29</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Standard Deviation">&#963;</td>
+									<td>1.06</td>
+								</tr>
+								<tr>
+									<td class="dark" title="Response Count">N</td>
+									<td>21</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+							</table>
+				  		</td>
+					</tr>
+				</table>
+			<table class='footer_table' border='0' width='100%'><tr> 
+		<td width='100%'>The direct address for this report is: <a href="https://go.utdallas.edu/eval/ee1202.002.13s" target="_blank">go.utdallas.edu/eval/ee1202.002.13s</a>. Download a PDF version of this report: <a href="https://go.utdallas.edu/eval/ee1202.002.13s/pdf" target="_blank">go.utdallas.edu/eval/ee1202.002.13s/pdf</a>. Contact the Provost's Technology Group to verify authenticity of report data: <a href="mailto:ptg@utdallas.edu">ptg@utdallas.edu</a>. Median calculated using <a href="http://aec.umich.edu/median.php" target="_blank">Interpolated Median Algorithm</a>. This class is cross listed with: <a href="https://coursebook.utdallas.edu/ues-report/ee1202.002.13s">ee1202.002.13s (0)</a>, <a href="https://coursebook.utdallas.edu/ues-report/ce1202.002.13s">ce1202.002.13s (0)</a>, <a href="https://coursebook.utdallas.edu/ues-report/te1202.002.13s">te1202.002.13s (0)</a> Survey Type: <b>ues</b>. Section Enrollment: <b>44</b>. Cache Time: <b>2017-05-28 16:35:59</b>.  </td> </tr></table>
+	</div>
+</body>
+
+</html>
