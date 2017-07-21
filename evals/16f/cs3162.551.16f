@@ -1,20 +1,26 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="https://www.w3.org/1999/xhtml" lang="en-US">
-
+<!DOCTYPE html>
+<html>
 <head>
-	<title>UT Dallas Course Evaluation for </title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
-	<link href="https://provost.utdallas.edu/images/utd-favicon-gs.ico" rel="shortcut icon" type="image/ico" />
-	<link href="https://provost.utdallas.edu/css/reset+ues2-screen+ues3-screen" rel="stylesheet" media="screen" />
-	<link href="https://provost.utdallas.edu/css/reset+ues2-print+ues3-print" rel="stylesheet" media="print" />
-
+  <title>Ptg.utdallas.edu Service Outage</title>
 </head>
-
 <body>
-	<div id="page">
-	-- sorry, no evaluations match the report criteria (cs3162.551.16f) --
-	</div>
-</body>
+ 
+<h1>Scheduled Service Outage, Sunday, May 21 2017</h1>
+<hr />
+<p>Multiple applications hosted by the Provost's Technology Group will be unavailable on Sunday, May 21 2017. Service will be unavailable starting at 5:00am and is expected to be available by 5:00pm.</p>
+<p>A partial list of affected services include:</p>
+<ul>
+<li>CourseBook</li>
+<li>UT Dallas Catalog</li>
+<li>StudentBook</li>
+<li>Faculty Review</li>
+<li>FacultyBook</li>
+<li>eForms</li>
+<li>Policy Navigator</li>
+<li>Course Evaluations</li>
+<li>Token Surveys</li>
+</ul>
 
+</body>
 </html>
+

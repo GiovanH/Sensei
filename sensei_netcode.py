@@ -158,9 +158,9 @@ def save(output, input):
 def downloadEvals(args):
 	try:
 		evalnames = ncpLoad('evalnames')
-		if not args.quiet:
-			print("Working variable evalnames:")
-			print(evalnames)
+		#if not args.quiet:
+			#print("Working variable evalnames:")
+			#print(evalnames)
 	except: 
 		print("You need to run downloadDirlists first!")
 		return

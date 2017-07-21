@@ -163,7 +163,7 @@ def processFile(filename,classlist,instructors):
 		#print("INFO: File " + filename + " has type " + surveytype)
 		if surveytype == '1': print("INFO: File " + filename + " has type " + surveytype)
 	except IndexError:
-		print("Error with file " + filename + ". Is it even a survey?")
+		print("Error with file " + filename + ". Is it even a survey? Deleting file. ")
 		os.remove(filename)
 		raise ValueError('CANNOT PARSE SURVEYTYPE')
 
@@ -321,7 +321,32 @@ def dict_merge(dct, merge_dct):
 			dict_merge(dct[k], merge_dct[k])
 		else:
 			dct[k] = merge_dct[k]	
-	
+
+def merge(a, b, path=None):
+	"merges b into a"
+	if path is None: path = []
+	for key in b:
+		if key in a:
+			if isinstance(a[key], dict) and isinstance(b[key], dict):
+				merge(a[key], b[key], path + [str(key)])
+			elif a[key] == b[key]:
+				pass # same leaf value
+			elif type(a[key]) == type(b[key]) == int:
+				a[key] += b[key] # add
+			elif type(a[key]) == type(b[key]) == list:
+				a[key] += b[key] # add
+			elif type(a[key]) == type(b[key]) == str:
+				print("Overwriting key " + '.'.join(path + [str(key)]) + ": \"" + a[key] + "\" -> \"" + b[key] + "\".")
+				a[key] == b[key] # overwrite
+			else:
+				print(a[key])
+				print(b[key])
+				print(type(a[key]))
+				raise Exception('Conflict at %s' % '.'.join(path + [str(key)]))
+		else:
+			a[key] = b[key]
+	return a
+
 def rebuild(matches,classlist,instructors):
 	# global instructors
 	# global classlist
@@ -340,7 +365,7 @@ def rebuild(matches,classlist,instructors):
 		try:
 			ipart = pickleLoad(imatch)
 			cpart = pickleLoad(cmatch)
-			if not args.quiet: print(imatch)
+			if not args.quiet: print('Using cached data for glob' + imatch)
 		except:
 			print('No cached data, building.')
 			ipart = dict()
@@ -350,7 +375,7 @@ def rebuild(matches,classlist,instructors):
 			j = 0
 			pbar = 0
 			files = glob.glob("evals/" + match)
-			if not args.quiet: print('Rebuilding data libraries for specific glob')
+			if not args.quiet: print('Rebuilding data libraries for specific glob ' + match)
 			if not args.quiet: print('[########################################]\n[',end='')
 			for filename in files:
 				try:
@@ -374,8 +399,8 @@ def rebuild(matches,classlist,instructors):
 			pickleSave(ipart,imatch)
 			pickleSave(cpart,cmatch)
 			if not args.quiet: print(']')
-		dict_merge(instructors,ipart)
-		dict_merge(classlist,cpart)
+		instructors = merge(instructors,ipart)
+		classlist = merge(classlist,cpart)
 
 	#print("Successfully processed " + str(i) + " evals. Skipped " + str(j))
 	#print(instructors)

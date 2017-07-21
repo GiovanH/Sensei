@@ -70,7 +70,9 @@ sdat.args(args)
 #print(args)
 
 
+global instructors
 instructors = dict()
+global classlist 
 classlist = dict()
 
 def pickleLoad(filename):
@@ -148,6 +150,7 @@ def scoreTeacherues(teacher):
 	if teacher['data'].get('ues') == None:
 		if not args.quiet: print("No UES data availible.")
 		return	
+	print("## UES Survey data")
 	print("Datapoints: " + str(uesdatapoints(teacher)))
 	ues_label_enum = sdat.enums().get('ues')
 	print("{0:<40}  {1:5}% {2:>5} [{3[0]:>3}, {3[1]:>3}, {3[2]:>3}, {3[3]:>3}, {3[4]:>3}]".format("Criteria","%","σ",["SD","D","N","A","SA"]))
@@ -173,13 +176,13 @@ def scoreTeacherues(teacher):
 #done
 
 def scoreTeacherlegacy(teacher):
-	print("Datapoints: " + str(legacydatapoints(teacher)))
+	if (legacydatapoints(teacher) > 1): print("Datapoints: " + str(legacydatapoints(teacher)))
 	for surveytype in ['1','2','H','C']:
 		if teacher['data'].get(surveytype) == None:
 			if not args.quiet: print("No v" + surveytype + " data availible.")
 			continue
 		else:
-			print("=Survey v" + surveytype + " data")
+			print("## Survey v" + surveytype + " data")
 		
 		label_enum = sdat.enums().get("legacy_" + surveytype)
 		if label_enum == None:
@@ -234,7 +237,7 @@ def deepscore(teacher):
 		print("Not a valid teacher")
 		return
 	if teacher.get('rmpdata') == None: snc.rateThisProfessor(teacher,instructors)
-	print("==" + teacher['name'])
+	print("# " + teacher['name'])
 	scoreTeacherlegacy(teacher)
 	scoreTeacherues(teacher)
 	scoreTeacherrmp(teacher)
@@ -401,7 +404,7 @@ def load():
 	global classlist
 	instructors = pickleLoad('instructors')
 	classlist = pickleLoad('classlist')
-#print(instructors)
+	#print(instructors)
 
 def help():
 	commands = [
@@ -440,12 +443,15 @@ def compareAll():
 		print("Administrative permissions required.")
 		return
 	global classlist
+	q = args.quiet
 	for c in classlist:
 		with open('bulk/classes/' + c + '.txt','w') as f:
+			args.quiet = True
 			sys.stdout = f
-			print("==============" + c)
+			#print("==============" + c)
 			nf.fn(deepcompare,nf.fn(getInstructorsByIDlist,classlist.get(c))).exe()
 		sys.stdout = sys.__stdout__
+		args.quiet = q
 		print("==============" + c)
 		nf.fn(deepcompare,nf.fn(getInstructorsByIDlist,classlist.get(c))).exe()
 		
@@ -453,21 +459,26 @@ def scoreAll():
 	if not isAdmin():
 		print("Administrative permissions required.")
 		return
-	global instructors
+	print("Authorized.")
+	#global instructors
+	#print(instructors)
+	q = args.quiet
 	for i in instructors.keys():
 		with open('bulk/instructors/' + i + '.txt','w', encoding='utf8') as f:
+			args.quiet = True
 			sys.stdout = f
-			print("==============" + instructors.get(i)['name'])
+			#print("==============" + instructors.get(i)['name'])
 			nf.fn(deepscore,instructors.get(i)).exe()
 		sys.stdout = sys.__stdout__
+		args.quiet = q
 		print("==============" + instructors.get(i)['name'])
 		nf.fn(deepscore,instructors.get(i)).exe()
 		
 def rebuild(rargs):
 	global classlist
 	global instructors
-	instructors = dict()
-	classlist = dict()
+	# instructors = dict()
+	# classlist = dict()
 	sdat.rebuild(rargs,classlist,instructors)
 	pickleSave(instructors,'instructors')
 	pickleSave(classlist,'classlist')
@@ -510,6 +521,7 @@ for path in ['obj', 'obj/part', 'obj/part/rmp', 'evals', 'directorylisting','tem
 		os.makedirs(path)
 
 #See if we can load any saved databases
+
 try:
 	load()
 except:
@@ -552,15 +564,14 @@ try:
 except KeyError:
 	print("Invalid command. Try with --help for a list.")
 
-	
-#print(args)
+
 if args.classcodes is not None:
 	if not args.quiet: print('Setting codes')
 	snc.setClassCodes(args.classcodes)
 if args.yearrange is not None:
 	if not args.quiet: print('Getting dirlists')
 	snc.downloadDirlists(args.yearrange)
-if args.redownload is not None:
+if args.redownload:
 	if not args.quiet: print('Getting evals')
 	snc.downloadEvals(args)
 if args.glob is not None: 
