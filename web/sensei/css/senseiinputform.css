@@ -1,0 +1,27 @@
+span.input {
+    display: block;
+    padding-bottom: 2em;
+}
+
+span.input input[type="text"] {
+    position: absolute;
+    left: 12em;
+    width: 30em;
+}
+
+span.description {
+    display: flex;
+    font-size: small;
+    padding-bottom: .4em;
+    padding-top: .1em;
+    position: absolute;    
+	left: 12.3em;
+}
+
+.input_header span.description {
+    margin-top: -1.4em;
+}
+
+span.input_header {
+    font-weight: bold;
+}

@@ -1,0 +1,60 @@
+progress {
+
+    right: 0%;
+    position: fixed;
+}    
+a:hover + progress {display: inline;}
+div {
+    font-size: 11pt;
+    font-family: monospace;
+}
+span.page {
+    display: block;
+}
+.page a {
+	color: black;
+	color: #000;
+	text-decoration: none;
+}
+.part a {
+    font-size: 14pt;
+    font-weight: bold;
+}
+.part1 a {	color: #13C100;}
+.part2 a, .page.TROLL a { 	color: #8A00B5; }
+.part3 a { 	color: red;}
+.part4 a {	color: black;}
+.page a:hover {	text-decoration: underline;}
+.page.giofixthis a {	/*text-decoration: underline;*/}
+.page.ACT a {
+	color: blue;
+	font-weight: bold;
+}
+.page.SECRET a {	color: lightgrey;}
+.THE_END a {	color: white;     text-shadow: 0 0 3px #000; }
+.ZAP a {	
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 3px #0E78FB; }
+.EOA a {	color: black;}
+.EOY a { color: #454545; }
+.CASCADE a, .COLLIDE a{    text-shadow: 0 0 3px #000;}
+.page.STRIFE a {	color: orange;}
+
+.page.MIND a {	color: #008282;    font-weight: normal; }
+.page.TRICKSTER a {
+	color: pink;
+	
+    -webkit-animation: blink .4s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: blink .4s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: blink .4s;
+}
+@-webkit-keyframes blink{0%{opacity:1}50%{opacity:0.4}100%{opacity:1}}
+.page.GREEN a, .page.BETA a {	color: green;}
+.page.A5A2 a, .page.ALPHA a {	color: red;}
+.page.A5A1 a {	color: teal;}
+.page.INTERJECTION a {	color: #666;}
+.page.DOC a {	color: white; }
+.page.WALKAROUND a {	color: #1F1BFF; }

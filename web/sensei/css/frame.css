@@ -1,0 +1,6 @@
+div#output_wrapper iframe {
+	width: 100%;
+	display: none;
+    margin-bottom: 1em;
+    border: none;
+}
